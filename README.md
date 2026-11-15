@@ -27,7 +27,8 @@ FastAPI ── Runtime ── bid graph ─┬ Job Analyst ┐
 ```
 Details: [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md) · tools: [docs/TOOLS.md](docs/TOOLS.md) ·
 data: [docs/DATA_CARD.md](docs/DATA_CARD.md) · ops: [docs/RUNBOOK.md](docs/RUNBOOK.md) ·
-decisions: [docs/adr/](docs/adr/) · report: [docs/report/REPORT.pdf](docs/report/REPORT.pdf)
+decisions: [docs/adr/](docs/adr/) · report: [docs/report/REPORT.pdf](docs/report/REPORT.pdf) ·
+write-up: [docs/WRITEUP.md](docs/WRITEUP.md)
 
 ## Quick start
 ```bash
