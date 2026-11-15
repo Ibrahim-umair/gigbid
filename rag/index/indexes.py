@@ -4,6 +4,7 @@ from __future__ import annotations
 import functools
 import hashlib
 import json
+import os
 import re
 
 import numpy as np
@@ -20,10 +21,13 @@ def tokenize(text: str) -> list[str]:
     return re.findall(r"[a-z0-9][a-z0-9.+#_-]*[a-z0-9+#]|[a-z0-9]", text.lower())
 
 
+LITE = os.getenv("GIGBID_LITE") == "1"  # 512 MB hosts: one thread, small batches
+
+
 @functools.lru_cache
 def embedder():
     from fastembed import TextEmbedding
-    return TextEmbedding(cfg("models", "embeddings"))
+    return TextEmbedding(cfg("models", "embeddings"), threads=1 if LITE else None)
 
 
 @functools.lru_cache
@@ -33,7 +37,7 @@ def reranker():
 
 
 def embed(texts: list[str]) -> np.ndarray:
-    v = np.array(list(embedder().embed(texts)), dtype=np.float32)
+    v = np.array(list(embedder().embed(texts, batch_size=8 if LITE else 256)), dtype=np.float32)
     return v / (np.linalg.norm(v, axis=1, keepdims=True) + 1e-9)
 
 

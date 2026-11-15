@@ -11,6 +11,8 @@ WORKDIR /app
 COPY . .
 RUN pip install --no-cache-dir uv && uv pip install --system --no-cache -e .
 COPY --from=web /web/dist apps/web/dist
-ENV GIGSIM_BASE_URL=inproc GIGBID_LITE=1 GIGBID_LLM=fake FASTEMBED_CACHE_PATH=/app/.fastembed
-RUN python -c "from fastembed import TextEmbedding; TextEmbedding('BAAI/bge-small-en-v1.5')"
+ENV GIGSIM_BASE_URL=inproc GIGBID_LITE=1 GIGBID_LLM=fake FASTEMBED_CACHE_PATH=/app/.fastembed     OMP_NUM_THREADS=1 MALLOC_ARENA_MAX=2
+# download the model AND pre-compute the portfolio embeddings at build time, so the server only
+# embeds short queries at runtime (embedding the corpus at runtime exceeded 512 MB)
+RUN python -c "from rag.index.indexes import get_index; ix = get_index(); print(len(ix.chunks), 'chunks indexed')"
 CMD ["sh", "-c", "uvicorn apps.api.main:app --host 0.0.0.0 --port ${PORT:-10000}"]
