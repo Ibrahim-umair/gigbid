@@ -100,9 +100,27 @@ async def match_requirements(
     return await anyio.to_thread.run_sync(lambda: _match(job_title, requirements, k))
 
 
+def _lite_coverage(job_title: str, requirements: list[str], k: int) -> dict:
+    """Low-memory mode (GIGBID_LITE=1, e.g. 512 MB hosts): coverage from dense cosine of the
+    best chunk per requirement instead of the cross-encoder."""
+    ix = get_index(PERSONA)
+    cov = {}
+    for r in requirements:
+        hits = ix.dense(f"{job_title}: {r}", 3)
+        best = hits[0][1] if hits else 0.0
+        ids = list(dict.fromkeys(ix.chunks[c]["item_id"] for c, s in hits if s >= 0.62))
+        strength = "strong" if best >= 0.72 else "partial" if best >= 0.62 else "none"
+        cov[r] = {"evidence_ids": ids if strength != "none" else [], "strength": strength}
+    return {"items": [], "coverage": cov}
+
+
 def _match(job_title: str, requirements: list[str], k: int) -> MatchResult:
-    out = retrieve_with_coverage({"title": job_title, "description": " ".join(requirements)},
-                                 get_index(PERSONA), k=k, requirements=requirements)
+    if os.getenv("GIGBID_LITE") == "1":
+        out = _lite_coverage(job_title, requirements, k)
+    else:
+            out = retrieve_with_coverage(
+            {"title": job_title, "description": " ".join(requirements)},
+            get_index(PERSONA), k=k, requirements=requirements)
     main = search({"title": job_title, "description": " ".join(requirements)},
                   requirements=requirements, persona=PERSONA, k=k)
     seen = {m["id"] for m in main}

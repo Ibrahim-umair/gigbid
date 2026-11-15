@@ -1,0 +1,22 @@
+# Render Blueprint: dashboard.render.com -> New -> Blueprint -> pick this repo.
+services:
+  - type: web
+    name: gigbid
+    runtime: docker
+    plan: free
+    dockerfilePath: ./infra/render/Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    envVars:
+      - key: GIGBID_LLM
+        value: fake
+      - key: GIGBID_LITE
+        value: "1"
+      - key: GIGSIM_BASE_URL
+        value: inproc
+      - key: APP_SECRET_KEY
+        generateValue: true
+      - key: REVIEWER_PASSWORD
+        generateValue: true
+      - key: DEMO_PASSWORD
+        generateValue: true
