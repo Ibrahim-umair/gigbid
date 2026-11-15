@@ -1,0 +1,3182 @@
+{
+ "split": "all",
+ "variants": {
+  "v0_naive": {
+   "n_jobs": 19,
+   "recall@5": 0.348,
+   "mrr": 0.449,
+   "ndcg@10": 0.406,
+   "recall@5_jobs_4plus_req": 0.451,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.11
+  },
+  "v1_decompose": {
+   "n_jobs": 19,
+   "recall@5": 0.298,
+   "mrr": 0.357,
+   "ndcg@10": 0.334,
+   "recall@5_jobs_4plus_req": 0.417,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.23
+  },
+  "v2_hybrid_only": {
+   "n_jobs": 19,
+   "recall@5": 0.378,
+   "mrr": 0.535,
+   "ndcg@10": 0.43,
+   "recall@5_jobs_4plus_req": 0.495,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.29
+  },
+  "v2_hybrid": {
+   "n_jobs": 19,
+   "recall@5": 0.311,
+   "mrr": 0.48,
+   "ndcg@10": 0.381,
+   "recall@5_jobs_4plus_req": 0.396,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.29
+  },
+  "v3_rerank_nodecomp": {
+   "n_jobs": 19,
+   "recall@5": 0.334,
+   "mrr": 0.509,
+   "ndcg@10": 0.375,
+   "recall@5_jobs_4plus_req": 0.431,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 10.68
+  },
+  "v3_rerank": {
+   "n_jobs": 19,
+   "recall@5": 0.296,
+   "mrr": 0.484,
+   "ndcg@10": 0.332,
+   "recall@5_jobs_4plus_req": 0.374,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 30.21
+  },
+  "v4_outcome": {
+   "n_jobs": 19,
+   "recall@5": 0.324,
+   "mrr": 0.531,
+   "ndcg@10": 0.347,
+   "recall@5_jobs_4plus_req": 0.415,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.38
+  },
+  "v8_corrective": {
+   "n_jobs": 19,
+   "recall@5": 0.225,
+   "mrr": 0.484,
+   "ndcg@10": 0.271,
+   "recall@5_jobs_4plus_req": 0.31,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 10.86
+  }
+ },
+ "per_job": [
+  {
+   "variant": "v0_naive",
+   "job_id": "real-28572",
+   "n_req": 4,
+   "top5": [
+    "rev-03",
+    "cs-03",
+    "cv",
+    "rev-07",
+    "cs-02"
+   ],
+   "gold": [
+    "cs-11",
+    "cs-03",
+    "cs-07",
+    "rev-11"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.5,
+   "ndcg@10": 0.6260258673782978
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-49722",
+   "n_req": 4,
+   "top5": [
+    "cs-15",
+    "cs-02",
+    "rev-03",
+    "cs-07",
+    "cs-11"
+   ],
+   "gold": [
+    "cs-15",
+    "repo-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.6131471927654584
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-46183",
+   "n_req": 3,
+   "top5": [
+    "cv",
+    "rev-07",
+    "cs-02",
+    "cs-07",
+    "repo-02"
+   ],
+   "gold": [
+    "cs-02",
+    "cs-03"
+   ],
+   "recall@5": 0.5,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.4911492931622974
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-15141",
+   "n_req": 4,
+   "top5": [
+    "cs-05",
+    "repo-03",
+    "repo-06",
+    "cv",
+    "rev-05"
+   ],
+   "gold": [
+    "cs-05",
+    "repo-03",
+    "rev-05"
+   ],
+   "recall@5": 1.0,
+   "mrr": 1.0,
+   "ndcg@10": 0.9469024295259745
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-09353",
+   "n_req": 4,
+   "top5": [
+    "cs-06",
+    "repo-06",
+    "cs-05",
+    "cv",
+    "repo-03"
+   ],
+   "gold": [
+    "cs-06",
+    "repo-06",
+    "rev-06",
+    "cs-05"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.9709286432396581
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-35717",
+   "n_req": 4,
+   "top5": [
+    "cs-12",
+    "cv",
+    "cs-09",
+    "cs-01",
+    "cs-04"
+   ],
+   "gold": [
+    "cs-12",
+    "cs-09",
+    "rev-09"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 1.0,
+   "ndcg@10": 0.8451850618939637
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-05895",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-07",
+    "repo-04",
+    "repo-03",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "cs-04",
+    "rev-10"
+   ],
+   "recall@5": 0.5,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.34620964322385606
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-32197",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "rev-03",
+    "cs-02",
+    "cs-01",
+    "rev-11"
+   ],
+   "gold": [
+    "cs-08",
+    "cs-02",
+    "cs-01"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.4367467095119258
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-15128",
+   "n_req": 3,
+   "top5": [
+    "cv",
+    "cs-10",
+    "repo-06",
+    "cs-06",
+    "repo-03"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "rev-10",
+    "cs-04"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.5,
+   "ndcg@10": 0.35914753008966527
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-04308",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "rev-03",
+    "cs-02",
+    "cs-03",
+    "cs-07"
+   ],
+   "gold": [
+    "cs-13",
+    "cs-01",
+    "cs-07",
+    "rev-12"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.2,
+   "ndcg@10": 0.2638647595767405
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-02079",
+   "n_req": 4,
+   "top5": [
+    "repo-02",
+    "cs-02",
+    "cs-08",
+    "rev-03",
+    "rev-07"
+   ],
+   "gold": [
+    "cs-08",
+    "repo-02",
+    "rev-08",
+    "cs-02"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.9447176050778178
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-19576",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-10",
+    "cs-02",
+    "rev-11",
+    "rev-03"
+   ],
+   "gold": [
+    "cs-01",
+    "cs-03",
+    "cs-09",
+    "cs-02",
+    "cs-14"
+   ],
+   "recall@5": 0.2,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.2716774977597197
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "real-34788",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cs-02",
+    "cs-15",
+    "cv",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-11",
+    "rev-11",
+    "cs-08"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 1.0,
+   "ndcg@10": 0.6049306994552042
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "syn-04",
+   "n_req": 4,
+   "top5": [
+    "cs-02",
+    "rev-03",
+    "repo-01",
+    "cs-03",
+    "cv"
+   ],
+   "gold": [
+    "RAG",
+    "FastAPI",
+    "pgvector",
+    "chatbot"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "syn-05",
+   "n_req": 2,
+   "top5": [
+    "cs-06",
+    "repo-06",
+    "cs-05",
+    "rev-05",
+    "cv"
+   ],
+   "gold": [
+    "YOLOv8",
+    "computer vision",
+    "FastAPI model serving",
+    "PyTorch"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "syn-06",
+   "n_req": 2,
+   "top5": [
+    "repo-02",
+    "cs-02",
+    "repo-01",
+    "cv",
+    "cs-15"
+   ],
+   "gold": [
+    "LLM apps",
+    "Slack bot",
+    "summarization",
+    "Python"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "syn-07",
+   "n_req": 3,
+   "top5": [
+    "cs-14",
+    "cs-04",
+    "cs-07",
+    "cs-15",
+    "cs-03"
+   ],
+   "gold": [
+    "transformers fine-tuning",
+    "sentiment classification",
+    "FastAPI",
+    "evaluation"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "syn-11",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cs-15",
+    "cs-02",
+    "rev-11",
+    "cs-10"
+   ],
+   "gold": [
+    "Whisper",
+    "TTS",
+    "FastAPI websockets",
+    "LLM apps"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v0_naive",
+   "job_id": "syn-12",
+   "n_req": 3,
+   "top5": [
+    "cs-07",
+    "cs-01",
+    "cs-04",
+    "cs-10",
+    "repo-01"
+   ],
+   "gold": [
+    "LLM evaluation",
+    "prompt engineering",
+    "pytest",
+    "data extraction"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-28572",
+   "n_req": 4,
+   "top5": [
+    "rev-03",
+    "cs-11",
+    "rev-07",
+    "cs-02",
+    "rev-11"
+   ],
+   "gold": [
+    "cs-11",
+    "cs-03",
+    "cs-07",
+    "rev-11"
+   ],
+   "recall@5": 0.5,
+   "mrr": 0.5,
+   "ndcg@10": 0.6505998846696008
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-49722",
+   "n_req": 4,
+   "top5": [
+    "cs-15",
+    "rev-03",
+    "rev-11",
+    "rev-07",
+    "cs-02"
+   ],
+   "gold": [
+    "cs-15",
+    "repo-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.6131471927654584
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-46183",
+   "n_req": 3,
+   "top5": [
+    "cv",
+    "rev-07",
+    "cs-10",
+    "repo-04",
+    "repo-05"
+   ],
+   "gold": [
+    "cs-02",
+    "cs-03"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.1111111111111111,
+   "ndcg@10": 0.18457569677956817
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-15141",
+   "n_req": 4,
+   "top5": [
+    "cs-05",
+    "cv",
+    "rev-05",
+    "cs-10",
+    "repo-03"
+   ],
+   "gold": [
+    "cs-05",
+    "repo-03",
+    "rev-05"
+   ],
+   "recall@5": 1.0,
+   "mrr": 1.0,
+   "ndcg@10": 0.8854598815714874
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-09353",
+   "n_req": 4,
+   "top5": [
+    "cs-06",
+    "repo-06",
+    "cv",
+    "cs-10",
+    "cs-05"
+   ],
+   "gold": [
+    "cs-06",
+    "repo-06",
+    "rev-06",
+    "cs-05"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.787702056960637
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-35717",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-12",
+    "rev-09",
+    "cs-13",
+    "cs-01"
+   ],
+   "gold": [
+    "cs-12",
+    "cs-09",
+    "rev-09"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 0.5,
+   "ndcg@10": 0.6978817289434457
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-05895",
+   "n_req": 4,
+   "top5": [
+    "cs-07",
+    "repo-04",
+    "repo-03",
+    "cs-02",
+    "repo-02"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "cs-04",
+    "rev-10"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.5,
+   "ndcg@10": 0.3764290720714305
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-32197",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "rev-03",
+    "rev-11",
+    "rev-07",
+    "cs-02"
+   ],
+   "gold": [
+    "cs-08",
+    "cs-02",
+    "cs-01"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 0.2,
+   "ndcg@10": 0.34870224750355494
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-15128",
+   "n_req": 3,
+   "top5": [
+    "repo-06",
+    "cv",
+    "cs-10",
+    "repo-01",
+    "repo-03"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "rev-10",
+    "cs-04"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.312706129752478
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-04308",
+   "n_req": 4,
+   "top5": [
+    "rev-03",
+    "cs-02",
+    "cv",
+    "rev-07",
+    "rev-11"
+   ],
+   "gold": [
+    "cs-13",
+    "cs-01",
+    "cs-07",
+    "rev-12"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.16666666666666666,
+   "ndcg@10": 0.13905617951077562
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-02079",
+   "n_req": 4,
+   "top5": [
+    "repo-02",
+    "cs-02",
+    "rev-03",
+    "cs-08",
+    "rev-07"
+   ],
+   "gold": [
+    "cs-08",
+    "repo-02",
+    "rev-08",
+    "cs-02"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.8048099750039491
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-19576",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "rev-07",
+    "rev-05",
+    "rev-11",
+    "rev-03"
+   ],
+   "gold": [
+    "cs-01",
+    "cs-03",
+    "cs-09",
+    "cs-02",
+    "cs-14"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.14285714285714285,
+   "ndcg@10": 0.11305340175787204
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "real-34788",
+   "n_req": 4,
+   "top5": [
+    "cs-10",
+    "cv",
+    "cs-11",
+    "rev-11",
+    "cs-07"
+   ],
+   "gold": [
+    "cs-11",
+    "rev-11",
+    "cs-08"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.4367467095119258
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "syn-04",
+   "n_req": 4,
+   "top5": [
+    "repo-01",
+    "rev-03",
+    "rev-07",
+    "cs-02",
+    "cs-07"
+   ],
+   "gold": [
+    "RAG",
+    "FastAPI",
+    "pgvector",
+    "chatbot"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "syn-05",
+   "n_req": 2,
+   "top5": [
+    "cs-06",
+    "cs-05",
+    "rev-05",
+    "repo-06",
+    "cv"
+   ],
+   "gold": [
+    "YOLOv8",
+    "computer vision",
+    "FastAPI model serving",
+    "PyTorch"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "syn-06",
+   "n_req": 2,
+   "top5": [
+    "cs-15",
+    "rev-03",
+    "repo-02",
+    "cs-02",
+    "repo-01"
+   ],
+   "gold": [
+    "LLM apps",
+    "Slack bot",
+    "summarization",
+    "Python"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "syn-07",
+   "n_req": 3,
+   "top5": [
+    "cs-14",
+    "cs-04",
+    "rev-03",
+    "rev-11",
+    "cs-07"
+   ],
+   "gold": [
+    "transformers fine-tuning",
+    "sentiment classification",
+    "FastAPI",
+    "evaluation"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "syn-11",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "rev-11",
+    "cs-02",
+    "cs-15",
+    "cs-07"
+   ],
+   "gold": [
+    "Whisper",
+    "TTS",
+    "FastAPI websockets",
+    "LLM apps"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v1_decompose",
+   "job_id": "syn-12",
+   "n_req": 3,
+   "top5": [
+    "cv",
+    "rev-07",
+    "cs-04",
+    "cs-01",
+    "cs-07"
+   ],
+   "gold": [
+    "LLM evaluation",
+    "prompt engineering",
+    "pytest",
+    "data extraction"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-28572",
+   "n_req": 4,
+   "top5": [
+    "cs-03",
+    "cv",
+    "cs-11",
+    "cs-15",
+    "cs-13"
+   ],
+   "gold": [
+    "cs-11",
+    "cs-03",
+    "cs-07",
+    "rev-11"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.7030861797445797
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-49722",
+   "n_req": 4,
+   "top5": [
+    "cs-15",
+    "cs-02",
+    "cs-03",
+    "repo-02",
+    "cs-11"
+   ],
+   "gold": [
+    "cs-15",
+    "repo-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.6131471927654584
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-46183",
+   "n_req": 3,
+   "top5": [
+    "rev-07",
+    "cs-07",
+    "cs-03",
+    "cv",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-02",
+    "cs-03"
+   ],
+   "recall@5": 0.5,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.5
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-15141",
+   "n_req": 4,
+   "top5": [
+    "repo-03",
+    "cs-05",
+    "cv",
+    "cs-06",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-05",
+    "repo-03",
+    "rev-05"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 1.0,
+   "ndcg@10": 0.9066276098484507
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-09353",
+   "n_req": 4,
+   "top5": [
+    "cs-06",
+    "repo-06",
+    "cv",
+    "cs-05",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-06",
+    "repo-06",
+    "rev-06",
+    "cs-05"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.8048099750039491
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-35717",
+   "n_req": 4,
+   "top5": [
+    "cs-12",
+    "cv",
+    "cs-09",
+    "cs-02",
+    "cs-13"
+   ],
+   "gold": [
+    "cs-12",
+    "cs-09",
+    "rev-09"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 1.0,
+   "ndcg@10": 0.7039180890341347
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-05895",
+   "n_req": 4,
+   "top5": [
+    "repo-04",
+    "cs-07",
+    "cv",
+    "cs-02",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "cs-04",
+    "rev-10"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.5413996682199069
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-32197",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-01",
+    "cs-02",
+    "cs-07",
+    "cs-15"
+   ],
+   "gold": [
+    "cs-08",
+    "cs-02",
+    "cs-01"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 0.5,
+   "ndcg@10": 0.5307212739772434
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-15128",
+   "n_req": 3,
+   "top5": [
+    "cv",
+    "cs-10",
+    "repo-06",
+    "cs-05",
+    "cs-06"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "rev-10",
+    "cs-04"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.5,
+   "ndcg@10": 0.4766636348460924
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-04308",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-03",
+    "cs-13",
+    "cs-07",
+    "rev-07"
+   ],
+   "gold": [
+    "cs-13",
+    "cs-01",
+    "cs-07",
+    "rev-12"
+   ],
+   "recall@5": 0.5,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.36331756126716835
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-02079",
+   "n_req": 4,
+   "top5": [
+    "repo-02",
+    "cs-08",
+    "cs-02",
+    "cs-07",
+    "cs-03"
+   ],
+   "gold": [
+    "cs-08",
+    "repo-02",
+    "rev-08",
+    "cs-02"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.961999147059583
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-19576",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-02",
+    "cs-10",
+    "cs-01",
+    "cs-14"
+   ],
+   "gold": [
+    "cs-01",
+    "cs-03",
+    "cs-09",
+    "cs-02",
+    "cs-14"
+   ],
+   "recall@5": 0.6,
+   "mrr": 0.5,
+   "ndcg@10": 0.5933570872124875
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "real-34788",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cs-02",
+    "cs-03",
+    "cv",
+    "cs-07"
+   ],
+   "gold": [
+    "cs-11",
+    "rev-11",
+    "cs-08"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 1.0,
+   "ndcg@10": 0.46927872602275644
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "syn-04",
+   "n_req": 4,
+   "top5": [
+    "repo-01",
+    "cs-02",
+    "cs-01",
+    "cs-03",
+    "cv"
+   ],
+   "gold": [
+    "RAG",
+    "FastAPI",
+    "pgvector",
+    "chatbot"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "syn-05",
+   "n_req": 2,
+   "top5": [
+    "cs-06",
+    "repo-06",
+    "cs-05",
+    "cv",
+    "repo-03"
+   ],
+   "gold": [
+    "YOLOv8",
+    "computer vision",
+    "FastAPI model serving",
+    "PyTorch"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "syn-06",
+   "n_req": 2,
+   "top5": [
+    "cv",
+    "cs-02",
+    "cs-15",
+    "cs-11",
+    "cs-04"
+   ],
+   "gold": [
+    "LLM apps",
+    "Slack bot",
+    "summarization",
+    "Python"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "syn-07",
+   "n_req": 3,
+   "top5": [
+    "cs-14",
+    "cs-04",
+    "cs-03",
+    "cs-01",
+    "cs-09"
+   ],
+   "gold": [
+    "transformers fine-tuning",
+    "sentiment classification",
+    "FastAPI",
+    "evaluation"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "syn-11",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cs-02",
+    "cs-15",
+    "cs-08",
+    "cs-07"
+   ],
+   "gold": [
+    "Whisper",
+    "TTS",
+    "FastAPI websockets",
+    "LLM apps"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid_only",
+   "job_id": "syn-12",
+   "n_req": 3,
+   "top5": [
+    "cs-01",
+    "cs-10",
+    "cs-07",
+    "cs-03",
+    "repo-01"
+   ],
+   "gold": [
+    "LLM evaluation",
+    "prompt engineering",
+    "pytest",
+    "data extraction"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-28572",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cv",
+    "cs-07",
+    "cs-15",
+    "repo-02"
+   ],
+   "gold": [
+    "cs-11",
+    "cs-03",
+    "cs-07",
+    "rev-11"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.8547529378296287
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-49722",
+   "n_req": 4,
+   "top5": [
+    "cs-15",
+    "cs-02",
+    "repo-02",
+    "cs-03",
+    "cs-13"
+   ],
+   "gold": [
+    "cs-15",
+    "repo-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.6131471927654584
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-46183",
+   "n_req": 3,
+   "top5": [
+    "cs-10",
+    "cv",
+    "cs-03",
+    "rev-03",
+    "repo-01"
+   ],
+   "gold": [
+    "cs-02",
+    "cs-03"
+   ],
+   "recall@5": 0.5,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.3065735963827292
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-15141",
+   "n_req": 4,
+   "top5": [
+    "cs-05",
+    "cv",
+    "cs-04",
+    "repo-03",
+    "repo-05"
+   ],
+   "gold": [
+    "cs-05",
+    "repo-03",
+    "rev-05"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 1.0,
+   "ndcg@10": 0.8278123145308894
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-09353",
+   "n_req": 4,
+   "top5": [
+    "cs-06",
+    "repo-06",
+    "cv",
+    "cs-10",
+    "cs-14"
+   ],
+   "gold": [
+    "cs-06",
+    "repo-06",
+    "rev-06",
+    "cs-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.7668091220635322
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-35717",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-12",
+    "cs-09",
+    "cs-13",
+    "cs-04"
+   ],
+   "gold": [
+    "cs-12",
+    "cs-09",
+    "rev-09"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 0.5,
+   "ndcg@10": 0.6663732474096913
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-05895",
+   "n_req": 4,
+   "top5": [
+    "repo-04",
+    "cs-07",
+    "cs-03",
+    "cs-01",
+    "repo-01"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "cs-04",
+    "rev-10"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.5032251913410369
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-32197",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "rev-07",
+    "rev-01",
+    "cs-07",
+    "cs-01"
+   ],
+   "gold": [
+    "cs-08",
+    "cs-02",
+    "cs-01"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 0.2,
+   "ndcg@10": 0.18154179253735267
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-15128",
+   "n_req": 3,
+   "top5": [
+    "repo-06",
+    "cv",
+    "cs-10",
+    "cs-14",
+    "repo-01"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "rev-10",
+    "cs-04"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.31834121936641585
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-04308",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "rev-03",
+    "cs-03",
+    "cs-13",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-13",
+    "cs-01",
+    "cs-07",
+    "rev-12"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.25,
+   "ndcg@10": 0.2856436410275446
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-02079",
+   "n_req": 4,
+   "top5": [
+    "repo-02",
+    "cs-08",
+    "cs-02",
+    "cv",
+    "cs-03"
+   ],
+   "gold": [
+    "cs-08",
+    "repo-02",
+    "rev-08",
+    "cs-02"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.9493885684853096
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-19576",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-02",
+    "cs-01",
+    "rev-05",
+    "cs-12"
+   ],
+   "gold": [
+    "cs-01",
+    "cs-03",
+    "cs-09",
+    "cs-02",
+    "cs-14"
+   ],
+   "recall@5": 0.4,
+   "mrr": 0.5,
+   "ndcg@10": 0.49055949973859936
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "real-34788",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cs-07",
+    "cv",
+    "cs-15",
+    "rev-07"
+   ],
+   "gold": [
+    "cs-11",
+    "rev-11",
+    "cs-08"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 1.0,
+   "ndcg@10": 0.46927872602275644
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "syn-04",
+   "n_req": 4,
+   "top5": [
+    "repo-01",
+    "cs-02",
+    "cs-13",
+    "cs-01",
+    "cs-03"
+   ],
+   "gold": [
+    "RAG",
+    "FastAPI",
+    "pgvector",
+    "chatbot"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "syn-05",
+   "n_req": 2,
+   "top5": [
+    "cs-06",
+    "repo-06",
+    "cs-05",
+    "cv",
+    "repo-03"
+   ],
+   "gold": [
+    "YOLOv8",
+    "computer vision",
+    "FastAPI model serving",
+    "PyTorch"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "syn-06",
+   "n_req": 2,
+   "top5": [
+    "cs-15",
+    "cs-02",
+    "rev-03",
+    "cv",
+    "cs-11"
+   ],
+   "gold": [
+    "LLM apps",
+    "Slack bot",
+    "summarization",
+    "Python"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "syn-07",
+   "n_req": 3,
+   "top5": [
+    "cs-14",
+    "cs-04",
+    "cs-03",
+    "cs-15",
+    "cs-09"
+   ],
+   "gold": [
+    "transformers fine-tuning",
+    "sentiment classification",
+    "FastAPI",
+    "evaluation"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "syn-11",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cs-02",
+    "cs-07",
+    "cs-15",
+    "rev-11"
+   ],
+   "gold": [
+    "Whisper",
+    "TTS",
+    "FastAPI websockets",
+    "LLM apps"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v2_hybrid",
+   "job_id": "syn-12",
+   "n_req": 3,
+   "top5": [
+    "repo-01",
+    "cv",
+    "cs-01",
+    "cs-04",
+    "cs-07"
+   ],
+   "gold": [
+    "LLM evaluation",
+    "prompt engineering",
+    "pytest",
+    "data extraction"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-28572",
+   "n_req": 4,
+   "top5": [
+    "cs-03",
+    "cv",
+    "cs-11",
+    "cs-15",
+    "repo-02"
+   ],
+   "gold": [
+    "cs-11",
+    "cs-03",
+    "cs-07",
+    "rev-11"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.5855700749881525
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-49722",
+   "n_req": 4,
+   "top5": [
+    "cs-15",
+    "repo-02",
+    "cs-11",
+    "cs-02",
+    "cs-03"
+   ],
+   "gold": [
+    "cs-15",
+    "repo-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.6131471927654584
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-46183",
+   "n_req": 3,
+   "top5": [
+    "rev-07",
+    "cv",
+    "repo-06",
+    "cs-03",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-02",
+    "cs-03"
+   ],
+   "recall@5": 0.5,
+   "mrr": 0.25,
+   "ndcg@10": 0.45749452618986164
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-15141",
+   "n_req": 4,
+   "top5": [
+    "cs-05",
+    "repo-03",
+    "cv",
+    "cs-10",
+    "repo-06"
+   ],
+   "gold": [
+    "cs-05",
+    "repo-03",
+    "rev-05"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 1.0,
+   "ndcg@10": 0.7653606369886217
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-09353",
+   "n_req": 4,
+   "top5": [
+    "cs-06",
+    "repo-06",
+    "cv",
+    "cs-05",
+    "repo-03"
+   ],
+   "gold": [
+    "cs-06",
+    "repo-06",
+    "rev-06",
+    "cs-05"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.8048099750039491
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-35717",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-12",
+    "cs-09",
+    "cs-02"
+   ],
+   "gold": [
+    "cs-12",
+    "cs-09",
+    "rev-09"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 0.5,
+   "ndcg@10": 0.5307212739772434
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-05895",
+   "n_req": 4,
+   "top5": [
+    "repo-04",
+    "cs-13",
+    "cs-02",
+    "repo-01",
+    "cv"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "cs-04",
+    "rev-10"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.5294362295028773
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-32197",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-03",
+    "cs-01",
+    "cs-11",
+    "cs-07"
+   ],
+   "gold": [
+    "cs-08",
+    "cs-02",
+    "cs-01"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.40179981797758046
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-15128",
+   "n_req": 3,
+   "top5": [
+    "cs-10",
+    "cs-06",
+    "cs-14",
+    "cv",
+    "repo-06"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "rev-10",
+    "cs-04"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.3903800499921017
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-04308",
+   "n_req": 4,
+   "top5": [
+    "cs-03",
+    "rev-07",
+    "cv",
+    "cs-13",
+    "cs-11"
+   ],
+   "gold": [
+    "cs-13",
+    "cs-01",
+    "cs-07",
+    "rev-12"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.25,
+   "ndcg@10": 0.3071837157818931
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-02079",
+   "n_req": 4,
+   "top5": [
+    "cs-02",
+    "cs-08",
+    "repo-02",
+    "cs-03",
+    "cs-07"
+   ],
+   "gold": [
+    "cs-08",
+    "repo-02",
+    "rev-08",
+    "cs-02"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.8318724637288826
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-19576",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-10",
+    "cs-02",
+    "cs-01",
+    "cs-14"
+   ],
+   "gold": [
+    "cs-01",
+    "cs-03",
+    "cs-09",
+    "cs-02",
+    "cs-14"
+   ],
+   "recall@5": 0.6,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.4468535299918563
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "real-34788",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cv",
+    "cs-03",
+    "cs-02",
+    "cs-15"
+   ],
+   "gold": [
+    "cs-11",
+    "rev-11",
+    "cs-08"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 1.0,
+   "ndcg@10": 0.46927872602275644
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "syn-04",
+   "n_req": 4,
+   "top5": [
+    "repo-01",
+    "cv",
+    "cs-03",
+    "cs-01",
+    "cs-13"
+   ],
+   "gold": [
+    "RAG",
+    "FastAPI",
+    "pgvector",
+    "chatbot"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "syn-05",
+   "n_req": 2,
+   "top5": [
+    "cs-10",
+    "cv",
+    "cs-06",
+    "repo-03",
+    "cs-05"
+   ],
+   "gold": [
+    "YOLOv8",
+    "computer vision",
+    "FastAPI model serving",
+    "PyTorch"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "syn-06",
+   "n_req": 2,
+   "top5": [
+    "cv",
+    "repo-05",
+    "cs-02",
+    "cs-11",
+    "cs-15"
+   ],
+   "gold": [
+    "LLM apps",
+    "Slack bot",
+    "summarization",
+    "Python"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "syn-07",
+   "n_req": 3,
+   "top5": [
+    "cs-14",
+    "cs-04",
+    "cs-03",
+    "cs-09",
+    "cs-01"
+   ],
+   "gold": [
+    "transformers fine-tuning",
+    "sentiment classification",
+    "FastAPI",
+    "evaluation"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "syn-11",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cs-02",
+    "cs-08",
+    "cs-10",
+    "cs-07"
+   ],
+   "gold": [
+    "Whisper",
+    "TTS",
+    "FastAPI websockets",
+    "LLM apps"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank_nodecomp",
+   "job_id": "syn-12",
+   "n_req": 3,
+   "top5": [
+    "cs-10",
+    "cs-04",
+    "repo-01",
+    "rev-07",
+    "cs-03"
+   ],
+   "gold": [
+    "LLM evaluation",
+    "prompt engineering",
+    "pytest",
+    "data extraction"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-28572",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "rev-11",
+    "cs-03",
+    "cs-15",
+    "cv"
+   ],
+   "gold": [
+    "cs-11",
+    "cs-03",
+    "cs-07",
+    "rev-11"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.961999147059583
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-49722",
+   "n_req": 4,
+   "top5": [
+    "cs-15",
+    "cs-02",
+    "cs-03",
+    "repo-02",
+    "rev-07"
+   ],
+   "gold": [
+    "cs-15",
+    "repo-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.6131471927654584
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-46183",
+   "n_req": 3,
+   "top5": [
+    "cv",
+    "repo-05",
+    "cs-10",
+    "repo-01",
+    "cs-03"
+   ],
+   "gold": [
+    "cs-02",
+    "cs-03"
+   ],
+   "recall@5": 0.5,
+   "mrr": 0.2,
+   "ndcg@10": 0.23719771276929622
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-15141",
+   "n_req": 4,
+   "top5": [
+    "repo-03",
+    "cs-05",
+    "cs-04",
+    "cv",
+    "repo-05"
+   ],
+   "gold": [
+    "cs-05",
+    "repo-03",
+    "rev-05"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 1.0,
+   "ndcg@10": 0.7653606369886217
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-09353",
+   "n_req": 4,
+   "top5": [
+    "cs-06",
+    "cv",
+    "repo-06",
+    "cs-10",
+    "cs-14"
+   ],
+   "gold": [
+    "cs-06",
+    "repo-06",
+    "rev-06",
+    "cs-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.5855700749881525
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-35717",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-12",
+    "cs-09",
+    "cs-13",
+    "cs-04"
+   ],
+   "gold": [
+    "cs-12",
+    "cs-09",
+    "rev-09"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 0.5,
+   "ndcg@10": 0.5307212739772434
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-05895",
+   "n_req": 4,
+   "top5": [
+    "repo-04",
+    "repo-01",
+    "cs-03",
+    "cv",
+    "cs-07"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "cs-04",
+    "rev-10"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.3903800499921017
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-32197",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "rev-01",
+    "rev-07",
+    "repo-01",
+    "rev-03"
+   ],
+   "gold": [
+    "cs-08",
+    "cs-02",
+    "cs-01"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.16666666666666666,
+   "ndcg@10": 0.16716045496620227
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-15128",
+   "n_req": 3,
+   "top5": [
+    "cs-10",
+    "cs-14",
+    "cv",
+    "repo-06",
+    "repo-01"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "rev-10",
+    "cs-04"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.3903800499921017
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-04308",
+   "n_req": 4,
+   "top5": [
+    "cs-03",
+    "cv",
+    "cs-13",
+    "rev-03",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-13",
+    "cs-01",
+    "cs-07",
+    "rev-12"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.19519002499605084
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-02079",
+   "n_req": 4,
+   "top5": [
+    "repo-02",
+    "cs-08",
+    "cs-02",
+    "cv"
+   ],
+   "gold": [
+    "cs-08",
+    "repo-02",
+    "rev-08",
+    "cs-02"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.8318724637288826
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-19576",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-02",
+    "cs-12",
+    "rev-11",
+    "rev-05"
+   ],
+   "gold": [
+    "cs-01",
+    "cs-03",
+    "cs-09",
+    "cs-02",
+    "cs-14"
+   ],
+   "recall@5": 0.2,
+   "mrr": 0.5,
+   "ndcg@10": 0.3347975674340217
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "real-34788",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-11",
+    "cs-10",
+    "cs-15",
+    "cs-02"
+   ],
+   "gold": [
+    "cs-11",
+    "rev-11",
+    "cs-08"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 0.5,
+   "ndcg@10": 0.2960819109658652
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "syn-04",
+   "n_req": 4,
+   "top5": [
+    "repo-01",
+    "cs-02",
+    "cs-13",
+    "cs-03",
+    "cs-01"
+   ],
+   "gold": [
+    "RAG",
+    "FastAPI",
+    "pgvector",
+    "chatbot"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "syn-05",
+   "n_req": 2,
+   "top5": [
+    "cv",
+    "repo-03",
+    "cs-05",
+    "cs-06",
+    "repo-06"
+   ],
+   "gold": [
+    "YOLOv8",
+    "computer vision",
+    "FastAPI model serving",
+    "PyTorch"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "syn-06",
+   "n_req": 2,
+   "top5": [
+    "cv",
+    "cs-02",
+    "cs-15",
+    "rev-03",
+    "cs-11"
+   ],
+   "gold": [
+    "LLM apps",
+    "Slack bot",
+    "summarization",
+    "Python"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "syn-07",
+   "n_req": 3,
+   "top5": [
+    "cs-14",
+    "cs-04",
+    "cs-15",
+    "cs-09",
+    "cs-03"
+   ],
+   "gold": [
+    "transformers fine-tuning",
+    "sentiment classification",
+    "FastAPI",
+    "evaluation"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "syn-11",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "rev-11",
+    "cs-13",
+    "cs-07",
+    "cs-02"
+   ],
+   "gold": [
+    "Whisper",
+    "TTS",
+    "FastAPI websockets",
+    "LLM apps"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v3_rerank",
+   "job_id": "syn-12",
+   "n_req": 3,
+   "top5": [
+    "repo-01",
+    "cv",
+    "cs-10",
+    "cs-04",
+    "cs-07"
+   ],
+   "gold": [
+    "LLM evaluation",
+    "prompt engineering",
+    "pytest",
+    "data extraction"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-28572",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "rev-11",
+    "cs-03",
+    "cs-15",
+    "repo-02"
+   ],
+   "gold": [
+    "cs-11",
+    "cs-03",
+    "cs-07",
+    "rev-11"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.9709286432396581
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-49722",
+   "n_req": 4,
+   "top5": [
+    "cs-15",
+    "cs-02",
+    "cs-13",
+    "cs-03",
+    "repo-02"
+   ],
+   "gold": [
+    "cs-15",
+    "repo-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.6131471927654584
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-46183",
+   "n_req": 3,
+   "top5": [
+    "cv",
+    "cs-10",
+    "repo-05",
+    "cs-03",
+    "repo-01"
+   ],
+   "gold": [
+    "cs-02",
+    "cs-03"
+   ],
+   "recall@5": 0.5,
+   "mrr": 0.25,
+   "ndcg@10": 0.2640681225725909
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-15141",
+   "n_req": 4,
+   "top5": [
+    "repo-03",
+    "cs-05",
+    "cs-04",
+    "cv",
+    "repo-05"
+   ],
+   "gold": [
+    "cs-05",
+    "repo-03",
+    "rev-05"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 1.0,
+   "ndcg@10": 0.7653606369886217
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-09353",
+   "n_req": 4,
+   "top5": [
+    "cs-06",
+    "cv",
+    "cs-10",
+    "repo-06",
+    "cs-14"
+   ],
+   "gold": [
+    "cs-06",
+    "repo-06",
+    "rev-06",
+    "cs-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.5585075862632192
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-35717",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-12",
+    "cs-13",
+    "cs-09",
+    "cs-04"
+   ],
+   "gold": [
+    "cs-12",
+    "cs-09",
+    "rev-09"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 0.5,
+   "ndcg@10": 0.49818925746641285
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-05895",
+   "n_req": 4,
+   "top5": [
+    "repo-04",
+    "cs-03",
+    "cs-01",
+    "repo-01",
+    "cs-07"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "cs-04",
+    "rev-10"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.3903800499921017
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-32197",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "rev-01",
+    "cs-01",
+    "rev-07",
+    "repo-01"
+   ],
+   "gold": [
+    "cs-08",
+    "cs-02",
+    "cs-01"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 0.3333333333333333,
+   "ndcg@10": 0.23463936301137822
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-15128",
+   "n_req": 3,
+   "top5": [
+    "cs-10",
+    "cs-14",
+    "repo-06",
+    "cv",
+    "repo-01"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "rev-10",
+    "cs-04"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.3903800499921017
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-04308",
+   "n_req": 4,
+   "top5": [
+    "cs-03",
+    "cs-13",
+    "cv",
+    "rev-03",
+    "cs-10"
+   ],
+   "gold": [
+    "cs-13",
+    "cs-01",
+    "cs-07",
+    "rev-12"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.5,
+   "ndcg@10": 0.24630238874073
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-02079",
+   "n_req": 4,
+   "top5": [
+    "cs-08",
+    "repo-02",
+    "cs-02",
+    "cv"
+   ],
+   "gold": [
+    "cs-08",
+    "repo-02",
+    "rev-08",
+    "cs-02"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.8318724637288826
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-19576",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-01",
+    "cs-12",
+    "cs-02",
+    "rev-11"
+   ],
+   "gold": [
+    "cs-01",
+    "cs-03",
+    "cs-09",
+    "cs-02",
+    "cs-14"
+   ],
+   "recall@5": 0.4,
+   "mrr": 0.5,
+   "ndcg@10": 0.36005461457723403
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "real-34788",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cs-10",
+    "cv",
+    "cs-15",
+    "cs-02"
+   ],
+   "gold": [
+    "cs-11",
+    "rev-11",
+    "cs-08"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 1.0,
+   "ndcg@10": 0.46927872602275644
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "syn-04",
+   "n_req": 4,
+   "top5": [
+    "repo-01",
+    "cs-13",
+    "cs-01",
+    "cs-03",
+    "cs-02"
+   ],
+   "gold": [
+    "RAG",
+    "FastAPI",
+    "pgvector",
+    "chatbot"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "syn-05",
+   "n_req": 2,
+   "top5": [
+    "repo-03",
+    "cs-05",
+    "cv",
+    "cs-06",
+    "repo-06"
+   ],
+   "gold": [
+    "YOLOv8",
+    "computer vision",
+    "FastAPI model serving",
+    "PyTorch"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "syn-06",
+   "n_req": 2,
+   "top5": [
+    "cs-15",
+    "cs-02",
+    "cv",
+    "rev-03",
+    "cs-11"
+   ],
+   "gold": [
+    "LLM apps",
+    "Slack bot",
+    "summarization",
+    "Python"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "syn-07",
+   "n_req": 3,
+   "top5": [
+    "cs-14",
+    "cs-04",
+    "cs-09",
+    "cs-15",
+    "cs-03"
+   ],
+   "gold": [
+    "transformers fine-tuning",
+    "sentiment classification",
+    "FastAPI",
+    "evaluation"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "syn-11",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cs-13",
+    "cs-01",
+    "rev-11",
+    "cs-15"
+   ],
+   "gold": [
+    "Whisper",
+    "TTS",
+    "FastAPI websockets",
+    "LLM apps"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v4_outcome",
+   "job_id": "syn-12",
+   "n_req": 3,
+   "top5": [
+    "cs-10",
+    "repo-01",
+    "cs-04",
+    "cv",
+    "cs-01"
+   ],
+   "gold": [
+    "LLM evaluation",
+    "prompt engineering",
+    "pytest",
+    "data extraction"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-28572",
+   "n_req": 4,
+   "top5": [
+    "rev-11",
+    "cs-11"
+   ],
+   "gold": [
+    "cs-11",
+    "cs-03",
+    "cs-07",
+    "rev-11"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.6366824387328317
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-49722",
+   "n_req": 4,
+   "top5": [
+    "cs-15",
+    "cs-02"
+   ],
+   "gold": [
+    "cs-15",
+    "repo-05"
+   ],
+   "recall@5": 0.5,
+   "mrr": 1.0,
+   "ndcg@10": 0.6131471927654584
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-46183",
+   "n_req": 3,
+   "top5": [
+    "cv",
+    "cs-10",
+    "repo-05",
+    "repo-06"
+   ],
+   "gold": [
+    "cs-02",
+    "cs-03"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-15141",
+   "n_req": 4,
+   "top5": [
+    "cs-05",
+    "repo-03",
+    "cv"
+   ],
+   "gold": [
+    "cs-05",
+    "repo-03",
+    "rev-05"
+   ],
+   "recall@5": 0.6666666666666666,
+   "mrr": 1.0,
+   "ndcg@10": 0.7653606369886217
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-09353",
+   "n_req": 4,
+   "top5": [
+    "cs-06",
+    "cv"
+   ],
+   "gold": [
+    "cs-06",
+    "repo-06",
+    "rev-06",
+    "cs-05"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.3903800499921017
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-35717",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-12"
+   ],
+   "gold": [
+    "cs-12",
+    "cs-09",
+    "rev-09"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 0.5,
+   "ndcg@10": 0.2960819109658652
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-05895",
+   "n_req": 4,
+   "top5": [
+    "repo-04",
+    "repo-05",
+    "rev-07",
+    "repo-03",
+    "cs-03"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "cs-04",
+    "rev-10"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.3903800499921017
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-32197",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "rev-01",
+    "repo-01",
+    "repo-04",
+    "rev-07"
+   ],
+   "gold": [
+    "cs-08",
+    "cs-02",
+    "cs-01"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-15128",
+   "n_req": 3,
+   "top5": [
+    "cs-10",
+    "cs-14",
+    "cv",
+    "repo-06",
+    "repo-01"
+   ],
+   "gold": [
+    "cs-10",
+    "repo-04",
+    "rev-10",
+    "cs-04"
+   ],
+   "recall@5": 0.25,
+   "mrr": 1.0,
+   "ndcg@10": 0.3903800499921017
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-04308",
+   "n_req": 4,
+   "top5": [
+    "cs-03",
+    "cv",
+    "rev-07",
+    "rev-03",
+    "cs-13"
+   ],
+   "gold": [
+    "cs-13",
+    "cs-01",
+    "cs-07",
+    "rev-12"
+   ],
+   "recall@5": 0.25,
+   "mrr": 0.2,
+   "ndcg@10": 0.15101961822780524
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-02079",
+   "n_req": 4,
+   "top5": [
+    "cs-08",
+    "repo-02",
+    "cs-02"
+   ],
+   "gold": [
+    "cs-08",
+    "repo-02",
+    "rev-08",
+    "cs-02"
+   ],
+   "recall@5": 0.75,
+   "mrr": 1.0,
+   "ndcg@10": 0.8318724637288826
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-19576",
+   "n_req": 4,
+   "top5": [
+    "cv",
+    "cs-02",
+    "cs-12"
+   ],
+   "gold": [
+    "cs-01",
+    "cs-03",
+    "cs-09",
+    "cs-02",
+    "cs-14"
+   ],
+   "recall@5": 0.2,
+   "mrr": 0.5,
+   "ndcg@10": 0.21398626473452756
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "real-34788",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "cv",
+    "repo-06",
+    "cs-10",
+    "cs-02"
+   ],
+   "gold": [
+    "cs-11",
+    "rev-11",
+    "cs-08"
+   ],
+   "recall@5": 0.3333333333333333,
+   "mrr": 1.0,
+   "ndcg@10": 0.46927872602275644
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "syn-04",
+   "n_req": 4,
+   "top5": [
+    "repo-01",
+    "cs-13"
+   ],
+   "gold": [
+    "RAG",
+    "FastAPI",
+    "pgvector",
+    "chatbot"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "syn-05",
+   "n_req": 2,
+   "top5": [
+    "cv",
+    "repo-03",
+    "cs-05",
+    "cs-06"
+   ],
+   "gold": [
+    "YOLOv8",
+    "computer vision",
+    "FastAPI model serving",
+    "PyTorch"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "syn-06",
+   "n_req": 2,
+   "top5": [
+    "cv",
+    "cs-02",
+    "cs-03",
+    "cs-15",
+    "rev-03"
+   ],
+   "gold": [
+    "LLM apps",
+    "Slack bot",
+    "summarization",
+    "Python"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "syn-07",
+   "n_req": 3,
+   "top5": [
+    "cs-14",
+    "cs-04"
+   ],
+   "gold": [
+    "transformers fine-tuning",
+    "sentiment classification",
+    "FastAPI",
+    "evaluation"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "syn-11",
+   "n_req": 4,
+   "top5": [
+    "cs-11",
+    "rev-11"
+   ],
+   "gold": [
+    "Whisper",
+    "TTS",
+    "FastAPI websockets",
+    "LLM apps"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  },
+  {
+   "variant": "v8_corrective",
+   "job_id": "syn-12",
+   "n_req": 3,
+   "top5": [
+    "repo-01",
+    "cv",
+    "cs-10",
+    "cs-04"
+   ],
+   "gold": [
+    "LLM evaluation",
+    "prompt engineering",
+    "pytest",
+    "data extraction"
+   ],
+   "recall@5": 0.0,
+   "mrr": 0.0,
+   "ndcg@10": 0.0
+  }
+ ]
+}

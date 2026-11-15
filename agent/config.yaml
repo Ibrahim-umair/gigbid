@@ -1,0 +1,83 @@
+# GigBid runtime configuration. Rules, prompts, models and costs live here, never in code,
+# so a platform policy change is a config edit (see docs/RUNBOOK.md "Change request").
+
+marketplace:
+  mode: gigsim                 # gigsim | upwork_live
+  max_requests_per_minute: 20  # stays under GigSim's 30/min limit
+  live_poll_minutes: 240       # live Upwork: at most every 4h per saved search
+
+llm:
+  # GIGBID_LLM env var overrides: fake (0 paid calls, deterministic) | openai
+  backend: fake
+  max_paid_calls: 200          # hard cap per process; exceeding raises BudgetExceeded
+  cache: data/processed/llm_cache.sqlite
+  timeout_s: 60
+  retries: 2
+
+models:
+  profile: paid                # `open` requires a hosted open-model provider (not configured)
+  profiles:
+    paid:
+      default: gpt-6-luna
+      nodes:                   # route by node: cheap/frequent nodes vs writer-quality nodes
+        analyst: gpt-6-luna
+        risk_assessor: gpt-6-luna
+        fit_matcher: gpt-6-luna
+        writer: gpt-6-luna
+        verifier: gpt-6-luna
+        critic: gpt-6-luna
+        compliance: gpt-6-luna
+        client_liaison: gpt-6-luna
+        sim_client: gpt-6-luna
+      fallback: null           # user choice: gpt-6-luna only (no fallback model)
+    open:
+      default: qwen3-8b        # placeholder: set base_url to Groq/OpenRouter to enable
+      nodes: {}
+  pricing_usd_per_mtok:        # for cost reporting; update from the provider's price page
+    gpt-6-luna: {in: 0.10, out: 0.50}
+    gpt-5.6-luna: {in: 0.20, out: 1.20}
+  embeddings: BAAI/bge-small-en-v1.5             # open, CPU (fastembed / ONNX)
+  reranker: BAAI/bge-reranker-v2-m3-int8         # open, CPU cross-encoder (MiniLM ms-marco tried: ranked reviews/CV above case studies)
+
+retrieval:
+  variant: v2_hybrid_only      # chosen by evals/results/rag_eval_all.json: best R@5/MRR/nDCG, 0.3s/job
+  k: 5
+  rerank_pool: 8
+  max_requirements: 4
+  v8_strong: -5.0             # bge-reranker-v2-m3 logits, calibrated on dev jobs
+  v8_partial: -6.5
+
+budgets:
+  max_graph_steps: 30
+  max_revisions: 2
+  max_tokens_per_job: 40000
+
+thresholds:
+  bid_min_fit: 0.55           # 0.40 looked better on 35 dev jobs but not on 51 (decision_sweep.json)
+  watch_min_fit: 0.35
+  max_risk: 0.7               # was 0.6; chosen on 51 dev jobs (decision_sweep.json)
+  min_client_quality_for_bid: 0.2
+
+pricing:
+  # Bid sits inside the client's range, nudged toward the persona's target and market median.
+  fixed_floor_multiplier: 1.0
+  connects_usd_value: 0.15     # what one Connect costs the freelancer
+  min_expected_value_ratio: 3  # bid only if expected value >= ratio * connects spend
+  default_connects_cost: 8
+
+compliance:
+  # Deterministic pre-checks run before the LLM compliance pass. Regexes are case-insensitive.
+  block_patterns:
+    contact_email: '[\w.+-]+@[\w-]+\.[\w.]+'
+    contact_phone: '(?:\+?\d[\d\s().-]{7,}\d)'
+    off_platform: '\b(whatsapp|telegram|skype|signal|wechat|discord|zoom me at|text me)\b'
+    off_platform_payment: '\b(paypal|venmo|zelle|western union|crypto|bitcoin|usdt|bank transfer)\b'
+    guarantee: '\b(guarantee[ds]?|100\s?% (accura|success|satisf)|risk[- ]free|promise you)\b'
+    external_link: 'https?://|www\.'   # policy update rehearsal (RUNBOOK): no external links
+  banned_phrases: []           # filled from style memory / policy updates
+
+autonomy:
+  auto_skip_low_fit: true      # may auto-skip; never auto-send (enforced in code)
+
+prompts:
+  writer: writer               # X2 experiment arm B: writer_b (question-first)

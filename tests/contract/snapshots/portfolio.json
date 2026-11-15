@@ -1,0 +1,417 @@
+{
+ "get_case_study": {
+  "annotations": {
+   "destructiveHint": false,
+   "idempotentHint": true,
+   "openWorldHint": false,
+   "readOnlyHint": true,
+   "title": null
+  },
+  "input": {
+   "properties": {
+    "id": {
+     "pattern": "^[\\w-]+$",
+     "title": "Id",
+     "type": "string"
+    }
+   },
+   "required": [
+    "id"
+   ],
+   "title": "get_case_studyArguments",
+   "type": "object"
+  },
+  "output": {
+   "properties": {
+    "client_industry": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Client Industry"
+    },
+    "date": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Date"
+    },
+    "id": {
+     "title": "Id",
+     "type": "string"
+    },
+    "skills": {
+     "default": [],
+     "items": {
+      "type": "string"
+     },
+     "title": "Skills",
+     "type": "array"
+    },
+    "text": {
+     "title": "Text",
+     "type": "string"
+    },
+    "title": {
+     "title": "Title",
+     "type": "string"
+    },
+    "type": {
+     "title": "Type",
+     "type": "string"
+    }
+   },
+   "required": [
+    "id",
+    "title",
+    "type",
+    "text"
+   ],
+   "title": "CaseStudy",
+   "type": "object"
+  }
+ },
+ "list_skills": {
+  "annotations": {
+   "destructiveHint": false,
+   "idempotentHint": true,
+   "openWorldHint": false,
+   "readOnlyHint": true,
+   "title": null
+  },
+  "input": {
+   "properties": {},
+   "title": "list_skillsArguments",
+   "type": "object"
+  },
+  "output": null
+ },
+ "match_requirements": {
+  "annotations": {
+   "destructiveHint": false,
+   "idempotentHint": true,
+   "openWorldHint": false,
+   "readOnlyHint": true,
+   "title": null
+  },
+  "input": {
+   "properties": {
+    "job_title": {
+     "maxLength": 300,
+     "title": "Job Title",
+     "type": "string"
+    },
+    "k": {
+     "default": 6,
+     "maximum": 12,
+     "minimum": 1,
+     "title": "K",
+     "type": "integer"
+    },
+    "requirements": {
+     "items": {
+      "type": "string"
+     },
+     "maxItems": 12,
+     "minItems": 1,
+     "title": "Requirements",
+     "type": "array"
+    }
+   },
+   "required": [
+    "job_title",
+    "requirements"
+   ],
+   "title": "match_requirementsArguments",
+   "type": "object"
+  },
+  "output": {
+   "$defs": {
+    "Coverage": {
+     "properties": {
+      "evidence_ids": {
+       "items": {
+        "type": "string"
+       },
+       "title": "Evidence Ids",
+       "type": "array"
+      },
+      "requirement": {
+       "title": "Requirement",
+       "type": "string"
+      },
+      "strength": {
+       "enum": [
+        "strong",
+        "partial",
+        "none"
+       ],
+       "title": "Strength",
+       "type": "string"
+      }
+     },
+     "required": [
+      "requirement",
+      "evidence_ids",
+      "strength"
+     ],
+     "title": "Coverage",
+     "type": "object"
+    },
+    "Evidence": {
+     "properties": {
+      "client_industry": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "title": "Client Industry"
+      },
+      "date": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "title": "Date"
+      },
+      "id": {
+       "title": "Id",
+       "type": "string"
+      },
+      "outcome": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "title": "Outcome"
+      },
+      "score": {
+       "title": "Score",
+       "type": "number"
+      },
+      "snippet": {
+       "title": "Snippet",
+       "type": "string"
+      },
+      "source": {
+       "title": "Source",
+       "type": "string"
+      },
+      "title": {
+       "title": "Title",
+       "type": "string"
+      },
+      "type": {
+       "title": "Type",
+       "type": "string"
+      }
+     },
+     "required": [
+      "id",
+      "type",
+      "title",
+      "source",
+      "snippet",
+      "score"
+     ],
+     "title": "Evidence",
+     "type": "object"
+    }
+   },
+   "properties": {
+    "coverage": {
+     "items": {
+      "$ref": "#/$defs/Coverage"
+     },
+     "title": "Coverage",
+     "type": "array"
+    },
+    "items": {
+     "items": {
+      "$ref": "#/$defs/Evidence"
+     },
+     "title": "Items",
+     "type": "array"
+    }
+   },
+   "required": [
+    "items",
+    "coverage"
+   ],
+   "title": "MatchResult",
+   "type": "object"
+  }
+ },
+ "search_evidence": {
+  "annotations": {
+   "destructiveHint": false,
+   "idempotentHint": true,
+   "openWorldHint": false,
+   "readOnlyHint": true,
+   "title": null
+  },
+  "input": {
+   "properties": {
+    "k": {
+     "default": 5,
+     "maximum": 20,
+     "minimum": 1,
+     "title": "K",
+     "type": "integer"
+    },
+    "requirement": {
+     "description": "One requirement or a whole job post",
+     "maxLength": 2000,
+     "minLength": 3,
+     "title": "Requirement",
+     "type": "string"
+    },
+    "types": {
+     "anyOf": [
+      {
+       "items": {
+        "enum": [
+         "case_study",
+         "repo",
+         "review",
+         "cv"
+        ],
+        "type": "string"
+       },
+       "type": "array"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "description": "Optional filter on evidence type",
+     "title": "Types"
+    }
+   },
+   "required": [
+    "requirement"
+   ],
+   "title": "search_evidenceArguments",
+   "type": "object"
+  },
+  "output": {
+   "$defs": {
+    "Evidence": {
+     "properties": {
+      "client_industry": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "title": "Client Industry"
+      },
+      "date": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "title": "Date"
+      },
+      "id": {
+       "title": "Id",
+       "type": "string"
+      },
+      "outcome": {
+       "anyOf": [
+        {
+         "type": "string"
+        },
+        {
+         "type": "null"
+        }
+       ],
+       "default": null,
+       "title": "Outcome"
+      },
+      "score": {
+       "title": "Score",
+       "type": "number"
+      },
+      "snippet": {
+       "title": "Snippet",
+       "type": "string"
+      },
+      "source": {
+       "title": "Source",
+       "type": "string"
+      },
+      "title": {
+       "title": "Title",
+       "type": "string"
+      },
+      "type": {
+       "title": "Type",
+       "type": "string"
+      }
+     },
+     "required": [
+      "id",
+      "type",
+      "title",
+      "source",
+      "snippet",
+      "score"
+     ],
+     "title": "Evidence",
+     "type": "object"
+    }
+   },
+   "properties": {
+    "items": {
+     "items": {
+      "$ref": "#/$defs/Evidence"
+     },
+     "title": "Items",
+     "type": "array"
+    }
+   },
+   "required": [
+    "items"
+   ],
+   "title": "EvidenceList",
+   "type": "object"
+  }
+ }
+}

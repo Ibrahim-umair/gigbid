@@ -1,0 +1,1 @@
+One versioned prompt file per node (`version:` header, system text, `---user---`, user template with `{{var}}` slots). Loaded by `agent/llm.py`; CI fails on inline prompts. Job posts and client messages are inserted wrapped as untrusted data.

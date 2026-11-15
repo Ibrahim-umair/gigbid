@@ -1,0 +1,1977 @@
+{
+ "model": "gpt-6-luna",
+ "n_tasks": 40,
+ "ts": "2026-11-15 20:37",
+ "results": {
+  "fine": {
+   "tools": 15,
+   "tool_selection_acc": 0.975,
+   "argument_acc": 0.975,
+   "unsafe_submit_calls": 0,
+   "input_tokens_per_task": 437.1
+  },
+  "coarse": {
+   "tools": 2,
+   "tool_selection_acc": 0.875,
+   "argument_acc": 0.875,
+   "unsafe_submit_calls": 0,
+   "input_tokens_per_task": 174.2
+  },
+  "best": {
+   "tools": 7,
+   "tool_selection_acc": 1.0,
+   "argument_acc": 1.0,
+   "unsafe_submit_calls": 0,
+   "input_tokens_per_task": 442.1
+  }
+ },
+ "per_task": [
+  {
+   "set": "fine",
+   "q": "What has client cl-004 spent so far?",
+   "call": {
+    "name": "get_client_spend",
+    "args": {
+     "client_id": "cl-004"
+    },
+    "id": "call_6kb6cEk2rE9S5Pc6MCYKWXRN",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "What is client cl-012's hire rate?",
+   "call": {
+    "name": "get_client_hire_rate",
+    "args": {
+     "client_id": "cl-012"
+    },
+    "id": "call_119dd0304be54b69bb2b4da13b7d1174",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Do freelancers complain about client cl-020?",
+   "call": {
+    "name": "get_client_reviews",
+    "args": {
+     "client_id": "cl-020"
+    },
+    "id": "call_iVy1yQEnfCEA1qFeht9NxBuI",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Is client cl-033's payment verified?",
+   "call": {
+    "name": "get_client_verification",
+    "args": {
+     "client_id": "cl-033"
+    },
+    "id": "call_bxwQ2DWTvrhWfuAfo4aPTYXJ",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "How trustworthy is client cl-041? Check spending.",
+   "call": {
+    "name": "get_client_spend",
+    "args": {
+     "client_id": "cl-041"
+    },
+    "id": "call_0QIxptEGXmQyqKgUrMYYVfcU",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Has client cl-007 actually hired people before? Give the hire rate.",
+   "call": {
+    "name": "get_client_hire_rate",
+    "args": {
+     "client_id": "cl-007"
+    },
+    "id": "call_WXrMgz1sLOTsIREL4QqfFBgx",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Read what past freelancers said about client cl-045.",
+   "call": {
+    "name": "get_client_reviews",
+    "args": {
+     "client_id": "cl-045"
+    },
+    "id": "call_daMkQMlXVnrKlHEWV2kXN619",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Can I trust client cl-019 to pay? Is payment verified?",
+   "call": {
+    "name": "get_client_verification",
+    "args": {
+     "client_id": "cl-019"
+    },
+    "id": "call_UNTYUG36XxaASKtl3y4bi1lt",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "What's the budget for job real-28572?",
+   "call": {
+    "name": "get_job_budget",
+    "args": {
+     "job_id": "real-28572"
+    },
+    "id": "call_lMlN6AEbVTC0tdmEkUp0j5VS",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "How many Connects does job real-15128 cost?",
+   "call": {
+    "name": "get_job_connects_cost",
+    "args": {
+     "job_id": "real-15128"
+    },
+    "id": "call_nl5Dq2ypvmZeBYEn68wCllcn",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Read me the description of job real-05895.",
+   "call": {
+    "name": "get_job_description",
+    "args": {
+     "job_id": "real-05895"
+    },
+    "id": "call_TFnWONq2tbbi8NjciE5lZJqN",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Is job real-49722 worth the money? What's the budget?",
+   "call": {
+    "name": "get_job_budget",
+    "args": {
+     "job_id": "real-49722"
+    },
+    "id": "call_xg2Yl6ekg2mKDDRa6CnKoXFP",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Show the full post for job syn-04.",
+   "call": {
+    "name": "get_job_description",
+    "args": {
+     "job_id": "syn-04"
+    },
+    "id": "call_jDuMQmboOeC3l0Icr6wbrF6r",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Connects needed to apply for real-09353?",
+   "call": {
+    "name": "get_job_connects_cost",
+    "args": {
+     "job_id": "real-09353"
+    },
+    "id": "call_ow7bdVMEMYvUaT8xX0zqV3tg",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "What does the client in real-46183 want built?",
+   "call": {
+    "name": "get_job_description",
+    "args": {
+     "job_id": "real-46183"
+    },
+    "id": "call_ltmcMmbwH1s6vf0mnow4fvRq",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Fixed price or hourly, and how much, for real-15141?",
+   "call": {
+    "name": "get_job_budget",
+    "args": {
+     "job_id": "real-15141"
+    },
+    "id": "call_Bytfnw5Swbdyy0i1bED6muDF",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Find proof I have built a WhatsApp chatbot.",
+   "call": {
+    "name": "search_case_studies",
+    "args": {
+     "query": "WhatsApp chatbot built"
+    },
+    "id": "call_49mM6slRH2JnSJu4Xl7AJSs4",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Is there a repo with my YOLO object-detection code?",
+   "call": {
+    "name": "search_repos",
+    "args": {
+     "query": "YOLO object detection"
+    },
+    "id": "call_gR0HIshSn1sV8LOy9RZjc8IZ",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "What have clients said about my chatbot work?",
+   "call": {
+    "name": "search_reviews",
+    "args": {
+     "query": "chatbot work"
+    },
+    "id": "call_feiqdEve69OD2yU3y89Eu8Ms",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Do I have a case study about RAG over documents?",
+   "call": {
+    "name": "search_case_studies",
+    "args": {
+     "query": "RAG over documents"
+    },
+    "id": "call_ubzDn4Rf5fwskBNeQhd43r5M",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Show code where I served a model with FastAPI.",
+   "call": {
+    "name": "search_repos",
+    "args": {
+     "query": "FastAPI serve model"
+    },
+    "id": "call_ab9bca59a33649e5ae66d65ada5c3210",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Any client review mentioning face recognition?",
+   "call": {
+    "name": "search_reviews",
+    "args": {
+     "query": "face recognition"
+    },
+    "id": "call_rE2HEnixmS0kGn5wH9bPyFZb",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Find a project where I built a dashboard.",
+   "call": {
+    "name": "search_case_studies",
+    "args": {
+     "query": "dashboard"
+    },
+    "id": "call_hCnzUUiWc8M5pTBQ9GsMv2tY",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Which of my repositories uses Twilio?",
+   "call": {
+    "name": "search_repos",
+    "args": {
+     "query": "Twilio"
+    },
+    "id": "call_meUL74MKuQMNRG88QiPShs0E",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Have I done work for a healthcare client?",
+   "call": {
+    "name": "search_case_studies",
+    "args": {
+     "query": "healthcare client work"
+    },
+    "id": "call_MKH0WiCJM8OLcyQohRbYufQr",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Find evidence I built an inference server.",
+   "call": {
+    "name": "search_repos",
+    "args": {
+     "query": "inference server"
+    },
+    "id": "call_7WGw4Kzsx4yjCXlRt7vOjhYy",
+    "type": "tool_call"
+   },
+   "tool_ok": false,
+   "args_ok": false,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Open case study cs-03.",
+   "call": {
+    "name": "get_case_study",
+    "args": {
+     "id": "cs-03"
+    },
+    "id": "call_paGcvalvnEBz1cR20k1YJHKj",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Show me cs-11 in full.",
+   "call": {
+    "name": "get_case_study",
+    "args": {
+     "id": "cs-11"
+    },
+    "id": "call_tSESJlPuUVnwP1fb2BWrEAmc",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "I need the details of case study cs-07.",
+   "call": {
+    "name": "get_case_study",
+    "args": {
+     "id": "cs-07"
+    },
+    "id": "call_xKSUv4onRoFWQm4ql0R64HPN",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Pull up cs-01.",
+   "call": {
+    "name": "get_case_study",
+    "args": {
+     "id": "cs-01"
+    },
+    "id": "call_vm1sZQ4RvivI5aUeP2nyUupo",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "How many Connects do I have left?",
+   "call": {
+    "name": "get_connects_balance",
+    "args": {},
+    "id": "call_PsdJq0xb1rxi58iKoeX6R9sH",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Check my Connects balance.",
+   "call": {
+    "name": "get_connects_balance",
+    "args": {},
+    "id": "call_AkjkNoHnqZvvh8O7UXrx3BQ2",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Can I afford more bids? How many Connects remain?",
+   "call": {
+    "name": "get_connects_balance",
+    "args": {},
+    "id": "call_k0S2yW3ObDPi9ZXWYrdz8sRX",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "What's my current Connects count?",
+   "call": {
+    "name": "get_connects_balance",
+    "args": {},
+    "id": "call_VnTnogxriiBkkdY1Om76oJls",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $300 fixed on job real-28572 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "preview_proposal",
+    "args": {
+     "job_id": "real-28572",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_amount": 300,
+     "bid_type": "fixed"
+    },
+    "id": "call_2dCDi8gIs4C4y4twKfJ2jgnv",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $450 fixed on job real-15128 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "preview_proposal",
+    "args": {
+     "job_id": "real-15128",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_amount": 450,
+     "bid_type": "fixed"
+    },
+    "id": "call_qszX21OgkIrLbHZCapkE8dTj",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $200 fixed on job real-49722 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "preview_proposal",
+    "args": {
+     "job_id": "real-49722",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_amount": 200,
+     "bid_type": "fixed"
+    },
+    "id": "call_xVJSiqwqjzHs7SIkZriAidZz",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $40 fixed on job real-05895 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "preview_proposal",
+    "args": {
+     "job_id": "real-05895",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_amount": 40,
+     "bid_type": "fixed"
+    },
+    "id": "call_h7HON9gN2CdE5stbd9Bngcjb",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $600 fixed on job real-09353 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "preview_proposal",
+    "args": {
+     "job_id": "real-09353",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_amount": 600,
+     "bid_type": "fixed"
+    },
+    "id": "call_igKJSzxHg3VZUA6Yl8H7tcox",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "fine",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $250 fixed on job real-46183 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "preview_proposal",
+    "args": {
+     "job_id": "real-46183",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_amount": 250,
+     "bid_type": "fixed"
+    },
+    "id": "call_FD4fln2PXa9HWAhfx4QtTNsE",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "What has client cl-004 spent so far?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "client",
+     "id": "cl-004"
+    },
+    "id": "call_UlLOssBYloFThw9Rb5nPFock",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "What is client cl-012's hire rate?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "client",
+     "id": "cl-012"
+    },
+    "id": "call_c8Lzl7PM432TJHTPkndeHQ4y",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Do freelancers complain about client cl-020?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "client",
+     "id": "cl-020"
+    },
+    "id": "call_BOKAaKnGf3d8S74tUZDXWfA4",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Is client cl-033's payment verified?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "client",
+     "id": "cl-033"
+    },
+    "id": "call_CrlnGyRM6LRhsbLyiVYHuaRe",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "How trustworthy is client cl-041? Check spending.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "client",
+     "id": "cl-041"
+    },
+    "id": "call_qNUorJZtFCUAPeMkaR2IC6x3",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Has client cl-007 actually hired people before? Give the hire rate.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "client",
+     "id": "cl-007"
+    },
+    "id": "call_2DcmqnsgsyHrsnLzfFEtXM0W",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Read what past freelancers said about client cl-045.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "client",
+     "id": "cl-045"
+    },
+    "id": "call_lHfOIiO5YhJodR2HYXhwL23m",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Can I trust client cl-019 to pay? Is payment verified?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "client",
+     "id": "cl-019"
+    },
+    "id": "call_aXgF12gqpUgMwboIABIOigeV",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "What's the budget for job real-28572?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "job",
+     "id": "real-28572"
+    },
+    "id": "call_b0a2ugCtL2ncbaZCpwjpy3BS",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "How many Connects does job real-15128 cost?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "connects",
+     "id": "real-15128"
+    },
+    "id": "call_z6rQ3hgebiTPSIOCY2n0xNOV",
+    "type": "tool_call"
+   },
+   "tool_ok": false,
+   "args_ok": false,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Read me the description of job real-05895.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "job",
+     "id": "real-05895"
+    },
+    "id": "call_zxAvK0S0GyAfSOjhT7cA1IuR",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Is job real-49722 worth the money? What's the budget?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "job",
+     "id": "real-49722"
+    },
+    "id": "call_gU4suypkzwGZhAUPP5e4C3sx",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Show the full post for job syn-04.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "job",
+     "id": "syn-04"
+    },
+    "id": "call_kYvbM8gRMUzfPub52irXSS5u",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Connects needed to apply for real-09353?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "connects",
+     "id": "real-09353"
+    },
+    "id": "call_eNuBMyPbIS8j2smLA0FiTkzD",
+    "type": "tool_call"
+   },
+   "tool_ok": false,
+   "args_ok": false,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "What does the client in real-46183 want built?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "job",
+     "id": "real-46183"
+    },
+    "id": "call_QjhEtgJCQHIX8rGsBJpbodn9",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Fixed price or hourly, and how much, for real-15141?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "job",
+     "id": "real-15141"
+    },
+    "id": "call_jyCxK0mg1D5TV7fAUUb9Rvoo",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Find proof I have built a WhatsApp chatbot.",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "search",
+     "query": "WhatsApp chatbot",
+     "id": null
+    },
+    "id": "call_oKsuRtVgh1fVldSavHVGtKgZ",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Is there a repo with my YOLO object-detection code?",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "search",
+     "query": "YOLO object detection code repository",
+     "id": null
+    },
+    "id": "call_zAU15F9m3b6OPIsOENnNsJ8w",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "What have clients said about my chatbot work?",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "search",
+     "query": "chatbot client feedback testimonials",
+     "id": null
+    },
+    "id": "call_CbGjVYunEBb33d9eJ58OZbKK",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Do I have a case study about RAG over documents?",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "search",
+     "query": "RAG over documents",
+     "id": null
+    },
+    "id": "call_nxgS2Oy07ZOkH2sTuq7WZzla",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Show code where I served a model with FastAPI.",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "search",
+     "query": "FastAPI served a model code",
+     "id": null
+    },
+    "id": "call_zYEsPwuLb6VCSqTCduGAMgJP",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Any client review mentioning face recognition?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "client",
+     "payload": {
+      "query": "face recognition"
+     }
+    },
+    "id": "call_ypxcclQXqhwuFuMBtkA7LK88",
+    "type": "tool_call"
+   },
+   "tool_ok": false,
+   "args_ok": false,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Find a project where I built a dashboard.",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "search",
+     "query": "dashboard",
+     "id": null
+    },
+    "id": "call_2ORyltVL3OtfIYyAui61UL9G",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Which of my repositories uses Twilio?",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "search",
+     "query": "Twilio",
+     "id": null
+    },
+    "id": "call_8LaaLqcfs6fYVFqVtwaAd949",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Have I done work for a healthcare client?",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "search",
+     "query": "healthcare client",
+     "id": null
+    },
+    "id": "call_DaF0wc6gAMdcJfrIrIBOCKK0",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Find evidence I built an inference server.",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "search",
+     "query": "inference server",
+     "id": null
+    },
+    "id": "call_BlsmiSaAlv4Rtd8ob7PrD1pu",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Open case study cs-03.",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "get",
+     "query": null,
+     "id": "cs-03"
+    },
+    "id": "call_wm8BJNiFmIhkNNw5MnihrBuF",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Show me cs-11 in full.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "job",
+     "id": "cs-11"
+    },
+    "id": "call_phD0FtzIeuWFG22lImHvUhax",
+    "type": "tool_call"
+   },
+   "tool_ok": false,
+   "args_ok": false,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "I need the details of case study cs-07.",
+   "call": {
+    "name": "portfolio",
+    "args": {
+     "action": "get",
+     "query": null,
+     "id": "cs-07"
+    },
+    "id": "call_WavUNSkzirZ4mCuHNhOcw6BQ",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Pull up cs-01.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "job",
+     "id": "cs-01"
+    },
+    "id": "call_mOtVyHWEfRJRMUTNnSqNizb7",
+    "type": "tool_call"
+   },
+   "tool_ok": false,
+   "args_ok": false,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "How many Connects do I have left?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "connects"
+    },
+    "id": "call_a0TUCGcHO4mupDPtmCvXpOfg",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Check my Connects balance.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "connects"
+    },
+    "id": "call_7s7XbHHonVrzKFI1ZEiCXLHh",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Can I afford more bids? How many Connects remain?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "connects"
+    },
+    "id": "call_6RK9RFgMm4eHsSLmVwQzbLPS",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "What's my current Connects count?",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "connects"
+    },
+    "id": "call_HZf6qE92PqANElfK6a4BSIdR",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $300 fixed on job real-28572 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "preview",
+     "id": "real-28572",
+     "payload": {
+      "bid_amount": 300,
+      "bid_type": "fixed",
+      "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%."
+     }
+    },
+    "id": "call_Ex3BoLZEI4IdwldILqXWMW94",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $450 fixed on job real-15128 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "preview",
+     "id": "real-15128",
+     "payload": {
+      "bid": 450,
+      "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%."
+     }
+    },
+    "id": "call_va0LAWTHhoeWTSB8ajvVgfdW",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $200 fixed on job real-49722 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "preview",
+     "id": "real-49722",
+     "payload": {
+      "type": "fixed",
+      "amount": 200,
+      "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%."
+     }
+    },
+    "id": "call_aYzP0HFx0kqqkbtYnBBvkTpj",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $40 fixed on job real-05895 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "preview",
+     "id": "real-05895",
+     "payload": {
+      "bid_type": "fixed",
+      "bid_amount": 40,
+      "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%."
+     }
+    },
+    "id": "call_2DguKHR9mJDku7Tb0v3UzbVW",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $600 fixed on job real-09353 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "preview",
+     "id": "real-09353",
+     "payload": {
+      "bid": 600,
+      "type": "fixed",
+      "letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%."
+     }
+    },
+    "id": "call_rkvb7d6e1GEkxei9mbOJXQ7Q",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "coarse",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $250 fixed on job real-46183 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "marketplace",
+    "args": {
+     "action": "preview",
+     "id": "real-46183",
+     "payload": {
+      "amount": 250,
+      "fixed": true,
+      "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%."
+     }
+    },
+    "id": "call_c7XjubS84jytvVGc917oVVKl",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "What has client cl-004 spent so far?",
+   "call": {
+    "name": "get_client_history",
+    "args": {
+     "client_id": "cl-004"
+    },
+    "id": "call_Kvev8A0x4kt83SJQ7bG5r5Ed",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "What is client cl-012's hire rate?",
+   "call": {
+    "name": "get_client_history",
+    "args": {
+     "client_id": "cl-012"
+    },
+    "id": "call_EcNWOTCkeCOT0C5vkbXZVt9g",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Do freelancers complain about client cl-020?",
+   "call": {
+    "name": "get_client_history",
+    "args": {
+     "client_id": "cl-020"
+    },
+    "id": "call_0A7L4mZA9xo5LfKtbdaWHch6",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Is client cl-033's payment verified?",
+   "call": {
+    "name": "get_client_history",
+    "args": {
+     "client_id": "cl-033"
+    },
+    "id": "call_Th64kBtazs5QPb9nIJ0Sbsb9",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "How trustworthy is client cl-041? Check spending.",
+   "call": {
+    "name": "get_client_history",
+    "args": {
+     "client_id": "cl-041"
+    },
+    "id": "call_R3kVTXgBRAlQUwqG8X3UdjOV",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Has client cl-007 actually hired people before? Give the hire rate.",
+   "call": {
+    "name": "get_client_history",
+    "args": {
+     "client_id": "cl-007"
+    },
+    "id": "call_k7xkQLHSMWpnTIODRl7H6dZA",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Read what past freelancers said about client cl-045.",
+   "call": {
+    "name": "get_client_history",
+    "args": {
+     "client_id": "cl-045"
+    },
+    "id": "call_UHNsxaD7gVm5Pf2pSbqy0ZcK",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Can I trust client cl-019 to pay? Is payment verified?",
+   "call": {
+    "name": "get_client_history",
+    "args": {
+     "client_id": "cl-019"
+    },
+    "id": "call_YX4hE9UlBvJ56G9h2Oo5HPaX",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "What's the budget for job real-28572?",
+   "call": {
+    "name": "get_job",
+    "args": {
+     "job_id": "real-28572"
+    },
+    "id": "call_Dtg0Q8ylTU4HjBs85HBz5gXz",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "How many Connects does job real-15128 cost?",
+   "call": {
+    "name": "get_job",
+    "args": {
+     "job_id": "real-15128"
+    },
+    "id": "call_9oQVQZWzT9W6j76lgPZVHaOo",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Read me the description of job real-05895.",
+   "call": {
+    "name": "get_job",
+    "args": {
+     "job_id": "real-05895"
+    },
+    "id": "call_igs8Etsy2OopvHQLJXwJEugs",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Is job real-49722 worth the money? What's the budget?",
+   "call": {
+    "name": "get_job",
+    "args": {
+     "job_id": "real-49722"
+    },
+    "id": "call_6bxZsY90bTEX3BSx4oXzlkki",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Show the full post for job syn-04.",
+   "call": {
+    "name": "get_job",
+    "args": {
+     "job_id": "syn-04"
+    },
+    "id": "call_wS4XqFhJL6PhUtxYGcv1j3eP",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Connects needed to apply for real-09353?",
+   "call": {
+    "name": "get_job",
+    "args": {
+     "job_id": "real-09353"
+    },
+    "id": "call_8Tr3QW5oE5JAepFiQEw5uH4r",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "What does the client in real-46183 want built?",
+   "call": {
+    "name": "get_job",
+    "args": {
+     "job_id": "real-46183"
+    },
+    "id": "call_BmX0fJYrZFFPfUpuBA40PSyW",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Fixed price or hourly, and how much, for real-15141?",
+   "call": {
+    "name": "get_job",
+    "args": {
+     "job_id": "real-15141"
+    },
+    "id": "call_cvSCvLdXKXC7EEA8ojoAC0L4",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Find proof I have built a WhatsApp chatbot.",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "Built a WhatsApp chatbot",
+     "k": 5,
+     "types": [
+      "case_study",
+      "repo",
+      "review",
+      "cv"
+     ]
+    },
+    "id": "call_yb51dRfXbhVOgWvrP7MWPzwe",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Is there a repo with my YOLO object-detection code?",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "YOLO object-detection code",
+     "k": 5,
+     "types": [
+      "repo"
+     ]
+    },
+    "id": "call_gfldncedo0UMFYRfzwNnoIMD",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "What have clients said about my chatbot work?",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "Client reviews and testimonials specifically about my chatbot work",
+     "k": 5,
+     "types": [
+      "review"
+     ]
+    },
+    "id": "call_qodNcYd6jwXzpl6VNy2lLedD",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Do I have a case study about RAG over documents?",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "RAG over documents",
+     "k": 5,
+     "types": [
+      "case_study"
+     ]
+    },
+    "id": "call_B33YMnyfFoJBY4AOVh7FVL9i",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Show code where I served a model with FastAPI.",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "Code showing I served a machine learning model with FastAPI",
+     "k": 5,
+     "types": [
+      "repo"
+     ]
+    },
+    "id": "call_sSASniqGTcNIgpJjmG8fNTiE",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Any client review mentioning face recognition?",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "client review mentioning face recognition",
+     "k": 5,
+     "types": [
+      "review"
+     ]
+    },
+    "id": "call_IT1ttAz7ON5jEKTl9w4mFiQE",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Find a project where I built a dashboard.",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "dashboard",
+     "k": 5,
+     "types": [
+      "case_study",
+      "repo"
+     ]
+    },
+    "id": "call_yiKjEfzKau5yeyw5GUtMg7WS",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Which of my repositories uses Twilio?",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "Twilio",
+     "k": 5,
+     "types": [
+      "repo"
+     ]
+    },
+    "id": "call_uuCePqBhvVnUoktDyCXN6pgX",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Have I done work for a healthcare client?",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "healthcare client work",
+     "k": 5,
+     "types": [
+      "case_study",
+      "review",
+      "cv"
+     ]
+    },
+    "id": "call_X52qMhtEhNVGGFBX978bsgDf",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Find evidence I built an inference server.",
+   "call": {
+    "name": "search_evidence",
+    "args": {
+     "requirement": "Built an inference server",
+     "k": 5,
+     "types": [
+      "case_study",
+      "repo",
+      "review",
+      "cv"
+     ]
+    },
+    "id": "call_JklMlUM9ei9b3pewH2wfAylW",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Open case study cs-03.",
+   "call": {
+    "name": "get_case_study",
+    "args": {
+     "id": "cs-03"
+    },
+    "id": "call_ioYMX8or0bCHoiI5fFSZj8e7",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Show me cs-11 in full.",
+   "call": {
+    "name": "get_case_study",
+    "args": {
+     "id": "cs-11"
+    },
+    "id": "call_or0YfMoH7YvCxwLJUWpCQYo1",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "I need the details of case study cs-07.",
+   "call": {
+    "name": "get_case_study",
+    "args": {
+     "id": "cs-07"
+    },
+    "id": "call_nKsT5QuDAAgROb9ur8hbf0Wc",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Pull up cs-01.",
+   "call": {
+    "name": "get_case_study",
+    "args": {
+     "id": "cs-01"
+    },
+    "id": "call_ZkiivZcSJR842a2waGuikAwH",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "How many Connects do I have left?",
+   "call": {
+    "name": "get_connects_balance",
+    "args": {},
+    "id": "call_RljUGJ2iWhDehysf2j2H9LAA",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Check my Connects balance.",
+   "call": {
+    "name": "get_connects_balance",
+    "args": {},
+    "id": "call_B3VGNxWpUJbWw8lZ8oEepCQb",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Can I afford more bids? How many Connects remain?",
+   "call": {
+    "name": "get_connects_balance",
+    "args": {},
+    "id": "call_HH2KsOtR1JgibbzfN7lNFZGl",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "What's my current Connects count?",
+   "call": {
+    "name": "get_connects_balance",
+    "args": {},
+    "id": "call_L4K7ZsMSNz5JAnMS4NWuTftO",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $300 fixed on job real-28572 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "create_proposal_draft",
+    "args": {
+     "job_id": "real-28572",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_type": "fixed",
+     "bid_amount": 300
+    },
+    "id": "call_tAuXEmdBnPqYFdNjbcK9vfuV",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $450 fixed on job real-15128 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "create_proposal_draft",
+    "args": {
+     "job_id": "real-15128",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_type": "fixed",
+     "bid_amount": 450
+    },
+    "id": "call_liPwrI0EJW7eT0iyBryPxqzf",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $200 fixed on job real-49722 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "create_proposal_draft",
+    "args": {
+     "job_id": "real-49722",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_type": "fixed",
+     "bid_amount": 200
+    },
+    "id": "call_X66bvJMdNbBBSwapbTjRAOBg",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $40 fixed on job real-05895 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "create_proposal_draft",
+    "args": {
+     "job_id": "real-05895",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_type": "fixed",
+     "bid_amount": 40
+    },
+    "id": "call_5zgfZvvanu0w0HhtUlg591bV",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $600 fixed on job real-09353 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "create_proposal_draft",
+    "args": {
+     "job_id": "real-09353",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_type": "fixed",
+     "bid_amount": 600
+    },
+    "id": "call_yKyLNIk3JC0eC2FwiT1Okaj7",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  },
+  {
+   "set": "best",
+   "q": "Show me exactly what would be sent and what it would cost if I bid $250 fixed on job real-46183 with this letter: You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+   "call": {
+    "name": "create_proposal_draft",
+    "args": {
+     "job_id": "real-46183",
+     "cover_letter": "You need a WhatsApp booking bot; I built one for a clinic that cut no-shows 30%.",
+     "bid_type": "fixed",
+     "bid_amount": 250
+    },
+    "id": "call_cacvZMs6KqmJKfoAaV5noZMe",
+    "type": "tool_call"
+   },
+   "tool_ok": true,
+   "args_ok": true,
+   "unsafe": false
+  }
+ ]
+}

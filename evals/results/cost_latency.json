@@ -1,0 +1,441 @@
+{
+ "dev": {
+  "n_jobs": 35,
+  "cost_per_job_usd": 0.00109,
+  "cost_per_proposal_usd": 0.00199,
+  "latency_p50_s": 40.11,
+  "latency_p95_s": 71.35,
+  "proposal_latency_p95_s": 73.66,
+  "tokens_per_job": 5571,
+  "per_job": [
+   {
+    "job_id": "real-00146",
+    "calls": 2,
+    "cost": 0.000365,
+    "llm_secs": 43.79,
+    "tokens": 2176,
+    "proposal": false
+   },
+   {
+    "job_id": "real-02273",
+    "calls": 3,
+    "cost": 0.000621,
+    "llm_secs": 33.34,
+    "tokens": 3434,
+    "proposal": false
+   },
+   {
+    "job_id": "real-03653",
+    "calls": 3,
+    "cost": 0.00078,
+    "llm_secs": 71.35,
+    "tokens": 3843,
+    "proposal": false
+   },
+   {
+    "job_id": "real-05895",
+    "calls": 7,
+    "cost": 0.002021,
+    "llm_secs": 26.4,
+    "tokens": 10623,
+    "proposal": true
+   },
+   {
+    "job_id": "real-06977",
+    "calls": 3,
+    "cost": 0.000874,
+    "llm_secs": 68.24,
+    "tokens": 4662,
+    "proposal": false
+   },
+   {
+    "job_id": "real-08176",
+    "calls": 3,
+    "cost": 0.000798,
+    "llm_secs": 92.74,
+    "tokens": 4048,
+    "proposal": false
+   },
+   {
+    "job_id": "real-09353",
+    "calls": 7,
+    "cost": 0.001822,
+    "llm_secs": 23.94,
+    "tokens": 10226,
+    "proposal": true
+   },
+   {
+    "job_id": "real-12733",
+    "calls": 3,
+    "cost": 0.000814,
+    "llm_secs": 42.52,
+    "tokens": 4112,
+    "proposal": false
+   },
+   {
+    "job_id": "real-13581",
+    "calls": 3,
+    "cost": 0.000811,
+    "llm_secs": 66.57,
+    "tokens": 4035,
+    "proposal": false
+   },
+   {
+    "job_id": "real-15128",
+    "calls": 10,
+    "cost": 0.002484,
+    "llm_secs": 36.17,
+    "tokens": 12858,
+    "proposal": true
+   },
+   {
+    "job_id": "real-15141",
+    "calls": 7,
+    "cost": 0.001724,
+    "llm_secs": 26.44,
+    "tokens": 7978,
+    "proposal": true
+   },
+   {
+    "job_id": "real-25062",
+    "calls": 3,
+    "cost": 0.000906,
+    "llm_secs": 54.25,
+    "tokens": 4175,
+    "proposal": false
+   },
+   {
+    "job_id": "real-25400",
+    "calls": 3,
+    "cost": 0.000704,
+    "llm_secs": 59.3,
+    "tokens": 3833,
+    "proposal": false
+   },
+   {
+    "job_id": "real-25932",
+    "calls": 3,
+    "cost": 0.000747,
+    "llm_secs": 59.86,
+    "tokens": 4588,
+    "proposal": false
+   },
+   {
+    "job_id": "real-26726",
+    "calls": 3,
+    "cost": 0.000765,
+    "llm_secs": 44.61,
+    "tokens": 3803,
+    "proposal": false
+   },
+   {
+    "job_id": "real-28572",
+    "calls": 5,
+    "cost": 0.001642,
+    "llm_secs": 30.13,
+    "tokens": 7244,
+    "proposal": true
+   },
+   {
+    "job_id": "real-32197",
+    "calls": 3,
+    "cost": 0.000881,
+    "llm_secs": 7.66,
+    "tokens": 4594,
+    "proposal": false
+   },
+   {
+    "job_id": "real-33829",
+    "calls": 3,
+    "cost": 0.000494,
+    "llm_secs": 60.71,
+    "tokens": 3299,
+    "proposal": false
+   },
+   {
+    "job_id": "real-33967",
+    "calls": 3,
+    "cost": 0.000784,
+    "llm_secs": 71.15,
+    "tokens": 3982,
+    "proposal": false
+   },
+   {
+    "job_id": "real-35231",
+    "calls": 3,
+    "cost": 0.000809,
+    "llm_secs": 56.85,
+    "tokens": 3990,
+    "proposal": false
+   },
+   {
+    "job_id": "real-35717",
+    "calls": 3,
+    "cost": 0.000739,
+    "llm_secs": 7.73,
+    "tokens": 3746,
+    "proposal": false
+   },
+   {
+    "job_id": "real-38097",
+    "calls": 3,
+    "cost": 0.000642,
+    "llm_secs": 16.02,
+    "tokens": 3805,
+    "proposal": false
+   },
+   {
+    "job_id": "real-43432",
+    "calls": 3,
+    "cost": 0.000653,
+    "llm_secs": 49.74,
+    "tokens": 3528,
+    "proposal": false
+   },
+   {
+    "job_id": "real-44663",
+    "calls": 3,
+    "cost": 0.000666,
+    "llm_secs": 60.37,
+    "tokens": 3919,
+    "proposal": false
+   },
+   {
+    "job_id": "real-46183",
+    "calls": 13,
+    "cost": 0.003888,
+    "llm_secs": 73.66,
+    "tokens": 19008,
+    "proposal": true
+   },
+   {
+    "job_id": "real-49722",
+    "calls": 7,
+    "cost": 0.001299,
+    "llm_secs": 21.55,
+    "tokens": 7380,
+    "proposal": true
+   },
+   {
+    "job_id": "real-49871",
+    "calls": 3,
+    "cost": 0.000668,
+    "llm_secs": 16.97,
+    "tokens": 3895,
+    "proposal": false
+   },
+   {
+    "job_id": "real-51324",
+    "calls": 3,
+    "cost": 0.000883,
+    "llm_secs": 36.69,
+    "tokens": 4177,
+    "proposal": false
+   },
+   {
+    "job_id": "syn-01",
+    "calls": 3,
+    "cost": 0.000736,
+    "llm_secs": 40.11,
+    "tokens": 3581,
+    "proposal": false
+   },
+   {
+    "job_id": "syn-02",
+    "calls": 3,
+    "cost": 0.000613,
+    "llm_secs": 6.48,
+    "tokens": 3210,
+    "proposal": false
+   },
+   {
+    "job_id": "syn-03",
+    "calls": 3,
+    "cost": 0.000744,
+    "llm_secs": 52.05,
+    "tokens": 3638,
+    "proposal": false
+   },
+   {
+    "job_id": "syn-04",
+    "calls": 7,
+    "cost": 0.001878,
+    "llm_secs": 33.08,
+    "tokens": 8722,
+    "proposal": true
+   },
+   {
+    "job_id": "syn-05",
+    "calls": 7,
+    "cost": 0.0015,
+    "llm_secs": 25.17,
+    "tokens": 7573,
+    "proposal": true
+   },
+   {
+    "job_id": "syn-06",
+    "calls": 3,
+    "cost": 0.000666,
+    "llm_secs": 6.58,
+    "tokens": 3436,
+    "proposal": false
+   },
+   {
+    "job_id": "syn-07",
+    "calls": 7,
+    "cost": 0.00165,
+    "llm_secs": 27.57,
+    "tokens": 7870,
+    "proposal": true
+   }
+  ]
+ },
+ "test": {
+  "n_jobs": 17,
+  "cost_per_job_usd": 0.00109,
+  "cost_per_proposal_usd": 0.00208,
+  "latency_p50_s": 34.69,
+  "latency_p95_s": 68.92,
+  "proposal_latency_p95_s": 62.53,
+  "tokens_per_job": 5587,
+  "per_job": [
+   {
+    "job_id": "real-02079",
+    "calls": 13,
+    "cost": 0.003244,
+    "llm_secs": 62.53,
+    "tokens": 16207,
+    "proposal": true
+   },
+   {
+    "job_id": "real-04112",
+    "calls": 3,
+    "cost": 0.00053,
+    "llm_secs": 62.7,
+    "tokens": 3266,
+    "proposal": false
+   },
+   {
+    "job_id": "real-04308",
+    "calls": 7,
+    "cost": 0.001544,
+    "llm_secs": 26.17,
+    "tokens": 7894,
+    "proposal": true
+   },
+   {
+    "job_id": "real-19576",
+    "calls": 7,
+    "cost": 0.001942,
+    "llm_secs": 29.56,
+    "tokens": 10346,
+    "proposal": true
+   },
+   {
+    "job_id": "real-25590",
+    "calls": 3,
+    "cost": 0.000681,
+    "llm_secs": 78.78,
+    "tokens": 3718,
+    "proposal": false
+   },
+   {
+    "job_id": "real-34788",
+    "calls": 7,
+    "cost": 0.001731,
+    "llm_secs": 25.72,
+    "tokens": 8780,
+    "proposal": true
+   },
+   {
+    "job_id": "real-36202",
+    "calls": 3,
+    "cost": 0.000814,
+    "llm_secs": 34.69,
+    "tokens": 4161,
+    "proposal": false
+   },
+   {
+    "job_id": "real-42366",
+    "calls": 3,
+    "cost": 0.000742,
+    "llm_secs": 68.92,
+    "tokens": 3989,
+    "proposal": false
+   },
+   {
+    "job_id": "real-42473",
+    "calls": 3,
+    "cost": 0.00059,
+    "llm_secs": 13.98,
+    "tokens": 3456,
+    "proposal": false
+   },
+   {
+    "job_id": "real-43229",
+    "calls": 3,
+    "cost": 0.000705,
+    "llm_secs": 42.11,
+    "tokens": 3684,
+    "proposal": false
+   },
+   {
+    "job_id": "real-47896",
+    "calls": 3,
+    "cost": 0.000632,
+    "llm_secs": 49.06,
+    "tokens": 3474,
+    "proposal": false
+   },
+   {
+    "job_id": "real-50119",
+    "calls": 3,
+    "cost": 0.000531,
+    "llm_secs": 13.89,
+    "tokens": 3087,
+    "proposal": false
+   },
+   {
+    "job_id": "syn-08",
+    "calls": 3,
+    "cost": 0.000802,
+    "llm_secs": 27.75,
+    "tokens": 3545,
+    "proposal": false
+   },
+   {
+    "job_id": "syn-09",
+    "calls": 3,
+    "cost": 0.000519,
+    "llm_secs": 35.42,
+    "tokens": 2956,
+    "proposal": false
+   },
+   {
+    "job_id": "syn-10",
+    "calls": 3,
+    "cost": 0.000782,
+    "llm_secs": 48.96,
+    "tokens": 3698,
+    "proposal": false
+   },
+   {
+    "job_id": "syn-11",
+    "calls": 7,
+    "cost": 0.001927,
+    "llm_secs": 28.69,
+    "tokens": 9154,
+    "proposal": true
+   },
+   {
+    "job_id": "syn-12",
+    "calls": 3,
+    "cost": 0.000735,
+    "llm_secs": 7.51,
+    "tokens": 3570,
+    "proposal": false
+   }
+  ]
+ },
+ "method": "Recover per-job cost and LLM latency for the paid dev/test runs from the call ledger."
+}

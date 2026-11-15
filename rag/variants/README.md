@@ -1,0 +1,1 @@
+V0 naive, V1 decomposition, V2 hybrid (+ hybrid-only ablation), V3 rerank (+ no-decomposition ablation), V4 outcome-aware, V8 corrective (LangGraph). Chosen by `rag/retriever.py` from config; compared by `python -m evals.runners.rag_eval`.

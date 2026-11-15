@@ -1,0 +1,37 @@
+name: ci
+on: [push, pull_request]
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    env: {GIGBID_LLM: fake}          # tests never spend paid calls
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 0}
+      - uses: astral-sh/setup-uv@v5
+      - run: uv venv && uv pip install -e ".[dev]" cryptography sse-starlette arq python-multipart
+      - name: no secrets in repo
+        run: |
+          ! git ls-files | grep -E '(^|/)\.env$'
+          ! git grep -nE 'sk-(proj-)?[A-Za-z0-9_-]{20,}|KGAT_[a-f0-9]{20,}' -- . ':!*.md'
+      - name: every prompt lives in agent/prompts
+        run: "! git grep -nE 'ChatPromptTemplate|SystemMessage\\(\"' -- agent rag apps"
+      - name: gigsim unchanged since it was frozen
+        run: uv run python scripts/check_gigsim_frozen.py
+      - run: uv run ruff check agent rag mcp_servers apps evals gigsim worker
+      - run: uv run pytest -q tests/unit tests/contract mcp_servers
+      - run: uv run pytest -q tests/integration
+      - name: numbers in README trace to evals/results
+        run: uv run python scripts/check_results_cited.py
+
+  web:
+    runs-on: ubuntu-latest
+    defaults: {run: {working-directory: apps/web}}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 24}
+      - run: npm ci && npm run build
+      - run: npx playwright install --with-deps chromium && npx playwright test
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with: {name: playwright-report, path: apps/web/playwright-report}

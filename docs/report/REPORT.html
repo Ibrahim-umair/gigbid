@@ -1,0 +1,471 @@
+<!doctype html><meta charset=utf-8><title>GigBid R&D report</title><style>body{font-family:Georgia,serif;font-size:10.5pt;line-height:1.35;max-width:780px;
+margin:auto}
+h1{font-size:18pt}h2{font-size:13pt;margin-top:14pt;border-bottom:1px solid #999}
+h3{font-size:11pt}table{border-collapse:collapse;font-size:8.5pt;margin:6pt 0}
+td,th{border:1px solid #bbb;padding:2px 5px}code{font-size:8.5pt}pre{font-size:8pt;
+background:#f4f4f4;padding:6px;white-space:pre-wrap}</style><h1>GigBid: R&amp;D design review (draft)</h1>
+<p>AI-4016 · Multi-agent freelancer copilot · every number below cites a file in <code>evals/results/</code>.</p>
+<h2>1. Problem and constraints</h2>
+<p>A freelancer scans feeds, spends paid Connects on long-shot jobs, sends generic proposals and
+meets scams (free "trials", off-platform payment, credential requests). GigBid automates
+<strong>discovery, assessment and drafting</strong>; the human keeps <strong>every decision that leaves the system</strong>.</p>
+<p><strong>Never automated:</strong> submitting a proposal, sending a message, spending Connects, accepting
+off-platform contact/payment, and claiming experience the portfolio does not show. Autonomy can
+at most auto-skip low-fit jobs (<code>settings.autonomy</code>), never auto-send (enforced in the API and
+the graph: the only path to <code>submit</code> is an explicit <code>approve</code> resume).</p>
+<p><strong>Declared budgets (paid profile, gpt-6-luna):</strong> p95 latency ≤ 90 s per job analysed and
+≤ 120 s per proposal on a CPU-only laptop; cost ≤ $0.002 per job analysed and ≤ $0.005 per
+proposal. Paid calls are hard-capped per run and every call is ledgered
+(<code>evals/results/llm_ledger.jsonl</code>).</p>
+<h2>2. Architecture</h2>
+<p>See <code>docs/ARCHITECTURE.md</code> (graphs rendered from code in <code>docs/images/bid_graph.mmd</code>).</p>
+<ul>
+<li><strong>Bid graph</strong>: Analyst ∥ Risk ∥ Fit (LangGraph <code>Send</code>) → rule-based decide → rule-based
+  pricing (53k-job market stats) → Writer → claim Verifier → Critic (≤2 send-backs) →
+  Compliance → <code>interrupt()</code> approval → idempotent submit. <strong>Conversation graph</strong>: thread →
+  Liaison (intent + reply) → Workspace slots → compliance → <code>interrupt()</code> → send.</li>
+<li><strong>Marketplace port</strong> (<code>agent/marketplace_port.py</code>): one interface, two adapters (GigSim REST,
+  official Upwork MCP), chosen by config, only reachable through the Marketplace MCP server.</li>
+<li><strong>MCP surface</strong>: 3 own servers, 16 tools (<code>docs/TOOLS.md</code>), per-agent allowlists, schema
+  snapshots in CI, idempotency keys + <code>dry_run</code> on writes, bearer auth + rate limiter + audit log.</li>
+<li><strong>Stores</strong>: SQLite checkpointer (thread state, crash-safe), LangGraph store (style + outcome
+  memory, promotion rules only), GigSim DB, LLM cache + ledger, audit log.</li>
+<li>Deterministic where judgement is not needed (decide, pricing, regex compliance) so that LLM
+  calls go where they add value: 3 calls for a skipped job, ~7 for a proposal.</li>
+</ul>
+<h2>3. R&amp;D question A: tool granularity</h2>
+<p><strong>Hypothesis.</strong> Fewer, broader tools cut schema tokens but hurt selection accuracy; descriptions that say <em>when</em> to use a tool matter more than the count.</p>
+<p><strong>Setup.</strong> 40 tasks with one known correct call (client checks, job lookups, evidence search, item fetch, balance, proposal preview), three tool sets as schema stubs, one <code>gpt-6-luna</code> call per task (<code>evals/runners/tool_granularity.py</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Tool set</th>
+<th>Tools</th>
+<th>Tool selection</th>
+<th>Arguments</th>
+<th>Unsafe submits</th>
+<th>Input tokens/task</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>fine</td>
+<td>15</td>
+<td>0.975</td>
+<td>0.975</td>
+<td>0</td>
+<td>437.1</td>
+</tr>
+<tr>
+<td>coarse</td>
+<td>2</td>
+<td>0.875</td>
+<td>0.875</td>
+<td>0</td>
+<td>174.2</td>
+</tr>
+<tr>
+<td>best</td>
+<td>7</td>
+<td>1.0</td>
+<td>1.0</td>
+<td>0</td>
+<td>442.1</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Result.</strong> The shipped set (7 tools whose descriptions state when to use them) was perfect; 15 fine-grained tools lost one ambiguous search (case study vs repo); 2 coarse <code>action</code>-enum tools used 60% fewer input tokens but misrouted 5/40 (portfolio lookups sent to the marketplace tool, <code>connects</code> vs <code>job</code>). No tool set ever chose <code>submit</code>. <strong>Conclusion:</strong> keep a small set of task-shaped tools with explicit when-to-use descriptions; the token saving of coarse tools is not worth the routing errors. Caveat: tasks were written by the author, single run.</p>
+<h2>4. R&amp;D question B: retrieval, claim verification, shipped choice</h2>
+<p>Pre-registered hypotheses: <code>evals/HYPOTHESIS.md</code> (written before the run). Gold evidence from the data card; 19 jobs with gold evidence; zero LLM calls (<code>evals/results/rag_eval_all.json</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Variant</th>
+<th>Recall@5</th>
+<th>MRR</th>
+<th>nDCG@10</th>
+<th>Recall@5, ≥4 req.</th>
+<th>s/job</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>v0_naive</td>
+<td>0.348</td>
+<td>0.449</td>
+<td>0.406</td>
+<td>0.451</td>
+<td>0.11</td>
+</tr>
+<tr>
+<td>v1_decompose</td>
+<td>0.298</td>
+<td>0.357</td>
+<td>0.334</td>
+<td>0.417</td>
+<td>0.23</td>
+</tr>
+<tr>
+<td>v2_hybrid_only</td>
+<td>0.378</td>
+<td>0.535</td>
+<td>0.43</td>
+<td>0.495</td>
+<td>0.29</td>
+</tr>
+<tr>
+<td>v2_hybrid</td>
+<td>0.311</td>
+<td>0.48</td>
+<td>0.381</td>
+<td>0.396</td>
+<td>0.29</td>
+</tr>
+<tr>
+<td>v3_rerank_nodecomp</td>
+<td>0.334</td>
+<td>0.509</td>
+<td>0.375</td>
+<td>0.431</td>
+<td>10.68</td>
+</tr>
+<tr>
+<td>v3_rerank</td>
+<td>0.296</td>
+<td>0.484</td>
+<td>0.332</td>
+<td>0.374</td>
+<td>30.21</td>
+</tr>
+<tr>
+<td>v4_outcome</td>
+<td>0.324</td>
+<td>0.531</td>
+<td>0.347</td>
+<td>0.415</td>
+<td>0.38</td>
+</tr>
+<tr>
+<td>v8_corrective</td>
+<td>0.225</td>
+<td>0.484</td>
+<td>0.271</td>
+<td>0.31</td>
+<td>10.86</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li><strong>H-B1 refuted.</strong> Decomposition + hybrid (V2) scored Recall@5 0.311 vs V0 0.348; removing decomposition (ablation <code>v2_hybrid_only</code>) gave the best result, 0.378 (MRR 0.535, nDCG@10 0.43), also on jobs with ≥4 requirements (0.495 vs 0.451). The zero-LLM splitter yields noisy fragments (skill lists, URLs) and RRF over many weak queries dilutes the strong whole-post query.</li>
+<li><strong>H-B2 refuted.</strong> The open cross-encoder (bge-reranker-v2-m3, int8, CPU) lowered recall (V3 0.296, without decomposition 0.334) and cost 30.21 s/job vs 0.29; an MS-MARCO MiniLM reranker was worse still (ranked short reviews above case studies).</li>
+<li><strong>H-B3 supported.</strong> Outcome-aware boosting (V4) did not raise Recall@5 (0.324 vs V3 0.296) though MRR rose (0.531 vs 0.484): gold labels encode relevance, not persuasiveness.</li>
+<li>Corrective loop V8 had the lowest recall (0.225): its refusal threshold drops weak-but-correct evidence; it is kept only to grade per-requirement coverage (strong/partial/none) inside <code>match_requirements</code>.</li>
+</ul>
+<p><strong>Claim verification (B3).</strong> Unsupported claims per proposal before verification: dev 0.07, test 0 (the writer rarely overclaims when it must list claims with evidence ids). After verification, an independent judge (Claude, different vendor from the runtime model) found 0.000 unsupported and 0.053 partly supported claims per proposal over 19 final proposals, mean rubric 3.579/5 (<code>evals/results/judge_claude.json</code>). <strong>The judge is not calibrated:</strong> the 30-item human label set (<code>evals/runners/judge_calibration.py --make-template</code>) has not been filled in, so no Cohen's kappa is reported.</p>
+<p><strong>By persona / job type.</strong> One persona only (AI/ML engineer), a limitation. On jobs with ≥4 extracted requirements every variant scores higher (they are the long, specific posts); the ranking of variants is the same.</p>
+<p><strong>Where better retrieval did not mean more replies.</strong> Dev reply rate was 0.429 with every proposal grounded; lost proposals had strong fit and correct evidence (e.g. real-15141 fit 0.88, real-05895 0.78). The simulated clients decide on must-have skills named explicitly, budget ceiling and opening style, so evidence quality beyond 'relevant' moves the reply rate little. Retrieval is necessary for grounding, not sufficient for replies.</p>
+<p><strong>Shipped:</strong> <code>v2_hybrid_only</code> (BM25 + dense, RRF, whole-post query): best on every retrieval metric and ~100x faster than reranking (<code>docs/adr/0001</code>).</p>
+<h2>5. R&amp;D question C: single agent vs prebuilt supervisor vs this graph</h2>
+<p>Same 51 dev jobs, same model, same MCP tools, same GigSim scoring (<code>evals/runners/arch_compare.py</code>; <code>arch_*_dev.json</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Metric (51 dev jobs)</th>
+<th>(a) ReAct</th>
+<th>(b) Supervisor</th>
+<th>(c) Graph</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Bid/skip F1</td>
+<td>0.815</td>
+<td>—</td>
+<td>0.786</td>
+</tr>
+<tr>
+<td>Scam precision</td>
+<td>0.750</td>
+<td>—</td>
+<td>0.750</td>
+</tr>
+<tr>
+<td>Scam recall</td>
+<td>1.000</td>
+<td>—</td>
+<td>1.000</td>
+</tr>
+<tr>
+<td>Injection attack success</td>
+<td>0.000</td>
+<td>—</td>
+<td>0.000</td>
+</tr>
+<tr>
+<td>Proposals</td>
+<td>23</td>
+<td>—</td>
+<td>14</td>
+</tr>
+<tr>
+<td>GigSim reply rate</td>
+<td>0.385</td>
+<td>—</td>
+<td>0.429</td>
+</tr>
+<tr>
+<td>Cost/job (USD)</td>
+<td>0.002</td>
+<td>—</td>
+<td>0.001</td>
+</tr>
+<tr>
+<td>p95 s/job</td>
+<td>206.480</td>
+<td>—</td>
+<td>197.120</td>
+</tr>
+<tr>
+<td>Judge: unsupported claims/proposal</td>
+<td>0.00</td>
+<td>—</td>
+<td>0.00</td>
+</tr>
+<tr>
+<td>Judge: mean rubric (1-5)</td>
+<td>2.65</td>
+<td>—</td>
+<td>3.58</td>
+</tr>
+<tr>
+<td>Judge: genuine policy violations</td>
+<td>0</td>
+<td>—</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Prebuilt supervisor.</strong> Results for (b) are pending in this draft; the runner is in place (<code>evals/runners/arch_compare.py --system supervisor</code>).</p>
+<p><strong>Where the single agent wins.</strong> On the 51 dev jobs ReAct's bid/skip F1 (0.815) beat the
+graph's measured thresholds (0.786); with the re-tuned risk ceiling the graph reaches 0.828. ReAct
+reads the job holistically and is not hurt by a hard fit threshold on borderline jobs, and its
+scam and injection handling was equally perfect. It loses on cost and outcomes: about 1.6x the
+cost per job, a lower GigSim reply rate, and many of its drafts were decline notes rather than
+proposals (judge rubric well below the graph's). Its proposals were grounded too (judge: 0
+unsupported claims), so on this corpus the graph's claim verifier is insurance rather than a
+measured differentiator. <strong>Conclusion:</strong> the graph is worth it for cost, auditability and the
+approval/durability guarantees; a single ReAct agent is a strong decision baseline.</p>
+<p><strong>Latency caveat.</strong> The 16 jobs added to reach 51 were run with three systems in parallel while
+two other build jobs used the same CPU, so their latencies are inflated (p95 ≈ 200 s) and the
+51-job latency rows are not comparable to the uncontended 35-job measurement (graph p95 71 s,
+<code>cost_latency.json</code>). Cost per job is unaffected.</p>
+<h2>6. The change request</h2>
+<p>The official 2 Nov 2026 policy text was not available to this build. A rehearsal update was applied instead: <em>“proposals may not contain external links”</em>. Edit: one regex line in <code>agent/config.yaml</code> (<code>compliance.block_patterns.external_link</code>) and a version bump + sentence in <code>agent/prompts/compliance.md</code> (1.0 → 1.1). No code changed. Edit + verification + the 16 fast tests took 32 s of wall time. A Connects or pricing rule would be one edit in <code>gigsim/policy.yaml</code> (re-frozen with <code>make freeze</code>) or <code>pricing.*</code>. This is what the design was meant to make cheap: rules, thresholds, prompts and models live in configuration.</p>
+<h2>7. Signature extension: X2 proposal experiments</h2>
+<p>Two writer strategies on the same 15 jobs the graph chose to bid on: A = evidence-first opening (<code>writer.md</code>), B = question-first opening (<code>writer_b.md</code>). Analysis was shared via the LLM cache, so only writing and the simulated client differ (<code>evals/runners/ab_test.py</code>).</p>
+<table>
+<thead>
+<tr>
+<th>Arm</th>
+<th>Proposals</th>
+<th>Replied</th>
+<th>Reply rate</th>
+<th>Hired</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>A (evidence-first)</td>
+<td>15</td>
+<td>8</td>
+<td>0.533</td>
+<td>0</td>
+</tr>
+<tr>
+<td>B (question-first)</td>
+<td>14</td>
+<td>5</td>
+<td>0.357</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>Judge (same standard, <code>judge_claude.json</code>): mean rubric A 3.58 vs B 3.50; unsupported claims A 0.00 vs B 0.00.</p>
+<p>Fisher exact test, two-sided: p = 0.4621. With ~15 proposals per arm the test can only detect very large differences; the result is reported as measured, not as a winner.</p>
+<h2>8. Failure analysis</h2>
+<p>11 of 51 dev jobs failed on the decision, price or outcome, plus 4 proposals with leaked citation tags and 3 first drafts sent back by the Critic.</p>
+<table>
+<thead>
+<tr>
+<th>Job</th>
+<th>Failure type</th>
+<th>Detail</th>
+<th>Fix tried</th>
+<th>Worked?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>real-05895</td>
+<td>no reply (generic / missed must-have)</td>
+<td>price 55.0 vs fair 45-70, outcome lost</td>
+<td>X2 question-first opening</td>
+<td>see §7</td>
+</tr>
+<tr>
+<td>real-09353</td>
+<td>no reply (generic / missed must-have)</td>
+<td>price 1000.0 vs fair 800-1500, outcome lost</td>
+<td>X2 question-first opening</td>
+<td>see §7</td>
+</tr>
+<tr>
+<td>real-15141</td>
+<td>no reply (generic / missed must-have)</td>
+<td>price 150.0 vs fair 60-150, outcome lost</td>
+<td>X2 question-first opening</td>
+<td>see §7</td>
+</tr>
+<tr>
+<td>real-28572</td>
+<td>no reply (generic / missed must-have)</td>
+<td>price 150.0 vs fair 150-400, outcome lost</td>
+<td>X2 question-first opening</td>
+<td>see §7</td>
+</tr>
+<tr>
+<td>real-32197</td>
+<td>wrong skip</td>
+<td>fit 0.23, risk 0.48, flags unrealistic_budget, vague_scope</td>
+<td>threshold sweep: risk ceiling 0.6→0.7</td>
+<td>no (fit 0.23)</td>
+</tr>
+<tr>
+<td>real-35717</td>
+<td>wrong skip</td>
+<td>fit 0.67, risk 0.62, flags vague_scope, poor_client_history</td>
+<td>threshold sweep: risk ceiling 0.6→0.7</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>real-46183</td>
+<td>wrong bid</td>
+<td>fit 0.78, risk 0.26, flags unrealistic_budget, vague_scope</td>
+<td>none (budget below floor; pricing quoted floor)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>syn-06</td>
+<td>wrong skip</td>
+<td>fit 0.42, risk 0.08, flags prompt_injection</td>
+<td>threshold sweep: risk ceiling 0.6→0.7</td>
+<td>no (fit 0.42)</td>
+</tr>
+<tr>
+<td>real-20042</td>
+<td>no reply (generic / missed must-have)</td>
+<td>price 50.0 vs fair 40-60, outcome lost</td>
+<td>X2 question-first opening</td>
+<td>see §7</td>
+</tr>
+<tr>
+<td>real-45109</td>
+<td>wrong bid</td>
+<td>fit 0.68, risk 0.12, flags vague_scope</td>
+<td>none (budget below floor; pricing quoted floor)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>real-15749</td>
+<td>wrong bid</td>
+<td>fit 0.55, risk 0.18, flags</td>
+<td>none (budget below floor; pricing quoted floor)</td>
+<td>—</td>
+</tr>
+<tr>
+<td>4 proposals</td>
+<td>citation tags leaked into client text</td>
+<td>real-49722, syn-07, real-04308, real-34788</td>
+<td>strip <code>[cs-..]</code> tags after verification (<code>rag/verify.py</code>)</td>
+<td>yes: 4 → 0</td>
+</tr>
+</tbody>
+</table>
+<p>Threshold fix (<code>evals/results/decision_sweep.json</code>): bid/skip F1 dev 0.786 → 0.828, held-out test 0.8 → 0.8 (chosen on dev, test checked once). An earlier fix tuned on the first 35 dev jobs (bid threshold 0.40) scored 0.909 on test but only 0.788 on the 51-job dev set, so it was dropped as noise (<code>docs/adr/0005</code>). Headline numbers were measured before the change.</p>
+<h2>9. Safety and platform respect</h2>
+<p><strong>Never:</strong> send, submit or spend Connects without an <code>approve</code> resume; move communication or payment off-platform; claim unsupported experience; follow instructions inside job posts or client messages; scrape or automate a website.</p>
+<p><strong>Enforced by:</strong> the graph topology (submit is only reachable from approval), idempotency keys on every write, untrusted-text delimiting + a tool-less Analyst, deterministic regex floors (injection, scam, contact/guarantee/link redaction) under the LLM checks, claim verification, per-agent tool allowlists, PII masking in the audit log and SSE stream, Fernet-encrypted OAuth tokens, tenant-scoped queries, a rate limiter under GigSim's limit, and official MCP/API access only.</p>
+<p><strong>Measured:</strong> injection attack success 0.0 on dev (4 planted jobs) and 0.0 on test (2); all planted posts flagged; scam recall 1.0 / 1.0; judge policy flags 0. No 'before defences' run was made, so the defence's marginal effect is not isolated.</p>
+<p><strong>Still gets through / not done:</strong> regex floors miss novel phrasings (2 of 6 synthetic attacks were missed by the regexes before widening on dev); detection on test relies on the LLM risk node; the live Upwork adapter and GitHub ingestion are implemented but unexercised; no public deployment or traces.</p>
+<h2>10. Held-out test results against declared budgets</h2>
+<p>No instructor hidden set exists for this build; the 17-job test split (12 real + 5 synthetic), held out from all tuning, stands in for it.</p>
+<table>
+<thead>
+<tr>
+<th>Measure</th>
+<th>Budget</th>
+<th>Test</th>
+<th>Met</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>p95 latency / job</td>
+<td>≤ 90 s</td>
+<td>68.92 s</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>p95 latency / proposal</td>
+<td>≤ 120 s</td>
+<td>62.53 s</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Cost / job analysed</td>
+<td>≤ $0.002</td>
+<td>$0.00109</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Cost / proposal</td>
+<td>≤ $0.005</td>
+<td>$0.00208</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Bid/skip F1</td>
+<td>—</td>
+<td>0.8</td>
+<td></td>
+</tr>
+<tr>
+<td>Scam precision / recall</td>
+<td>—</td>
+<td>1.0 / 1.0</td>
+<td></td>
+</tr>
+<tr>
+<td>Injection attack success</td>
+<td>0</td>
+<td>0.0</td>
+<td>yes</td>
+</tr>
+<tr>
+<td>Price in fair band</td>
+<td>—</td>
+<td>0.8</td>
+<td></td>
+</tr>
+<tr>
+<td>GigSim reply / hire rate</td>
+<td>—</td>
+<td>0.6 / 0.0</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<p>Latency is dominated by CPU retrieval (cross-encoder coverage grading inside <code>match_requirements</code>), not the model. <strong>Optimisation that helped:</strong> switching the ranking retriever from V3 to hybrid-only cut retrieval from 30.21 s to 0.29 s per job while improving recall; early skip keeps a rejected job at 3 LLM calls. Cost/latency were recovered from the call ledger because the scored runs replayed from the LLM cache (<code>scripts/ledger_jobs.py</code>).</p>
+<p>Total paid LLM usage for this report: 1085 calls, $0.2976 (<code>evals/results/llm_ledger.jsonl</code>).</p>
+<h2>Appendix: limitations</h2>
+<p>One persona; small eval sets (19 / 35 / 17 jobs); gold labels and synthetic data written by an LLM; simulated clients are an LLM proxy; one LLM configuration (gpt-6-luna) instead of two open models; supervisor baseline pending; uncalibrated judge; no public deployment, traces or demo video; Regenerate-paragraph in the studio is a placeholder.</p>

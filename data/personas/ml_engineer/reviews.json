@@ -1,0 +1,110 @@
+[
+  {
+    "id": "rev-01",
+    "client_industry": "healthcare",
+    "rating": 5,
+    "text": "Rohan built our policy assistant and it just works. Staff stopped phoning the compliance desk and, more importantly, every answer shows the page it came from, so nobody has to take it on trust. Clear weekly updates and honest about what the tool can not do.",
+    "project_ref": "cs-01",
+    "date": "2024-05",
+    "synthetic": true
+  },
+  {
+    "id": "rev-02",
+    "client_industry": "real estate",
+    "rating": 5,
+    "text": "Our after-hours leads used to go cold. Now they get a reply in seconds on WhatsApp and the good ones show up as booked viewings in the agents' calendar. Delivered ahead of schedule.",
+    "project_ref": "cs-02",
+    "date": "2023-11",
+    "synthetic": true
+  },
+  {
+    "id": "rev-03",
+    "client_industry": "e-commerce",
+    "rating": 5,
+    "text": "The chat widget deflected more than half of our support chats within a month. He also pushed back on letting the bot answer order-status questions itself, which saved us from a messy problem. Would hire again.",
+    "project_ref": "cs-03",
+    "date": "2024-08",
+    "synthetic": true
+  },
+  {
+    "id": "rev-04",
+    "client_industry": "legal",
+    "rating": 4,
+    "text": "Very good model work: the clause highlighting is accurate and the review time per contract fell dramatically. Took a week longer than first estimated because we kept adding clause types, but he communicated that early.",
+    "project_ref": "cs-04",
+    "date": "2023-07",
+    "synthetic": true
+  },
+  {
+    "id": "rev-05",
+    "client_industry": "logistics",
+    "rating": 5,
+    "text": "We had a camera system that skipped and lagged and two other freelancers had given up. Rohan found the cause in a day and the counts now match our manual checks. Great debugging skills.",
+    "project_ref": "cs-05",
+    "date": "2024-03",
+    "synthetic": true
+  },
+  {
+    "id": "rev-06",
+    "client_industry": "fintech",
+    "rating": 5,
+    "text": "Solid anti-spoofing work. He tested against his own recorded attacks, not just a public dataset, and gave us a clear report on false rejects. Our manual review queue is far smaller.",
+    "project_ref": "cs-06",
+    "date": "2024-10",
+    "synthetic": true
+  },
+  {
+    "id": "rev-07",
+    "client_industry": "education",
+    "rating": 5,
+    "text": "The companion bot and quiz generator are used by almost every learner. Code was simple enough for our one developer to maintain, which was exactly what we asked for.",
+    "project_ref": "cs-07",
+    "date": "2024-01",
+    "synthetic": true
+  },
+  {
+    "id": "rev-08",
+    "client_industry": "hospitality",
+    "rating": 5,
+    "text": "I get my evenings back. Guests text a number, get the answer to nearly everything, and I only hear about real problems. Setup was painless and costs next to nothing to run.",
+    "project_ref": "cs-08",
+    "date": "2024-06",
+    "synthetic": true
+  },
+  {
+    "id": "rev-09",
+    "client_industry": "e-commerce",
+    "rating": 4,
+    "text": "Good dashboard and he found a sizing-chart mistake that was costing us returns. Charts were a bit plain at first, but the numbers were right and documented.",
+    "project_ref": "cs-09",
+    "date": "2022-12",
+    "synthetic": true
+  },
+  {
+    "id": "rev-10",
+    "client_industry": "logistics",
+    "rating": 5,
+    "text": "Consolidated five GPU servers into one without any drama. The scheduling of which models stay loaded is neat, and our cloud bill fell by about 40%. Professional and responsive.",
+    "project_ref": "cs-10",
+    "date": "2024-12",
+    "synthetic": true
+  },
+  {
+    "id": "rev-11",
+    "client_industry": "fintech",
+    "rating": 5,
+    "text": "He measured every stage of our voice pipeline instead of guessing, and halved the wait before the assistant speaks. Customers talk over the bot far less now.",
+    "project_ref": "cs-11",
+    "date": "2025-03",
+    "synthetic": true
+  },
+  {
+    "id": "rev-12",
+    "client_industry": "legal",
+    "rating": 5,
+    "text": "He took our confidentiality concerns seriously and built permission checks into the search itself, then tried to break them. The associates use the assistant daily.",
+    "project_ref": "cs-13",
+    "date": "2025-05",
+    "synthetic": true
+  }
+]

@@ -1,0 +1,757 @@
+{
+  "real-43432": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 40,
+      "high": 60
+    },
+    "rationale": "Generative image/video pipeline for ads is outside the portfolio (no diffusion or creative-generation work), despite an acceptable hourly range."
+  },
+  "real-25400": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 10,
+      "high": 40
+    },
+    "rationale": "A $10 spreadsheet translation task is far below the $150 fixed-price floor and has no portfolio match."
+  },
+  "real-26726": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 15,
+      "high": 30
+    },
+    "rationale": "Native Android/iOS development is explicitly outside the persona's skills and the $5-$20 rate is below the floor."
+  },
+  "real-28572": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-11",
+      "cs-03",
+      "cs-07",
+      "rev-11"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 150,
+      "high": 400
+    },
+    "rationale": "Web chatbot grounded in product pages with STT/TTS matches the voice-latency and catalogue-chat work, and the $150 budget meets the floor."
+  },
+  "real-49722": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-15",
+      "repo-05"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 35,
+      "high": 45
+    },
+    "rationale": "Telegram channel triage with an LLM is nearly identical to the message-triage case study, and the top of the hourly range reaches the floor."
+  },
+  "real-46183": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-02",
+      "cs-03"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 5,
+      "high": 20
+    },
+    "rationale": "Generic Python/Django chatbot staffing role at $5/hour is well below the $35 floor even though chatbot work is a strength."
+  },
+  "real-15141": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-05",
+      "repo-03",
+      "rev-05"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 60,
+      "high": 150
+    },
+    "rationale": "RTSP frame-skip problem with a YOLOv8 counter is exactly the solved dock-camera issue, and it is a small fix so $60 is low but workable."
+  },
+  "real-09353": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-06",
+      "repo-06",
+      "rev-06",
+      "cs-05"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 800,
+      "high": 1500
+    },
+    "rationale": "Face detection, visibility check and liveness against replay and print attacks matches the KYC liveness project and the $1000 budget is fair."
+  },
+  "real-35231": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 15000,
+      "high": 30000
+    },
+    "rationale": "Requires a native Android developer for the app UI, which the persona does not offer, though the budget is large."
+  },
+  "real-44663": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 20,
+      "high": 100
+    },
+    "rationale": "PHP scraping tool for $20 is outside the persona's stack and below the fixed-price floor."
+  },
+  "real-02273": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 35,
+      "high": 60
+    },
+    "rationale": "Restaurant cost accounting from QuickBooks reports is accounting work the persona does not do."
+  },
+  "real-12733": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 10,
+      "high": 30
+    },
+    "rationale": "Academic-style paper writing with formatting rules is ghostwriting-type work the persona rejects, at a low rate."
+  },
+  "real-35717": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-12",
+      "cs-09",
+      "rev-09"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 1500,
+      "high": 2500
+    },
+    "rationale": "SQL-to-BigQuery integration, cleaning and dashboards match the claims consolidation and retail dashboard work, and $2,067 is a reasonable budget."
+  },
+  "real-51324": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 50,
+      "high": 50
+    },
+    "rationale": "A one-hour local Google-review beta test requiring Louisiana residence is not engineering work."
+  },
+  "real-03653": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 15,
+      "high": 35
+    },
+    "rationale": "Bookkeeping cleanup is accounting work outside the persona's scope."
+  },
+  "real-00146": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 500,
+      "high": 1000
+    },
+    "rationale": "A marketing checklist and lead-magnet PDF is copywriting and design work the persona does not take."
+  },
+  "real-05895": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-10",
+      "repo-04",
+      "cs-04",
+      "rev-10"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 45,
+      "high": 70
+    },
+    "rationale": "FastAPI plus Transformers API rebuild with production deployment matches the multi-model inference service and the async clause-extraction endpoint."
+  },
+  "real-25062": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 16,
+      "high": 40
+    },
+    "rationale": "On-site teaching position in Slavonia for six months is not remote freelance engineering and pays below the floor at the low end."
+  },
+  "real-13581": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 5,
+      "high": 20
+    },
+    "rationale": "Full LMS web platform build at $5-$20/hour is mostly full-stack web work with no portfolio match and a below-floor rate."
+  },
+  "real-08176": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 6,
+      "high": 20
+    },
+    "rationale": "Flutter mobile development is outside the persona's skills and $5-$6/hour is far below the floor."
+  },
+  "real-25932": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 200,
+      "high": 600
+    },
+    "rationale": "Building a Bubble.io front end from a Figma prototype is no-code and design-driven work the persona does not offer."
+  },
+  "real-38097": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 30,
+      "high": 50
+    },
+    "rationale": "NFT and blockchain interoperability is unrelated to the portfolio."
+  },
+  "real-06977": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 3,
+      "high": 15
+    },
+    "rationale": "Equity-style startup role at $3/hour requiring broad full-stack work is far below the floor with no portfolio fit."
+  },
+  "real-32197": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-08",
+      "cs-02",
+      "cs-01"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 3000,
+      "high": 6000
+    },
+    "rationale": "Messaging chatbot for healthcare staffing with document collection fits the SMS/WhatsApp hand-off and healthcare RAG work, and $5,000 is a healthy budget."
+  },
+  "real-33967": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 8,
+      "high": 12
+    },
+    "rationale": "Virtual assistant work (ads, funnels, PowerPoint) is outside scope and the rate is far below the floor."
+  },
+  "real-49871": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 35,
+      "high": 80
+    },
+    "rationale": "Studio accountant and project accounting is explicitly outside the persona's skills."
+  },
+  "real-15128": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-10",
+      "repo-04",
+      "rev-10",
+      "cs-04"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 40,
+      "high": 60
+    },
+    "rationale": "Dynamic Hugging Face inference server with time-scheduled model loading is the model-shelf project, and the range reaches the target rate."
+  },
+  "real-33829": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 20,
+      "high": 100
+    },
+    "rationale": "Figma screen redesign is graphic design work outside the persona's scope and budget is below the floor."
+  },
+  "real-25590": {
+    "split": "test",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 50,
+      "high": 150
+    },
+    "rationale": "Converting a Figma landing page to React/Tailwind in a day is front-end work with no portfolio match and a $50 budget."
+  },
+  "real-04308": {
+    "split": "test",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-13",
+      "cs-01",
+      "cs-07",
+      "rev-12"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 200,
+      "high": 500
+    },
+    "rationale": "Project knowledge-transfer chatbot over documentation matches the law-firm and clinic RAG assistants, and $200 meets the floor."
+  },
+  "real-04112": {
+    "split": "test",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 16,
+      "high": 35
+    },
+    "rationale": "Debugging a Laravel/PHP script install is outside the persona's stack and the range tops out at the floor."
+  },
+  "real-02079": {
+    "split": "test",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-08",
+      "repo-02",
+      "rev-08",
+      "cs-02"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 300,
+      "high": 600
+    },
+    "rationale": "Strong portfolio match for SMS/WhatsApp Q&A bots, but the $50 budget is a third of the floor and the scope is days of work, so skip."
+  },
+  "real-36202": {
+    "split": "test",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 30,
+      "high": 150
+    },
+    "rationale": "Shopify homepage and investor-section work is explicitly outside the persona's skills."
+  },
+  "real-47896": {
+    "split": "test",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 35,
+      "high": 50
+    },
+    "rationale": "Vintage-style graphic and logo design is not offered by the persona."
+  },
+  "real-43229": {
+    "split": "test",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 20,
+      "high": 40
+    },
+    "rationale": "Product-idea validation and market research needs a product manager background rather than portfolio evidence, and the range sits below the floor."
+  },
+  "real-42366": {
+    "split": "test",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 10,
+      "high": 50
+    },
+    "rationale": "ManyChat and Kajabi no-code Instagram automation with ad management is marketing automation outside the portfolio."
+  },
+  "real-42473": {
+    "split": "test",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 8,
+      "high": 25
+    },
+    "rationale": "Marketing and content generation is explicitly outside scope and below the rate floor."
+  },
+  "real-19576": {
+    "split": "test",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-01",
+      "cs-03",
+      "cs-09",
+      "cs-02",
+      "cs-14"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 45,
+      "high": 60
+    },
+    "rationale": "NLP chatbots, recommendations and data work map onto multiple case studies, and $40-$60/hour sits above the floor."
+  },
+  "real-34788": {
+    "split": "test",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-11",
+      "rev-11",
+      "cs-08"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 150,
+      "high": 400
+    },
+    "rationale": "Reducing STT/TTS latency in a phone LLM assistant with Twilio is the voice-latency case study almost exactly, and $150 meets the floor."
+  },
+  "real-50119": {
+    "split": "test",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 60,
+      "high": 300
+    },
+    "rationale": "Systematic literature review writing is academic writing outside scope and budget is below the floor."
+  },
+  "real-50165": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-04",
+      "cs-01"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 150,
+      "high": 500
+    },
+    "rationale": "Prompt-injection classifier tuning plus YARA rules and ChromaDB refinement touches text-classification and embedding work, but YARA is unproven and $100 is below the $150 floor for a three-part scope."
+  },
+  "real-20042": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-09",
+      "cs-05",
+      "cs-10",
+      "cs-03"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 40,
+      "high": 60
+    },
+    "rationale": "Retail and logistics AI and analytics consulting maps onto the dashboard, dock-camera vision, document-model serving and catalogue-chat work, and the top of the $30-$50 range reaches the floor."
+  },
+  "real-44335": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 100,
+      "high": 400
+    },
+    "rationale": "Marketing strategy, positioning and game-trailer copy for a Steam chatbot is marketing work the persona does not take."
+  },
+  "real-22065": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-02"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 15,
+      "high": 35
+    },
+    "rationale": "Full-stack AWS Lex, React and Lambda role with Spanish required is not a portfolio match and $15-$30/hour is below the $35 floor."
+  },
+  "real-45109": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-14"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 30,
+      "high": 50
+    },
+    "rationale": "Sentiment analysis matches the hotel review mining work, but the posting accepts US-based freelancers only and the range starts well under the floor."
+  },
+  "real-40831": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-11",
+      "cs-08"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 1500,
+      "high": 4000
+    },
+    "rationale": "Bland AI phone receptionist with clinic booking-API integration, dashboard and a Webflow-style website design is far larger than the $200 budget and includes web design the persona does not do."
+  },
+  "real-24274": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-05"
+    ],
+    "fair_price": {
+      "type": "fixed",
+      "low": 150,
+      "high": 500
+    },
+    "rationale": "Galaxy image classification is plausible CV work but a $10 budget is far below the $150 floor."
+  },
+  "real-13425": {
+    "split": "dev",
+    "bid": true,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-07",
+      "cs-01",
+      "cs-11",
+      "rev-07"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 40,
+      "high": 60
+    },
+    "rationale": "A chatbot that answers questions from a digital book and reads aloud fits the course-companion RAG and text-to-speech work, and the $22-$50 range reaches the floor at the top."
+  },
+  "real-04073": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 300,
+      "high": 800
+    },
+    "rationale": "Marketing automation and lead generation with email marketing is marketing work outside the portfolio despite the $500 budget."
+  },
+  "real-50213": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 8,
+      "high": 15
+    },
+    "rationale": "Vague basic-computer-skills task with data entry and content writing is not engineering work and has no portfolio match."
+  },
+  "real-45509": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 10,
+      "high": 30
+    },
+    "rationale": "Webflow integration work is explicitly outside the persona's skills and the range starts at $5/hour."
+  },
+  "real-15888": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [
+      "cs-09",
+      "cs-12"
+    ],
+    "fair_price": {
+      "type": "hourly",
+      "low": 20,
+      "high": 35
+    },
+    "rationale": "A Google Sheets marketing KPI dashboard resembles the reporting work, but $10-$30/hour is below the $35 floor and it is spreadsheet-based."
+  },
+  "real-06010": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "fixed",
+      "low": 20,
+      "high": 60
+    },
+    "rationale": "Copy-typing PDFs into Word is data entry for $50, with no portfolio match and far below the floor."
+  },
+  "real-15749": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 40,
+      "high": 80
+    },
+    "rationale": "Java interview and leetcode coaching is interview-support work the persona declines and has no portfolio evidence for."
+  },
+  "real-20672": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 10,
+      "high": 30
+    },
+    "rationale": "WordPress and Webflow design and conversion work is explicitly outside the persona's skills and the rate is below the floor."
+  },
+  "real-30901": {
+    "split": "dev",
+    "bid": false,
+    "scam": false,
+    "relevant_evidence": [],
+    "fair_price": {
+      "type": "hourly",
+      "low": 15,
+      "high": 35
+    },
+    "rationale": "Branded email template design in Omnisend is graphic and email design the persona does not offer."
+  }
+}

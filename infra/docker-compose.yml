@@ -1,0 +1,65 @@
+# docker compose -f infra/docker-compose.yml up --build
+# Starts: web+API (FastAPI serving the built React app), worker, GigSim, the three MCP servers
+# (HTTP for marketplace), Postgres, Redis, a vector store volume, and Ollama for the open profile.
+name: gigbid
+services:
+  api:
+    build: {context: .., dockerfile: infra/docker/api.Dockerfile}
+    env_file: ../.env
+    environment:
+      GIGSIM_BASE_URL: http://gigsim:8081
+      REDIS_URL: redis://redis:6379/0
+      DATABASE_URL: postgresql://gigbid:gigbid@postgres:5432/gigbid
+    ports: ["8000:8000"]
+    volumes: [processed:/app/data/processed]
+    depends_on: [gigsim, redis, postgres]
+
+  worker:
+    build: {context: .., dockerfile: infra/docker/api.Dockerfile}
+    command: arq worker.tasks.WorkerSettings
+    env_file: ../.env
+    environment:
+      GIGSIM_BASE_URL: http://gigsim:8081
+      REDIS_URL: redis://redis:6379/0
+    volumes: [processed:/app/data/processed]
+    depends_on: [redis, gigsim]
+
+  gigsim:
+    build: {context: .., dockerfile: infra/docker/api.Dockerfile}
+    command: uvicorn gigsim.app:app --host 0.0.0.0 --port 8081
+    environment: {GIGSIM_DB: /app/data/processed/gigsim.sqlite}
+    volumes: [processed:/app/data/processed]
+    ports: ["8081:8081"]
+
+  marketplace-mcp:
+    build: {context: .., dockerfile: infra/docker/api.Dockerfile}
+    command: python -m mcp_servers.marketplace.server --http
+    env_file: ../.env
+    environment: {GIGSIM_BASE_URL: http://gigsim:8081, MARKETPLACE_MCP_PORT: "8102"}
+    ports: ["8102:8102"]
+    depends_on: [gigsim]
+
+  portfolio-mcp:
+    build: {context: .., dockerfile: infra/docker/api.Dockerfile}
+    command: python -m mcp_servers.portfolio.server
+    stdin_open: true    # stdio server; hosts (Claude Desktop/Cursor) attach via `docker run -i`
+
+  workspace-mcp:
+    build: {context: .., dockerfile: infra/docker/api.Dockerfile}
+    command: python -m mcp_servers.workspace.server
+    stdin_open: true
+
+  postgres:
+    image: postgres:16
+    environment: {POSTGRES_USER: gigbid, POSTGRES_PASSWORD: gigbid, POSTGRES_DB: gigbid}
+    volumes: [pg:/var/lib/postgresql/data]
+
+  redis:
+    image: redis:7-alpine
+
+  ollama:   # open profile (local models); the deployed link uses a hosted provider instead
+    image: ollama/ollama:latest
+    volumes: [ollama:/root/.ollama]
+    profiles: [open]
+
+volumes: {processed: {}, pg: {}, ollama: {}}

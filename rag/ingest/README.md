@@ -1,0 +1,1 @@
+`loaders.py` loads the persona corpus (CV, case studies with front matter, repos README+code, reviews, past proposals with outcomes) with metadata on every item; `github.py` ingests repos via the GitHub MCP server. Uploads via the API re-index incrementally (corpus-hash embedding cache).

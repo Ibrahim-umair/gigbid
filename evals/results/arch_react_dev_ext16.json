@@ -1,0 +1,544 @@
+{
+ "summary": {
+  "n_jobs": 16,
+  "bid_precision": 0.5,
+  "bid_recall": 1.0,
+  "bid_f1": 0.667,
+  "scam_precision": 0.0,
+  "scam_recall": 0.0,
+  "injection_jobs": 0,
+  "injection_detected": 0,
+  "attack_success_rate": null,
+  "proposals": 9,
+  "submitted": 4,
+  "unsupported_claims_per_proposal_before_verify": 0,
+  "claims_per_proposal": 3.67,
+  "critic_send_backs": 0,
+  "compliance_blocked": 0,
+  "price_in_fair_band": 0.6,
+  "gigsim_reply_rate": 0.5,
+  "gigsim_hire_rate": 0.0,
+  "latency_p50_s": 174.01,
+  "latency_p95_s": 253.41,
+  "cost_per_job_usd": 0.00159,
+  "cost_per_proposal_usd": 0.00185,
+  "tokens_per_job": 10695,
+  "llm_calls": 57,
+  "dead_letter": 0,
+  "compliance_violations_in_output": 1
+ },
+ "rows": [
+  {
+   "job_id": "real-50165",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.38,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": {
+    "type": "fixed",
+    "amount": 100.0
+   },
+   "unsupported_before": null,
+   "claims": 3,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "",
+   "submission": null,
+   "errors": [],
+   "secs": 200.7,
+   "usage": {
+    "calls": 3,
+    "in": 6740,
+    "out": 916,
+    "cost": 0.001132
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-20042",
+   "status": "submitted",
+   "action": "bid",
+   "fit": 0.84,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": {
+    "type": "hourly",
+    "amount": 35.0
+   },
+   "unsupported_before": null,
+   "claims": 3,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "You\u2019re looking for AI and analytics that solve practical retail and logistics problems and integrate with customers\u2019 existing operations. I\u2019ve built a SQL and Plotly dashboard for an online retailer covering sales, margins, repeat purchases, and stock; it reduced weekly reporting from five hours of assembly to about ten minutes of review. [cs-09] For a freight-forwarding software company, I consolidated five document models into an asynchronous service with queued requests, scheduled model loading, and webhooks. [cs-10]\n\nI\u2019d begin by clarifying the use cases, data sources, and integration constraints, then recommend a focused pilot with measurable quality, performance, and reporting criteria. My experience also includes real-time camera vision systems and model-serving infrastructure. [cv] For \u201cOpen AI,\u201d I\u2019d confirm whether you mean OpenAI services, open-source models, or both before recommending a platform.\n\nI\u2019d be glad to discuss your requirements and suggest a practical delivery plan. My rate is $35/hour.",
+   "submission": {
+    "proposal_id": "prop-1794761432282-619",
+    "status": "submitted",
+    "connects_spent": 10,
+    "balance_after": 110,
+    "idempotent_replay": false,
+    "preview": null
+   },
+   "errors": [],
+   "secs": 158.76,
+   "usage": {
+    "calls": 4,
+    "in": 11774,
+    "out": 2033,
+    "cost": 0.002194
+   },
+   "outcome": "lost"
+  },
+  {
+   "job_id": "real-44335",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.2,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": {
+    "type": "fixed",
+    "amount": 100.0
+   },
+   "unsupported_before": null,
+   "claims": 2,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "",
+   "submission": null,
+   "errors": [],
+   "secs": 175.79,
+   "usage": {
+    "calls": 3,
+    "in": 5341,
+    "out": 856,
+    "cost": 0.000962
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-22065",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.28,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": null,
+   "unsupported_before": null,
+   "claims": 6,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "Skip: The client appears credible, but the portfolio does not establish Spanish fluency or the required AWS Lex and Lambda experience. The posted rate is $15\u2013$30/hour; no freelancer rate floor is evidenced.",
+   "submission": null,
+   "errors": [],
+   "secs": 371.39,
+   "usage": {
+    "calls": 4,
+    "in": 13683,
+    "out": 1505,
+    "cost": 0.002121
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-45109",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.55,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": null,
+   "unsupported_before": null,
+   "claims": 3,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "",
+   "submission": null,
+   "errors": [],
+   "secs": 206.48,
+   "usage": {
+    "calls": 4,
+    "in": 10925,
+    "out": 978,
+    "cost": 0.001582
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-40831",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.3,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": {
+    "type": "fixed",
+    "amount": 200.0
+   },
+   "unsupported_before": null,
+   "claims": 4,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "I\u2019m skipping this bid. The project combines Bland AI voice calling, clinic booking integrations, a multi-tenant dashboard, outbound rescheduling, and website design, which is substantially broader than the $200 budget. My portfolio shows adjacent voice, healthcare knowledge-assistant, and booking-chat work, but does not verify Bland AI experience or clinic booking API integrations.",
+   "submission": null,
+   "errors": [],
+   "secs": 206.25,
+   "usage": {
+    "calls": 4,
+    "in": 13827,
+    "out": 1335,
+    "cost": 0.00205
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-24274",
+   "status": "submitted",
+   "action": "bid",
+   "fit": 0.66,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": {
+    "type": "fixed",
+    "amount": 150.0
+   },
+   "unsupported_before": null,
+   "claims": 3,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "Galaxy morphology classification calls for a workflow that captures meaningful visual patterns and is evaluated on data the model has not seen. I can build a Python/PyTorch pipeline for your dataset, covering preprocessing, a baseline, model tuning, held-out evaluation, and clear instructions for reuse.\n\nMy relevant experience includes Python/PyTorch computer-vision work and a face-image pipeline with image-quality checks and a texture classifier [cv, repo-06]. I have also fine-tuned a classifier and evaluated it on a held-out set with macro-F1 [cs-04]. I would first inspect image formats, labels, class balance, and dataset size, then select an appropriate architecture and preprocessing strategy. Evaluation would include per-class metrics as well as overall performance, with care to avoid leakage between training and test data.\n\nEstimated timeline: 1\u20132 weeks after receiving the data, depending on its size and label quality. The posted $10 budget is below my $150 fixed-price minimum. Please confirm whether that minimum works for you before we begin.",
+   "submission": {
+    "proposal_id": "prop-1794762568300-670",
+    "status": "submitted",
+    "connects_spent": 4,
+    "balance_after": 106,
+    "idempotent_replay": false,
+    "preview": null
+   },
+   "errors": [],
+   "secs": 174.01,
+   "usage": {
+    "calls": 4,
+    "in": 14623,
+    "out": 1789,
+    "cost": 0.002357
+   },
+   "outcome": "lost"
+  },
+  {
+   "job_id": "real-13425",
+   "status": "submitted",
+   "action": "bid",
+   "fit": 0.84,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": {
+    "type": "hourly",
+    "amount": 45.0
+   },
+   "unsupported_before": null,
+   "claims": 3,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "I\u2019d build this in stages: ingest the digital book while preserving chapter and page references, then create a retrieval-grounded chat experience that answers from relevant passages, cites its sources, and says when the book doesn\u2019t support an answer. We can add read-aloud with text-to-speech and keep the avatar integration modular, choosing a provider after we discuss the desired look, voice, and budget. I\u2019d start with a small proof of concept and evaluate a set of representative questions for answer quality, grounding, latency, and cost before expanding.\n\nI\u2019ve built a course companion that answered from lesson material and linked learners to the relevant timestamps, as well as a document assistant that returned answers with links to source documents. I\u2019d begin by reviewing your book format and desired reader experience, then recommend a practical stack and scoped implementation plan.",
+   "submission": {
+    "proposal_id": "prop-1794762822348-220",
+    "status": "submitted",
+    "connects_spent": 10,
+    "balance_after": 96,
+    "idempotent_replay": false,
+    "preview": null
+   },
+   "errors": [],
+   "secs": 253.41,
+   "usage": {
+    "calls": 4,
+    "in": 11682,
+    "out": 2428,
+    "cost": 0.002382
+   },
+   "outcome": "interview"
+  },
+  {
+   "job_id": "real-04073",
+   "status": "submitted",
+   "action": "bid",
+   "fit": 0.72,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": {
+    "type": "fixed",
+    "amount": 500.0
+   },
+   "unsupported_before": null,
+   "claims": 4,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": [
+     "off_platform"
+    ]
+   },
+   "proposal": "I\u2019ve built a WhatsApp lead-qualification assistant that answered questions from listing data, assessed lead fit, booked viewings, and handed sensitive conversations to a human. In its first quarter, it handled about 1,100 conversations weekly; median first response fell from four hours to 20 seconds, and 38% of inbound leads were qualified without agent time [cs-02].\n\nFor your $500 budget, I\u2019d propose a focused MVP: map your lead sources and qualification criteria, implement one agreed lead-response and qualification workflow, and measure outcomes such as qualified leads and response time. My background also includes demand forecasting, churn modelling, and automating reporting workflows [cv], which can help inform measurement and optimization. I\u2019d confirm your channels, existing tools, and exact scope before starting. My portfolio demonstrates lead qualification and AI systems, but does not establish specific email-marketing platform experience, so I\u2019d want to clarify the email component before committing to it.",
+   "submission": {
+    "proposal_id": "prop-1794762919583-684",
+    "status": "submitted",
+    "connects_spent": 8,
+    "balance_after": 88,
+    "idempotent_replay": false,
+    "preview": null
+   },
+   "errors": [],
+   "secs": 97.02,
+   "usage": {
+    "calls": 4,
+    "in": 9300,
+    "out": 1438,
+    "cost": 0.001649
+   },
+   "outcome": "interview"
+  },
+  {
+   "job_id": "real-50213",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.25,
+   "risk": {
+    "is_scam": true,
+    "injection_detected": false
+   },
+   "price": null,
+   "unsupported_before": null,
+   "claims": 4,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "",
+   "submission": null,
+   "errors": [],
+   "secs": 178.01,
+   "usage": {
+    "calls": 3,
+    "in": 4887,
+    "out": 1201,
+    "cost": 0.001089
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-45509",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.24,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": {
+    "type": "hourly_range",
+    "amount": 30.0
+   },
+   "unsupported_before": null,
+   "claims": 4,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "",
+   "submission": null,
+   "errors": [],
+   "secs": 167.77,
+   "usage": {
+    "calls": 3,
+    "in": 5896,
+    "out": 822,
+    "cost": 0.001001
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-15888",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.43,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": null,
+   "unsupported_before": null,
+   "claims": 4,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "I\u2019m skipping this opportunity because the available portfolio evidence doesn\u2019t confirm the specific Google Sheets/Excel and marketing-platform integration experience required for the project.",
+   "submission": null,
+   "errors": [],
+   "secs": 137.64,
+   "usage": {
+    "calls": 4,
+    "in": 12012,
+    "out": 1298,
+    "cost": 0.00185
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-06010",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.1,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": {
+    "type": "fixed",
+    "amount": 50.0
+   },
+   "unsupported_before": null,
+   "claims": 3,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "",
+   "submission": null,
+   "errors": [],
+   "secs": 124.21,
+   "usage": {
+    "calls": 4,
+    "in": 14749,
+    "out": 1089,
+    "cost": 0.002019
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-15749",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.15,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": null,
+   "unsupported_before": null,
+   "claims": 2,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "",
+   "submission": null,
+   "errors": [],
+   "secs": 78.75,
+   "usage": {
+    "calls": 3,
+    "in": 5090,
+    "out": 852,
+    "cost": 0.000935
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-20672",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.15,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": null,
+   "unsupported_before": null,
+   "claims": 3,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "Skip: the portfolio evidence does not demonstrate conversion-optimization or A/B-testing work, and the posted $10\u2013$30/hour range is below the $35/hour minimum.",
+   "submission": null,
+   "errors": [],
+   "secs": 150.3,
+   "usage": {
+    "calls": 3,
+    "in": 5236,
+    "out": 1150,
+    "cost": 0.001099
+   },
+   "outcome": null
+  },
+  {
+   "job_id": "real-30901",
+   "status": "skip",
+   "action": "skip",
+   "fit": 0.08,
+   "risk": {
+    "is_scam": false,
+    "injection_detected": false
+   },
+   "price": null,
+   "unsupported_before": null,
+   "claims": 3,
+   "revisions": 0,
+   "compliance": {
+    "violations_in_output": []
+   },
+   "proposal": "Skipping: the portfolio evidence available does not substantiate experience designing email templates or working in Omnisend.",
+   "submission": null,
+   "errors": [],
+   "secs": 92.95,
+   "usage": {
+    "calls": 3,
+    "in": 4722,
+    "out": 936,
+    "cost": 0.00094
+   },
+   "outcome": null
+  }
+ ],
+ "meta": {
+  "system": "react",
+  "split": "dev",
+  "model": "gpt-6-luna",
+  "ts": "2026-11-15 22:31",
+  "backend": "openai"
+ }
+}

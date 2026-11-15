@@ -1,0 +1,21 @@
+name: eval
+# 30-job smoke eval on every PR. Fails if unsupported claims rise or bid/skip F1 drops past
+# thresholds. Uses the real model only when the OPENAI_API_KEY secret is set (otherwise the
+# fake backend checks the harness, and only retrieval metrics are gated).
+on: [pull_request]
+jobs:
+  smoke-eval:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v5
+      - run: uv venv && uv pip install -e ".[dev]"
+      - name: retrieval metrics (no LLM)
+        run: uv run python -m evals.runners.rag_eval --split all --variants v0_naive,v2_hybrid_only
+      - name: decision smoke eval (30 jobs)
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          GIGBID_LLM: ${{ secrets.OPENAI_API_KEY != '' && 'openai' || 'fake' }}
+        run: uv run python -m evals.runners.decision_eval --split dev --max-calls 200
+      - name: gate
+        run: uv run python scripts/eval_gate.py

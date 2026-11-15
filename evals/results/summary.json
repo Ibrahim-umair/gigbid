@@ -1,0 +1,178 @@
+{
+ "rag": {
+  "v0_naive": {
+   "n_jobs": 19,
+   "recall@5": 0.348,
+   "mrr": 0.449,
+   "ndcg@10": 0.406,
+   "recall@5_jobs_4plus_req": 0.451,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.11
+  },
+  "v1_decompose": {
+   "n_jobs": 19,
+   "recall@5": 0.298,
+   "mrr": 0.357,
+   "ndcg@10": 0.334,
+   "recall@5_jobs_4plus_req": 0.417,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.23
+  },
+  "v2_hybrid_only": {
+   "n_jobs": 19,
+   "recall@5": 0.378,
+   "mrr": 0.535,
+   "ndcg@10": 0.43,
+   "recall@5_jobs_4plus_req": 0.495,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.29
+  },
+  "v2_hybrid": {
+   "n_jobs": 19,
+   "recall@5": 0.311,
+   "mrr": 0.48,
+   "ndcg@10": 0.381,
+   "recall@5_jobs_4plus_req": 0.396,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.29
+  },
+  "v3_rerank_nodecomp": {
+   "n_jobs": 19,
+   "recall@5": 0.334,
+   "mrr": 0.509,
+   "ndcg@10": 0.375,
+   "recall@5_jobs_4plus_req": 0.431,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 10.68
+  },
+  "v3_rerank": {
+   "n_jobs": 19,
+   "recall@5": 0.296,
+   "mrr": 0.484,
+   "ndcg@10": 0.332,
+   "recall@5_jobs_4plus_req": 0.374,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 30.21
+  },
+  "v4_outcome": {
+   "n_jobs": 19,
+   "recall@5": 0.324,
+   "mrr": 0.531,
+   "ndcg@10": 0.347,
+   "recall@5_jobs_4plus_req": 0.415,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 0.38
+  },
+  "v8_corrective": {
+   "n_jobs": 19,
+   "recall@5": 0.225,
+   "mrr": 0.484,
+   "ndcg@10": 0.271,
+   "recall@5_jobs_4plus_req": 0.31,
+   "n_jobs_4plus_req": 13,
+   "secs_per_job": 10.86
+  }
+ },
+ "dev": {
+  "n_jobs": 51,
+  "bid_precision": 0.786,
+  "bid_recall": 0.786,
+  "bid_f1": 0.786,
+  "scam_precision": 0.75,
+  "scam_recall": 1.0,
+  "injection_jobs": 4,
+  "injection_detected": 4,
+  "attack_success_rate": 0.0,
+  "proposals": 14,
+  "submitted": 14,
+  "unsupported_claims_per_proposal_before_verify": 0.07,
+  "claims_per_proposal": 2.07,
+  "critic_send_backs": 5,
+  "compliance_blocked": 0,
+  "price_in_fair_band": 0.929,
+  "gigsim_reply_rate": 0.429,
+  "gigsim_hire_rate": 0.0,
+  "latency_p50_s": 56.85,
+  "latency_p95_s": 197.12,
+  "cost_per_job_usd": 0.00107,
+  "cost_per_proposal_usd": 0.00202,
+  "tokens_per_job": 5570,
+  "llm_calls": 71,
+  "dead_letter": 0
+ },
+ "test": {
+  "n_jobs": 17,
+  "bid_precision": 0.8,
+  "bid_recall": 0.8,
+  "bid_f1": 0.8,
+  "scam_precision": 1.0,
+  "scam_recall": 1.0,
+  "injection_jobs": 2,
+  "injection_detected": 2,
+  "attack_success_rate": 0.0,
+  "proposals": 5,
+  "submitted": 5,
+  "unsupported_claims_per_proposal_before_verify": 0,
+  "claims_per_proposal": 2.6,
+  "critic_send_backs": 2,
+  "compliance_blocked": 0,
+  "price_in_fair_band": 0.8,
+  "gigsim_reply_rate": 0.6,
+  "gigsim_hire_rate": 0.0,
+  "latency_p50_s": 2.01,
+  "latency_p95_s": 50.89,
+  "cost_per_job_usd": 0.00023,
+  "cost_per_proposal_usd": 0.00039,
+  "tokens_per_job": 1140,
+  "llm_calls": 16,
+  "dead_letter": 0
+ },
+ "judge": {
+  "graph": {
+   "n": 19,
+   "unsupported_claims_per_proposal": 0.0,
+   "partly_supported_per_proposal": 0.053,
+   "proposals_with_any_unsupported": 0,
+   "mean_rubric": 3.579,
+   "policy_flags": 0
+  },
+  "writer_b": {
+   "n": 14,
+   "unsupported_claims_per_proposal": 0.0,
+   "partly_supported_per_proposal": 0.0,
+   "proposals_with_any_unsupported": 0,
+   "mean_rubric": 3.5,
+   "policy_flags": 0
+  },
+  "react": {
+   "n": 23,
+   "unsupported_claims_per_proposal": 0.0,
+   "partly_supported_per_proposal": 0.0,
+   "proposals_with_any_unsupported": 0,
+   "mean_rubric": 2.652,
+   "policy_flags": 0
+  }
+ },
+ "cost_latency": {
+  "dev": {
+   "n_jobs": 35,
+   "cost_per_job_usd": 0.00109,
+   "cost_per_proposal_usd": 0.00199,
+   "latency_p50_s": 40.11,
+   "latency_p95_s": 71.35,
+   "proposal_latency_p95_s": 73.66,
+   "tokens_per_job": 5571
+  },
+  "test": {
+   "n_jobs": 17,
+   "cost_per_job_usd": 0.00109,
+   "cost_per_proposal_usd": 0.00208,
+   "latency_p50_s": 34.69,
+   "latency_p95_s": 68.92,
+   "proposal_latency_p95_s": 62.53,
+   "tokens_per_job": 5587
+  }
+ },
+ "paid_calls": 1085,
+ "paid_cost_usd": 0.2976
+}

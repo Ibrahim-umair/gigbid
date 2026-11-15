@@ -1,0 +1,85 @@
+[
+  {
+    "id": "repo-01",
+    "name": "clinic-policy-rag",
+    "description": "Retrieval-augmented question answering over policy PDFs with citations.",
+    "skills": [
+      "RAG",
+      "pgvector",
+      "LangChain",
+      "PostgreSQL"
+    ],
+    "date": "2024-03",
+    "related_case_study": "cs-01",
+    "synthetic": true
+  },
+  {
+    "id": "repo-02",
+    "name": "stay-helper",
+    "description": "Text-message helper for holiday-home guests: answers from a house manual, escalates to the host.",
+    "skills": [
+      "Twilio",
+      "SMS",
+      "WhatsApp",
+      "webhooks"
+    ],
+    "date": "2024-04",
+    "related_case_study": "cs-08",
+    "synthetic": true
+  },
+  {
+    "id": "repo-03",
+    "name": "dock-counter",
+    "description": "Count objects crossing a line on a live camera stream without dropping frames.",
+    "skills": [
+      "YOLOv8",
+      "OpenCV",
+      "RTSP",
+      "threading"
+    ],
+    "date": "2024-01",
+    "related_case_study": "cs-05",
+    "synthetic": true
+  },
+  {
+    "id": "repo-04",
+    "name": "model-shelf",
+    "description": "A service that keeps several transformer models on one GPU and loads them on a timetable.",
+    "skills": [
+      "FastAPI",
+      "Hugging Face",
+      "Celery",
+      "Redis"
+    ],
+    "date": "2024-10",
+    "related_case_study": "cs-10",
+    "synthetic": true
+  },
+  {
+    "id": "repo-05",
+    "name": "pantry-notes",
+    "description": "Weekend project to keep track of what is in my kitchen cupboards.",
+    "skills": [
+      "sentence-transformers",
+      "FastAPI",
+      "SQLite"
+    ],
+    "date": "2023-08",
+    "related_case_study": null,
+    "synthetic": true
+  },
+  {
+    "id": "repo-06",
+    "name": "face-gate-poc",
+    "description": "Proof of concept for a selfie check step: face found, visible, and not a photo of a photo.",
+    "skills": [
+      "face detection",
+      "liveness",
+      "OpenCV",
+      "mediapipe"
+    ],
+    "date": "2024-08",
+    "related_case_study": "cs-06",
+    "synthetic": true
+  }
+]

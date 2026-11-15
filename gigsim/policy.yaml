@@ -1,0 +1,14 @@
+# GigSim platform policy. The 2 Nov "platform policy update" is applied by editing this file
+# (and agent/config.yaml if GigBid's rules must change). Version bumps are logged in RUNBOOK.md.
+version: 1
+starting_connects: 120
+rate_limit_per_minute: 30
+error_rate: 0.0            # probability of a random 503 (GIGSIM_ERROR_RATE env overrides)
+connects_cost:             # for jobs without an explicit cost: by budget tier (fixed USD)
+  - {max_budget: 100, cost: 4}
+  - {max_budget: 500, cost: 8}
+  - {max_budget: 2000, cost: 12}
+  - {max_budget: null, cost: 16}
+hourly_connects_cost: 10
+max_cover_letter_chars: 5000
+min_cover_letter_chars: 200

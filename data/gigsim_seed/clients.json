@@ -1,0 +1,1990 @@
+[
+  {
+    "client_id": "cl-001",
+    "job_ids": [
+      "real-43432"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2018-07",
+    "payment_verified": true,
+    "total_spent_usd": 78239,
+    "jobs_posted": 108,
+    "hires": 66,
+    "avg_rating_given": 4.73,
+    "freelancer_reviews": [
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Very responsive, detailed requirements, paid right after delivery."
+    ],
+    "hire_rate": 0.61,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Stable Diffusion",
+        "Python"
+      ],
+      "budget_ceiling": 60.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Build an image generation system for ads' and cite concrete prior work; needs a bid within the budget ceiling of 60 to hire."
+    }
+  },
+  {
+    "client_id": "cl-002",
+    "job_ids": [
+      "real-25400"
+    ],
+    "synthetic": true,
+    "country": "United Kingdom",
+    "member_since": "2022-07",
+    "payment_verified": true,
+    "total_spent_usd": 80226,
+    "jobs_posted": 33,
+    "hires": 22,
+    "avg_rating_given": 4.83,
+    "freelancer_reviews": [
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Knew what they wanted and gave useful feedback. Smooth contract."
+    ],
+    "hire_rate": 0.67,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "prompt engineering"
+      ],
+      "budget_ceiling": 11.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'ChatGPT Expert Needed for Excelsheet Translation a' and cite concrete prior work; needs a bid within the budget ceiling of 11 to hire."
+    }
+  },
+  {
+    "client_id": "cl-003",
+    "job_ids": [
+      "real-26726"
+    ],
+    "synthetic": true,
+    "country": "Bulgaria",
+    "member_since": "2022-01",
+    "payment_verified": true,
+    "total_spent_usd": 1590,
+    "jobs_posted": 13,
+    "hires": 4,
+    "avg_rating_given": 4.2,
+    "freelancer_reviews": [
+      "Decent client but requirements shifted midway. Paid in the end.",
+      "Fair client, a bit vague at the start but clarified when asked."
+    ],
+    "hire_rate": 0.31,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Android",
+        "graphic design"
+      ],
+      "budget_ceiling": 20.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Android/iOS Developer' and cite concrete prior work; needs a bid within the budget ceiling of 20 to hire."
+    }
+  },
+  {
+    "client_id": "cl-004",
+    "job_ids": [
+      "real-28572"
+    ],
+    "synthetic": true,
+    "country": "Sweden",
+    "member_since": "2024-11",
+    "payment_verified": true,
+    "total_spent_usd": 5179,
+    "jobs_posted": 11,
+    "hires": 4,
+    "avg_rating_given": 4.45,
+    "freelancer_reviews": [
+      "Okay to work with, slow to reply sometimes. Payment was on time.",
+      "Decent client but requirements shifted midway. Paid in the end."
+    ],
+    "hire_rate": 0.36,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection",
+        "chatbot",
+        "speech-to-text",
+        "Python"
+      ],
+      "budget_ceiling": 165.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'AI Voice Chatbot integrated with Web Application' and cite concrete prior work; needs a bid within the budget ceiling of 165 to hire."
+    }
+  },
+  {
+    "client_id": "cl-005",
+    "job_ids": [
+      "real-49722"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2016-10",
+    "payment_verified": true,
+    "total_spent_usd": 4855,
+    "jobs_posted": 12,
+    "hires": 5,
+    "avg_rating_given": 4.3,
+    "freelancer_reviews": [
+      "Okay to work with, slow to reply sometimes. Payment was on time.",
+      "Fair client, a bit vague at the start but clarified when asked."
+    ],
+    "hire_rate": 0.42,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "chatbot",
+        "RAG",
+        "prompt engineering"
+      ],
+      "budget_ceiling": 45.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Train AI to read Telegram Channel' and cite concrete prior work; needs a bid within the budget ceiling of 45 to hire."
+    }
+  },
+  {
+    "client_id": "cl-006",
+    "job_ids": [
+      "real-46183"
+    ],
+    "synthetic": true,
+    "country": "Japan",
+    "member_since": "2023-06",
+    "payment_verified": true,
+    "total_spent_usd": 1972,
+    "jobs_posted": 15,
+    "hires": 6,
+    "avg_rating_given": 4.49,
+    "freelancer_reviews": [
+      "Decent client but requirements shifted midway. Paid in the end.",
+      "Fair client, a bit vague at the start but clarified when asked."
+    ],
+    "hire_rate": 0.4,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection",
+        "FastAPI",
+        "chatbot",
+        "Hugging Face"
+      ],
+      "budget_ceiling": 7.5,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Python developers who are also able to work on wee' and cite concrete prior work; needs a bid within the budget ceiling of 7.5 to hire."
+    }
+  },
+  {
+    "client_id": "cl-007",
+    "job_ids": [
+      "real-15141"
+    ],
+    "synthetic": true,
+    "country": "India",
+    "member_since": "2024-08",
+    "payment_verified": true,
+    "total_spent_usd": 2858,
+    "jobs_posted": 16,
+    "hires": 9,
+    "avg_rating_given": 4.43,
+    "freelancer_reviews": [
+      "Decent client but requirements shifted midway. Paid in the end.",
+      "Fair client, a bit vague at the start but clarified when asked."
+    ],
+    "hire_rate": 0.56,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "YOLOv8",
+        "Python"
+      ],
+      "budget_ceiling": 66.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'YOLOv8 project' and cite concrete prior work; needs a bid within the budget ceiling of 66 to hire."
+    }
+  },
+  {
+    "client_id": "cl-008",
+    "job_ids": [
+      "real-09353"
+    ],
+    "synthetic": true,
+    "country": "Taiwan",
+    "member_since": "2018-06",
+    "payment_verified": true,
+    "total_spent_usd": 3954,
+    "jobs_posted": 10,
+    "hires": 6,
+    "avg_rating_given": 4.03,
+    "freelancer_reviews": [
+      "Fair client, a bit vague at the start but clarified when asked.",
+      "Decent client but requirements shifted midway. Paid in the end."
+    ],
+    "hire_rate": 0.6,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection",
+        "pandas",
+        "graphic design"
+      ],
+      "budget_ceiling": 1100.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'AI and ML Based Face Detection (Without Obstacles)' and cite concrete prior work; needs a bid within the budget ceiling of 1100 to hire."
+    }
+  },
+  {
+    "client_id": "cl-009",
+    "job_ids": [
+      "real-35231"
+    ],
+    "synthetic": true,
+    "country": "India",
+    "member_since": "2024-02",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 8,
+    "hires": 2,
+    "avg_rating_given": 4.12,
+    "freelancer_reviews": [
+      "Low budget and high expectations. Left a lukewarm review despite delivering.",
+      "Disappeared for a week then asked for revisions that were out of scope."
+    ],
+    "hire_rate": 0.25,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection",
+        "Android",
+        "graphic design"
+      ],
+      "budget_ceiling": 27500.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Android Developer - Face Recognition App' and cite concrete prior work; needs a bid within the budget ceiling of 27500 to hire. Flaky client: slow to respond and sensitive to price."
+    }
+  },
+  {
+    "client_id": "cl-010",
+    "job_ids": [
+      "real-44663"
+    ],
+    "synthetic": true,
+    "country": "India",
+    "member_since": "2020-11",
+    "payment_verified": true,
+    "total_spent_usd": 66411,
+    "jobs_posted": 98,
+    "hires": 87,
+    "avg_rating_given": 4.79,
+    "freelancer_reviews": [
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Great communicator and fair about scope changes. Milestones released promptly."
+    ],
+    "hire_rate": 0.89,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "pandas",
+        "web scraping",
+        "copywriting"
+      ],
+      "budget_ceiling": 22.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'PHP Based Program/Tool for Automated Stocks Data S' and cite concrete prior work; needs a bid within the budget ceiling of 22 to hire."
+    }
+  },
+  {
+    "client_id": "cl-011",
+    "job_ids": [
+      "real-02273"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2023-06",
+    "payment_verified": true,
+    "total_spent_usd": 72709,
+    "jobs_posted": 46,
+    "hires": 36,
+    "avg_rating_given": 4.72,
+    "freelancer_reviews": [
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Very responsive, detailed requirements, paid right after delivery."
+    ],
+    "hire_rate": 0.78,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "QuickBooks"
+      ],
+      "budget_ceiling": 60.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Cost Accounting Project for Restaurant Operations' and cite concrete prior work; needs a bid within the budget ceiling of 60 to hire."
+    }
+  },
+  {
+    "client_id": "cl-012",
+    "job_ids": [
+      "real-12733"
+    ],
+    "synthetic": true,
+    "country": "Pakistan",
+    "member_since": "2023-02",
+    "payment_verified": true,
+    "total_spent_usd": 5001,
+    "jobs_posted": 11,
+    "hires": 5,
+    "avg_rating_given": 4.19,
+    "freelancer_reviews": [
+      "Decent client but requirements shifted midway. Paid in the end.",
+      "Okay to work with, slow to reply sometimes. Payment was on time."
+    ],
+    "hire_rate": 0.45,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "chatbot",
+        "RAG",
+        "pandas"
+      ],
+      "budget_ceiling": 30.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Automation in Banking Industry ( a paper)' and cite concrete prior work; needs a bid within the budget ceiling of 30 to hire."
+    }
+  },
+  {
+    "client_id": "cl-013",
+    "job_ids": [
+      "real-35717"
+    ],
+    "synthetic": true,
+    "country": "Spain",
+    "member_since": "2024-04",
+    "payment_verified": true,
+    "total_spent_usd": 77,
+    "jobs_posted": 6,
+    "hires": 2,
+    "avg_rating_given": 3.29,
+    "freelancer_reviews": [
+      "Disappeared for a week then asked for revisions that were out of scope.",
+      "Scope kept growing for the same price. Took long to release payment."
+    ],
+    "hire_rate": 0.33,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "pandas",
+        "SQL"
+      ],
+      "budget_ceiling": 2273.7,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Data Analyst/BI Expert to integrate &amp; analyze ' and cite concrete prior work; needs a bid within the budget ceiling of 2273.7 to hire. Flaky client: slow to respond and sensitive to price."
+    }
+  },
+  {
+    "client_id": "cl-014",
+    "job_ids": [
+      "real-51324"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2018-05",
+    "payment_verified": true,
+    "total_spent_usd": 62912,
+    "jobs_posted": 61,
+    "hires": 36,
+    "avg_rating_given": 4.86,
+    "freelancer_reviews": [
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Very responsive, detailed requirements, paid right after delivery."
+    ],
+    "hire_rate": 0.59,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "speech-to-text",
+        "WhatsApp API",
+        "copywriting"
+      ],
+      "budget_ceiling": 55.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Website Testing - Louisiana' and cite concrete prior work; needs a bid within the budget ceiling of 55 to hire."
+    }
+  },
+  {
+    "client_id": "cl-015",
+    "job_ids": [
+      "real-03653"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2024-07",
+    "payment_verified": true,
+    "total_spent_usd": 1348,
+    "jobs_posted": 18,
+    "hires": 8,
+    "avg_rating_given": 4.34,
+    "freelancer_reviews": [
+      "Okay to work with, slow to reply sometimes. Payment was on time.",
+      "Decent client but requirements shifted midway. Paid in the end."
+    ],
+    "hire_rate": 0.44,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "QuickBooks"
+      ],
+      "budget_ceiling": 35.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Experienced bookkeeping pro, automotive experience' and cite concrete prior work; needs a bid within the budget ceiling of 35 to hire."
+    }
+  },
+  {
+    "client_id": "cl-016",
+    "job_ids": [
+      "real-00146"
+    ],
+    "synthetic": true,
+    "country": "United Kingdom",
+    "member_since": "2019-08",
+    "payment_verified": true,
+    "total_spent_usd": 86738,
+    "jobs_posted": 45,
+    "hires": 28,
+    "avg_rating_given": 4.72,
+    "freelancer_reviews": [
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Very responsive, detailed requirements, paid right after delivery."
+    ],
+    "hire_rate": 0.62,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "copywriting",
+        "graphic design"
+      ],
+      "budget_ceiling": 1100.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Marketing PDF to be used for landing page + cold e' and cite concrete prior work; needs a bid within the budget ceiling of 1100 to hire."
+    }
+  },
+  {
+    "client_id": "cl-017",
+    "job_ids": [
+      "real-05895"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2021-10",
+    "payment_verified": true,
+    "total_spent_usd": 2203,
+    "jobs_posted": 6,
+    "hires": 2,
+    "avg_rating_given": 4.43,
+    "freelancer_reviews": [
+      "Decent client but requirements shifted midway. Paid in the end.",
+      "Okay to work with, slow to reply sometimes. Payment was on time."
+    ],
+    "hire_rate": 0.33,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "FastAPI",
+        "pandas",
+        "Python",
+        "SQL"
+      ],
+      "budget_ceiling": 90.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Refactor and Extend Python APIs with FastAPI' and cite concrete prior work; needs a bid within the budget ceiling of 90 to hire."
+    }
+  },
+  {
+    "client_id": "cl-018",
+    "job_ids": [
+      "real-25062"
+    ],
+    "synthetic": true,
+    "country": "United Kingdom",
+    "member_since": "2024-08",
+    "payment_verified": true,
+    "total_spent_usd": 159,
+    "jobs_posted": 8,
+    "hires": 1,
+    "avg_rating_given": 3.29,
+    "freelancer_reviews": [
+      "Scope kept growing for the same price. Took long to release payment.",
+      "Low budget and high expectations. Left a lukewarm review despite delivering."
+    ],
+    "hire_rate": 0.12,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Python"
+      ],
+      "budget_ceiling": 40.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Predavač iz umjetne inteligencije' and cite concrete prior work; needs a bid within the budget ceiling of 40 to hire. Flaky client: slow to respond and sensitive to price."
+    }
+  },
+  {
+    "client_id": "cl-019",
+    "job_ids": [
+      "real-13581"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2018-09",
+    "payment_verified": true,
+    "total_spent_usd": 77239,
+    "jobs_posted": 27,
+    "hires": 17,
+    "avg_rating_given": 4.81,
+    "freelancer_reviews": [
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Great communicator and fair about scope changes. Milestones released promptly."
+    ],
+    "hire_rate": 0.63,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "React"
+      ],
+      "budget_ceiling": 20.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Develop Learning Management Software Platform' and cite concrete prior work; needs a bid within the budget ceiling of 20 to hire."
+    }
+  },
+  {
+    "client_id": "cl-020",
+    "job_ids": [
+      "real-08176"
+    ],
+    "synthetic": true,
+    "country": "Cameroon",
+    "member_since": "2024-04",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 6,
+    "hires": 0,
+    "avg_rating_given": null,
+    "freelancer_reviews": [
+      "Low budget and high expectations. Left a lukewarm review despite delivering.",
+      "Ghosted after the first milestone, had to open a dispute."
+    ],
+    "hire_rate": 0.0,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Flutter",
+        "Android"
+      ],
+      "budget_ceiling": 6.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Flutter Dev Required' and cite concrete prior work; needs a bid within the budget ceiling of 6 to hire. Flaky client: slow to respond and sensitive to price."
+    }
+  },
+  {
+    "client_id": "cl-021",
+    "job_ids": [
+      "real-25932"
+    ],
+    "synthetic": true,
+    "country": "Germany",
+    "member_since": "2025-08",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 4,
+    "hires": 0,
+    "avg_rating_given": null,
+    "freelancer_reviews": [
+      "Low budget and high expectations. Left a lukewarm review despite delivering.",
+      "Ghosted after the first milestone, had to open a dispute."
+    ],
+    "hire_rate": 0.0,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection",
+        "chatbot",
+        "LLM",
+        "Figma"
+      ],
+      "budget_ceiling": 220.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Build a bubble.io MVP from existing Figma click-du' and cite concrete prior work; needs a bid within the budget ceiling of 220 to hire. Flaky client: slow to respond and sensitive to price."
+    }
+  },
+  {
+    "client_id": "cl-022",
+    "job_ids": [
+      "real-38097"
+    ],
+    "synthetic": true,
+    "country": "United Kingdom",
+    "member_since": "2020-08",
+    "payment_verified": true,
+    "total_spent_usd": 87316,
+    "jobs_posted": 58,
+    "hires": 38,
+    "avg_rating_given": 4.99,
+    "freelancer_reviews": [
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Great communicator and fair about scope changes. Milestones released promptly."
+    ],
+    "hire_rate": 0.66,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Python",
+        "graphic design"
+      ],
+      "budget_ceiling": 50.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'NFT Asset Interoperability Facilitator' and cite concrete prior work; needs a bid within the budget ceiling of 50 to hire."
+    }
+  },
+  {
+    "client_id": "cl-023",
+    "job_ids": [
+      "real-06977"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2023-06",
+    "payment_verified": true,
+    "total_spent_usd": 104,
+    "jobs_posted": 4,
+    "hires": 1,
+    "avg_rating_given": 3.73,
+    "freelancer_reviews": [
+      "Scope kept growing for the same price. Took long to release payment.",
+      "Disappeared for a week then asked for revisions that were out of scope."
+    ],
+    "hire_rate": 0.25,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection",
+        "chatbot",
+        "pandas",
+        "graphic design"
+      ],
+      "budget_ceiling": 4.5,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'MyMove101' and cite concrete prior work; needs a bid within the budget ceiling of 4.5 to hire. Flaky client: slow to respond and sensitive to price."
+    }
+  },
+  {
+    "client_id": "cl-024",
+    "job_ids": [
+      "real-32197"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2017-11",
+    "payment_verified": true,
+    "total_spent_usd": 34125,
+    "jobs_posted": 40,
+    "hires": 34,
+    "avg_rating_given": 4.84,
+    "freelancer_reviews": [
+      "Great communicator and fair about scope changes. Milestones released promptly.",
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Knew what they wanted and gave useful feedback. Smooth contract."
+    ],
+    "hire_rate": 0.85,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection",
+        "chatbot",
+        "RAG",
+        "pandas"
+      ],
+      "budget_ceiling": 5500.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Job Title: AI Chatbot Developer (Healthcare Staffi' and cite concrete prior work; needs a bid within the budget ceiling of 5500 to hire."
+    }
+  },
+  {
+    "client_id": "cl-025",
+    "job_ids": [
+      "real-33967"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2022-08",
+    "payment_verified": true,
+    "total_spent_usd": 19130,
+    "jobs_posted": 76,
+    "hires": 62,
+    "avg_rating_given": 4.92,
+    "freelancer_reviews": [
+      "Great communicator and fair about scope changes. Milestones released promptly.",
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Knew what they wanted and gave useful feedback. Smooth contract."
+    ],
+    "hire_rate": 0.82,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection"
+      ],
+      "budget_ceiling": 12.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Virtual Assistant for Business Coach' and cite concrete prior work; needs a bid within the budget ceiling of 12 to hire."
+    }
+  },
+  {
+    "client_id": "cl-026",
+    "job_ids": [
+      "real-49871"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2023-11",
+    "payment_verified": true,
+    "total_spent_usd": 86101,
+    "jobs_posted": 43,
+    "hires": 33,
+    "avg_rating_given": 4.99,
+    "freelancer_reviews": [
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Very responsive, detailed requirements, paid right after delivery."
+    ],
+    "hire_rate": 0.77,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "speech-to-text",
+        "graphic design"
+      ],
+      "budget_ceiling": 80.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Studio Financial Manager/Analyst' and cite concrete prior work; needs a bid within the budget ceiling of 80 to hire."
+    }
+  },
+  {
+    "client_id": "cl-027",
+    "job_ids": [
+      "real-15128"
+    ],
+    "synthetic": true,
+    "country": "Romania",
+    "member_since": "2017-09",
+    "payment_verified": true,
+    "total_spent_usd": 64860,
+    "jobs_posted": 120,
+    "hires": 105,
+    "avg_rating_given": 5.0,
+    "freelancer_reviews": [
+      "Great communicator and fair about scope changes. Milestones released promptly.",
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Knew what they wanted and gave useful feedback. Smooth contract."
+    ],
+    "hire_rate": 0.88,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection",
+        "Hugging Face",
+        "Python"
+      ],
+      "budget_ceiling": 60.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of '[Python] [Hugging Face] Create dynamic inference s' and cite concrete prior work; needs a bid within the budget ceiling of 60 to hire."
+    }
+  },
+  {
+    "client_id": "cl-028",
+    "job_ids": [
+      "real-33829"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2020-09",
+    "payment_verified": true,
+    "total_spent_usd": 50728,
+    "jobs_posted": 55,
+    "hires": 45,
+    "avg_rating_given": 4.78,
+    "freelancer_reviews": [
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Knew what they wanted and gave useful feedback. Smooth contract."
+    ],
+    "hire_rate": 0.82,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "face detection",
+        "Figma",
+        "graphic design"
+      ],
+      "budget_ceiling": 22.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Redesign my figma mockup' and cite concrete prior work; needs a bid within the budget ceiling of 22 to hire."
+    }
+  },
+  {
+    "client_id": "cl-029",
+    "job_ids": [
+      "real-25590"
+    ],
+    "synthetic": true,
+    "country": "Turkey",
+    "member_since": "2023-09",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 7,
+    "hires": 2,
+    "avg_rating_given": 3.37,
+    "freelancer_reviews": [
+      "Scope kept growing for the same price. Took long to release payment.",
+      "Disappeared for a week then asked for revisions that were out of scope."
+    ],
+    "hire_rate": 0.29,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Figma",
+        "React",
+        "graphic design"
+      ],
+      "budget_ceiling": 55.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Convert Figma Landing Page to React Tailwind CSS' and cite concrete prior work; needs a bid within the budget ceiling of 55 to hire. Flaky client: slow to respond and sensitive to price."
+    }
+  },
+  {
+    "client_id": "cl-030",
+    "job_ids": [
+      "real-04308"
+    ],
+    "synthetic": true,
+    "country": "Canada",
+    "member_since": "2018-03",
+    "payment_verified": true,
+    "total_spent_usd": 6440,
+    "jobs_posted": 10,
+    "hires": 4,
+    "avg_rating_given": 4.08,
+    "freelancer_reviews": [
+      "Decent client but requirements shifted midway. Paid in the end.",
+      "Okay to work with, slow to reply sometimes. Payment was on time."
+    ],
+    "hire_rate": 0.4,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "chatbot"
+      ],
+      "budget_ceiling": 220.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'AI Chatbot Setup for Project Knowledge Transfer an' and cite concrete prior work; needs a bid within the budget ceiling of 220 to hire."
+    }
+  },
+  {
+    "client_id": "cl-031",
+    "job_ids": [
+      "real-04112"
+    ],
+    "synthetic": true,
+    "country": "Canada",
+    "member_since": "2024-09",
+    "payment_verified": true,
+    "total_spent_usd": 1369,
+    "jobs_posted": 21,
+    "hires": 12,
+    "avg_rating_given": 4.62,
+    "freelancer_reviews": [
+      "Decent client but requirements shifted midway. Paid in the end.",
+      "Fair client, a bit vague at the start but clarified when asked."
+    ],
+    "hire_rate": 0.57,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "SQL"
+      ],
+      "budget_ceiling": 35.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Debug a Laravel Script install' and cite concrete prior work; needs a bid within the budget ceiling of 35 to hire."
+    }
+  },
+  {
+    "client_id": "cl-032",
+    "job_ids": [
+      "real-02079"
+    ],
+    "synthetic": true,
+    "country": "Germany",
+    "member_since": "2017-09",
+    "payment_verified": true,
+    "total_spent_usd": 16305,
+    "jobs_posted": 82,
+    "hires": 63,
+    "avg_rating_given": 4.83,
+    "freelancer_reviews": [
+      "Great communicator and fair about scope changes. Milestones released promptly.",
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Very responsive, detailed requirements, paid right after delivery."
+    ],
+    "hire_rate": 0.77,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "chatbot",
+        "WhatsApp API",
+        "prompt engineering"
+      ],
+      "budget_ceiling": 55.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'AI ChatBot connected to SMS and/or WhatsApp for Va' and cite concrete prior work; needs a bid within the budget ceiling of 55 to hire."
+    }
+  },
+  {
+    "client_id": "cl-033",
+    "job_ids": [
+      "real-36202"
+    ],
+    "synthetic": true,
+    "country": "India",
+    "member_since": "2024-08",
+    "payment_verified": true,
+    "total_spent_usd": 6227,
+    "jobs_posted": 22,
+    "hires": 13,
+    "avg_rating_given": 4.37,
+    "freelancer_reviews": [
+      "Okay to work with, slow to reply sometimes. Payment was on time.",
+      "Decent client but requirements shifted midway. Paid in the end."
+    ],
+    "hire_rate": 0.59,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "RAG",
+        "Shopify",
+        "copywriting",
+        "graphic design"
+      ],
+      "budget_ceiling": 33.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Looking for Someone who will Work on Shopify Websi' and cite concrete prior work; needs a bid within the budget ceiling of 33 to hire."
+    }
+  },
+  {
+    "client_id": "cl-034",
+    "job_ids": [
+      "real-47896"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2023-11",
+    "payment_verified": true,
+    "total_spent_usd": 123,
+    "jobs_posted": 8,
+    "hires": 1,
+    "avg_rating_given": 3.67,
+    "freelancer_reviews": [
+      "Disappeared for a week then asked for revisions that were out of scope.",
+      "Low budget and high expectations. Left a lukewarm review despite delivering."
+    ],
+    "hire_rate": 0.12,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "graphic design"
+      ],
+      "budget_ceiling": 50.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Vintage/Retro Style Graphic Designer for New eComm' and cite concrete prior work; needs a bid within the budget ceiling of 50 to hire. Flaky client: slow to respond and sensitive to price."
+    }
+  },
+  {
+    "client_id": "cl-035",
+    "job_ids": [
+      "real-43229"
+    ],
+    "synthetic": true,
+    "country": "South Africa",
+    "member_since": "2018-12",
+    "payment_verified": true,
+    "total_spent_usd": 26740,
+    "jobs_posted": 107,
+    "hires": 85,
+    "avg_rating_given": 4.78,
+    "freelancer_reviews": [
+      "Great communicator and fair about scope changes. Milestones released promptly.",
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Clear brief, responded quickly and paid on time. Would work with again."
+    ],
+    "hire_rate": 0.79,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "pandas",
+        "copywriting"
+      ],
+      "budget_ceiling": 40.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Validate Product Ideas (Generative AI)' and cite concrete prior work; needs a bid within the budget ceiling of 40 to hire."
+    }
+  },
+  {
+    "client_id": "cl-036",
+    "job_ids": [
+      "real-42366"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2017-07",
+    "payment_verified": true,
+    "total_spent_usd": 5970,
+    "jobs_posted": 21,
+    "hires": 8,
+    "avg_rating_given": 4.58,
+    "freelancer_reviews": [
+      "Decent client but requirements shifted midway. Paid in the end.",
+      "Okay to work with, slow to reply sometimes. Payment was on time."
+    ],
+    "hire_rate": 0.38,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "chatbot",
+        "copywriting"
+      ],
+      "budget_ceiling": 50.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'ManyChat Expert to Set Up Instagram DM Automation ' and cite concrete prior work; needs a bid within the budget ceiling of 50 to hire."
+    }
+  },
+  {
+    "client_id": "cl-037",
+    "job_ids": [
+      "real-42473"
+    ],
+    "synthetic": true,
+    "country": "Australia",
+    "member_since": "2023-12",
+    "payment_verified": true,
+    "total_spent_usd": 187,
+    "jobs_posted": 6,
+    "hires": 1,
+    "avg_rating_given": 3.22,
+    "freelancer_reviews": [
+      "Ghosted after the first milestone, had to open a dispute.",
+      "Disappeared for a week then asked for revisions that were out of scope."
+    ],
+    "hire_rate": 0.17,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "copywriting"
+      ],
+      "budget_ceiling": 25.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Marketing and Content Generation Specialist for Au' and cite concrete prior work; needs a bid within the budget ceiling of 25 to hire. Flaky client: slow to respond and sensitive to price."
+    }
+  },
+  {
+    "client_id": "cl-038",
+    "job_ids": [
+      "real-19576"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2024-10",
+    "payment_verified": true,
+    "total_spent_usd": 1026,
+    "jobs_posted": 15,
+    "hires": 7,
+    "avg_rating_given": 4.08,
+    "freelancer_reviews": [
+      "Decent client but requirements shifted midway. Paid in the end.",
+      "Fair client, a bit vague at the start but clarified when asked."
+    ],
+    "hire_rate": 0.47,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "chatbot",
+        "pandas",
+        "Python",
+        "graphic design"
+      ],
+      "budget_ceiling": 60.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'AI Applications &amp; Data Science Engineer' and cite concrete prior work; needs a bid within the budget ceiling of 60 to hire."
+    }
+  },
+  {
+    "client_id": "cl-039",
+    "job_ids": [
+      "real-34788"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2020-01",
+    "payment_verified": true,
+    "total_spent_usd": 24981,
+    "jobs_posted": 48,
+    "hires": 32,
+    "avg_rating_given": 4.95,
+    "freelancer_reviews": [
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Great communicator and fair about scope changes. Milestones released promptly.",
+      "Clear brief, responded quickly and paid on time. Would work with again."
+    ],
+    "hire_rate": 0.67,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "LLM",
+        "Python",
+        "prompt engineering"
+      ],
+      "budget_ceiling": 165.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Python Ai developer LLM, STT, TTS' and cite concrete prior work; needs a bid within the budget ceiling of 165 to hire."
+    }
+  },
+  {
+    "client_id": "cl-040",
+    "job_ids": [
+      "real-50119"
+    ],
+    "synthetic": true,
+    "country": "India",
+    "member_since": "2024-10",
+    "payment_verified": true,
+    "total_spent_usd": 1232,
+    "jobs_posted": 21,
+    "hires": 11,
+    "avg_rating_given": 4.2,
+    "freelancer_reviews": [
+      "Fair client, a bit vague at the start but clarified when asked.",
+      "Decent client but requirements shifted midway. Paid in the end."
+    ],
+    "hire_rate": 0.52,
+    "hidden_prefs": {
+      "must_have_skills": [
+        "pandas",
+        "technical writing"
+      ],
+      "budget_ceiling": 66.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Systematic Review Writer' and cite concrete prior work; needs a bid within the budget ceiling of 66 to hire."
+    }
+  },
+  {
+    "client_id": "cl-041",
+    "job_ids": [
+      "syn-01"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2025-10",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 1,
+    "hires": 0,
+    "hire_rate": 0.0,
+    "avg_rating_given": null,
+    "freelancer_reviews": [
+      "Never got paid for the sample they asked for. Used my work.",
+      "Asked for a full build before any contract."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [],
+      "budget_ceiling": 3300.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Scam account: replies instantly to anything and pushes toward off-platform contact or payment/ID/credential requests. Should never be hired."
+    }
+  },
+  {
+    "client_id": "cl-042",
+    "job_ids": [
+      "syn-02"
+    ],
+    "synthetic": true,
+    "country": "United Kingdom",
+    "member_since": "2025-11",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 0,
+    "hires": 0,
+    "hire_rate": 0.0,
+    "avg_rating_given": null,
+    "freelancer_reviews": [],
+    "hidden_prefs": {
+      "must_have_skills": [],
+      "budget_ceiling": 70.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Scam account: replies instantly to anything and pushes toward off-platform contact or payment/ID/credential requests. Should never be hired."
+    }
+  },
+  {
+    "client_id": "cl-043",
+    "job_ids": [
+      "syn-03"
+    ],
+    "synthetic": true,
+    "country": "Canada",
+    "member_since": "2025-11",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 1,
+    "hires": 0,
+    "hire_rate": 0.0,
+    "avg_rating_given": null,
+    "freelancer_reviews": [
+      "Wanted my account logins to 'test'. Reported."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [],
+      "budget_ceiling": 440.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Scam account: replies instantly to anything and pushes toward off-platform contact or payment/ID/credential requests. Should never be hired."
+    }
+  },
+  {
+    "client_id": "cl-044",
+    "job_ids": [
+      "syn-04"
+    ],
+    "synthetic": true,
+    "country": "Netherlands",
+    "member_since": "2018-03",
+    "payment_verified": true,
+    "total_spent_usd": 34000,
+    "jobs_posted": 48,
+    "hires": 31,
+    "hire_rate": 0.65,
+    "avg_rating_given": 4.8,
+    "freelancer_reviews": [
+      "Detailed spec, paid milestones on time.",
+      "Professional team, good feedback loops.",
+      "Clear requirements and quick approvals."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "FastAPI",
+        "chatbot",
+        "RAG",
+        "LLM"
+      ],
+      "budget_ceiling": 1980.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Legit client; replies to proposals with concrete relevant experience and a fair price; distrusts templated proposals and absolute guarantees."
+    }
+  },
+  {
+    "client_id": "cl-045",
+    "job_ids": [
+      "syn-05"
+    ],
+    "synthetic": true,
+    "country": "Germany",
+    "member_since": "2020-06",
+    "payment_verified": true,
+    "total_spent_usd": 12500,
+    "jobs_posted": 17,
+    "hires": 9,
+    "hire_rate": 0.53,
+    "avg_rating_given": 4.7,
+    "freelancer_reviews": [
+      "Fair and technical, knew the data.",
+      "Paid promptly after delivery."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "YOLOv8",
+        "FastAPI"
+      ],
+      "budget_ceiling": 1320.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Legit client; replies to proposals with concrete relevant experience and a fair price; distrusts templated proposals and absolute guarantees."
+    }
+  },
+  {
+    "client_id": "cl-046",
+    "job_ids": [
+      "syn-06"
+    ],
+    "synthetic": true,
+    "country": "Australia",
+    "member_since": "2021-09",
+    "payment_verified": true,
+    "total_spent_usd": 6200,
+    "jobs_posted": 11,
+    "hires": 6,
+    "hire_rate": 0.55,
+    "avg_rating_given": 4.6,
+    "freelancer_reviews": [
+      "Good communication, reasonable scope.",
+      "Would work with again."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "LLM",
+        "Python"
+      ],
+      "budget_ceiling": 55.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Legit client; replies to proposals with concrete relevant experience and a fair price; distrusts templated proposals and absolute guarantees."
+    }
+  },
+  {
+    "client_id": "cl-047",
+    "job_ids": [
+      "syn-07"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2019-01",
+    "payment_verified": true,
+    "total_spent_usd": 21000,
+    "jobs_posted": 30,
+    "hires": 18,
+    "hire_rate": 0.6,
+    "avg_rating_given": 4.9,
+    "freelancer_reviews": [
+      "Great client, clean dataset provided.",
+      "Fast replies, fair price."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "ml ai"
+      ],
+      "budget_ceiling": 770.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Legit client; replies to proposals with concrete relevant experience and a fair price; distrusts templated proposals and absolute guarantees."
+    }
+  },
+  {
+    "client_id": "cl-048",
+    "job_ids": [
+      "syn-08"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2025-11",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 2,
+    "hires": 0,
+    "hire_rate": 0.0,
+    "avg_rating_given": null,
+    "freelancer_reviews": [
+      "Sent a check that I was told to deposit and wire onward. Looked fake."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [],
+      "budget_ceiling": 990.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Scam account: replies instantly to anything and pushes toward off-platform contact or payment/ID/credential requests. Should never be hired."
+    }
+  },
+  {
+    "client_id": "cl-049",
+    "job_ids": [
+      "syn-09"
+    ],
+    "synthetic": true,
+    "country": "United Arab Emirates",
+    "member_since": "2025-10",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 1,
+    "hires": 0,
+    "hire_rate": 0.0,
+    "avg_rating_given": null,
+    "freelancer_reviews": [],
+    "hidden_prefs": {
+      "must_have_skills": [],
+      "budget_ceiling": 2750.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Scam account: replies instantly to anything and pushes toward off-platform contact or payment/ID/credential requests. Should never be hired."
+    }
+  },
+  {
+    "client_id": "cl-050",
+    "job_ids": [
+      "syn-10"
+    ],
+    "synthetic": true,
+    "country": "Singapore",
+    "member_since": "2025-11",
+    "payment_verified": false,
+    "total_spent_usd": 0,
+    "jobs_posted": 3,
+    "hires": 0,
+    "hire_rate": 0.0,
+    "avg_rating_given": null,
+    "freelancer_reviews": [
+      "Asked me to deposit USDT first. Scam."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [],
+      "budget_ceiling": 550.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Scam account: replies instantly to anything and pushes toward off-platform contact or payment/ID/credential requests. Should never be hired."
+    }
+  },
+  {
+    "client_id": "cl-051",
+    "job_ids": [
+      "syn-11"
+    ],
+    "synthetic": true,
+    "country": "Canada",
+    "member_since": "2022-02",
+    "payment_verified": true,
+    "total_spent_usd": 9800,
+    "jobs_posted": 14,
+    "hires": 8,
+    "hire_rate": 0.57,
+    "avg_rating_given": 4.5,
+    "freelancer_reviews": [
+      "Shifting requirements but paid on time.",
+      "Responsive and open to suggestions."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "FastAPI",
+        "LLM",
+        "speech-to-text"
+      ],
+      "budget_ceiling": 65.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "picky",
+      "notes": "Legit client; replies to proposals with concrete relevant experience and a fair price; distrusts templated proposals and absolute guarantees."
+    }
+  },
+  {
+    "client_id": "cl-052",
+    "job_ids": [
+      "syn-12"
+    ],
+    "synthetic": true,
+    "country": "Ireland",
+    "member_since": "2017-11",
+    "payment_verified": true,
+    "total_spent_usd": 52000,
+    "jobs_posted": 66,
+    "hires": 41,
+    "hire_rate": 0.62,
+    "avg_rating_given": 4.9,
+    "freelancer_reviews": [
+      "Excellent client, very clear acceptance criteria.",
+      "Long-term repeat work, pays fast.",
+      "Well organised team."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "LLM",
+        "speech-to-text",
+        "Python"
+      ],
+      "budget_ceiling": 1650.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "picky",
+      "notes": "Legit client; replies to proposals with concrete relevant experience and a fair price; distrusts templated proposals and absolute guarantees."
+    }
+  },
+  {
+    "client_id": "cl-053",
+    "job_ids": [
+      "real-50165"
+    ],
+    "synthetic": true,
+    "country": "Italy",
+    "member_since": "2019-04",
+    "payment_verified": true,
+    "total_spent_usd": 38491,
+    "jobs_posted": 37,
+    "hires": 18,
+    "hire_rate": 0.49,
+    "avg_rating_given": 4.64,
+    "freelancer_reviews": [
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Knew what they wanted and gave useful feedback. Smooth contract."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "prompt injection",
+        "text classification"
+      ],
+      "budget_ceiling": 100.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Fine-tuning model for detecting prompt injection' and cite concrete prior work; needs a bid within the budget ceiling of 100 to hire."
+    }
+  },
+  {
+    "client_id": "cl-054",
+    "job_ids": [
+      "real-20042"
+    ],
+    "synthetic": true,
+    "country": "United Arab Emirates",
+    "member_since": "2020-01",
+    "payment_verified": false,
+    "total_spent_usd": 12096,
+    "jobs_posted": 69,
+    "hires": 10,
+    "hire_rate": 0.14,
+    "avg_rating_given": 4.15,
+    "freelancer_reviews": [
+      "Vague at the start; clarified after a couple of questions and was fair.",
+      "Slow to reply at times, but approved milestones without fuss."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "data analytics",
+        "Azure AI Vision"
+      ],
+      "budget_ceiling": 50.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Require to provide AI and Data Analytics Solutions for Retai' and cite concrete prior work; needs a bid within the budget ceiling of 50 to hire."
+    }
+  },
+  {
+    "client_id": "cl-055",
+    "job_ids": [
+      "real-44335"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2020-09",
+    "payment_verified": true,
+    "total_spent_usd": 14453,
+    "jobs_posted": 20,
+    "hires": 8,
+    "hire_rate": 0.4,
+    "avg_rating_given": 4.68,
+    "freelancer_reviews": [
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Knew what they wanted and gave useful feedback. Smooth contract."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Marketing Strategy",
+        "Steam"
+      ],
+      "budget_ceiling": 100.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Marketing Strategy For Steam Roleplay A.I. Chatbot' and cite concrete prior work; needs a bid within the budget ceiling of 100 to hire."
+    }
+  },
+  {
+    "client_id": "cl-056",
+    "job_ids": [
+      "real-22065"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2017-02",
+    "payment_verified": true,
+    "total_spent_usd": 64387,
+    "jobs_posted": 61,
+    "hires": 36,
+    "hire_rate": 0.59,
+    "avg_rating_given": 4.94,
+    "freelancer_reviews": [
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Knew what they wanted and gave useful feedback. Smooth contract."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "AWS Lex",
+        "ReactJS"
+      ],
+      "budget_ceiling": 30.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Looking for bilingual (EN/SP) Chatbot Developers / Engineers' and cite concrete prior work; needs a bid within the budget ceiling of 30 to hire."
+    }
+  },
+  {
+    "client_id": "cl-057",
+    "job_ids": [
+      "real-45109"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2017-09",
+    "payment_verified": true,
+    "total_spent_usd": 91721,
+    "jobs_posted": 78,
+    "hires": 41,
+    "hire_rate": 0.53,
+    "avg_rating_given": 4.7,
+    "freelancer_reviews": [
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Clear brief, responded quickly and paid on time. Would work with again."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "sentiment analysis",
+        "Python"
+      ],
+      "budget_ceiling": 50.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Remote Sentiment Analysis Guru' and cite concrete prior work; needs a bid within the budget ceiling of 50 to hire."
+    }
+  },
+  {
+    "client_id": "cl-058",
+    "job_ids": [
+      "real-40831"
+    ],
+    "synthetic": true,
+    "country": "Australia",
+    "member_since": "2019-04",
+    "payment_verified": true,
+    "total_spent_usd": 64416,
+    "jobs_posted": 79,
+    "hires": 58,
+    "hire_rate": 0.73,
+    "avg_rating_given": 4.74,
+    "freelancer_reviews": [
+      "Decent client, scope shifted a little but they paid fairly.",
+      "Clear brief, responded quickly and paid on time. Would work with again."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Bland AI",
+        "API integration"
+      ],
+      "budget_ceiling": 200.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Voice Conversational AI with Bland AI' and cite concrete prior work; needs a bid within the budget ceiling of 200 to hire."
+    }
+  },
+  {
+    "client_id": "cl-059",
+    "job_ids": [
+      "real-24274"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2016-12",
+    "payment_verified": true,
+    "total_spent_usd": 5600,
+    "jobs_posted": 9,
+    "hires": 3,
+    "hire_rate": 0.33,
+    "avg_rating_given": 4.95,
+    "freelancer_reviews": [
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Very responsive, detailed requirements, paid right after delivery."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "image classification",
+        "TensorFlow"
+      ],
+      "budget_ceiling": 10.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Machine Learning Expert Needed for Morphological Classificat' and cite concrete prior work; needs a bid within the budget ceiling of 10 to hire."
+    }
+  },
+  {
+    "client_id": "cl-060",
+    "job_ids": [
+      "real-13425"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2020-09",
+    "payment_verified": true,
+    "total_spent_usd": 33672,
+    "jobs_posted": 88,
+    "hires": 34,
+    "hire_rate": 0.39,
+    "avg_rating_given": 4.9,
+    "freelancer_reviews": [
+      "Decent client, scope shifted a little but they paid fairly.",
+      "Slow to reply at times, but approved milestones without fuss.",
+      "Clear brief, responded quickly and paid on time. Would work with again."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "chatbot development",
+        "NLP"
+      ],
+      "budget_ceiling": 50.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'Seeking AI Specialist for Advanced AI / Chat Bot' and cite concrete prior work; needs a bid within the budget ceiling of 50 to hire."
+    }
+  },
+  {
+    "client_id": "cl-061",
+    "job_ids": [
+      "real-04073"
+    ],
+    "synthetic": true,
+    "country": "United Kingdom",
+    "member_since": "2016-12",
+    "payment_verified": true,
+    "total_spent_usd": 7069,
+    "jobs_posted": 23,
+    "hires": 15,
+    "hire_rate": 0.65,
+    "avg_rating_given": 4.63,
+    "freelancer_reviews": [
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Decent client, scope shifted a little but they paid fairly.",
+      "Slow to reply at times, but approved milestones without fuss."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "marketing automation",
+        "lead generation"
+      ],
+      "budget_ceiling": 500.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "normal",
+      "notes": "Replies to proposals that reference specifics of 'AI Specialist for Marketing Automation' and cite concrete prior work; needs a bid within the budget ceiling of 500 to hire."
+    }
+  },
+  {
+    "client_id": "cl-062",
+    "job_ids": [
+      "real-50213"
+    ],
+    "synthetic": true,
+    "country": "India",
+    "member_since": "2019-02",
+    "payment_verified": true,
+    "total_spent_usd": 9798,
+    "jobs_posted": 22,
+    "hires": 10,
+    "hire_rate": 0.45,
+    "avg_rating_given": 4.65,
+    "freelancer_reviews": [
+      "Clear brief, responded quickly and paid on time. Would work with again.",
+      "Knew what they wanted and gave useful feedback. Smooth contract."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "data entry"
+      ],
+      "budget_ceiling": 35.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'General Job for Freelance needed' and cite concrete prior work; needs a bid within the budget ceiling of 35 to hire."
+    }
+  },
+  {
+    "client_id": "cl-063",
+    "job_ids": [
+      "real-45509"
+    ],
+    "synthetic": true,
+    "country": "Australia",
+    "member_since": "2020-10",
+    "payment_verified": false,
+    "total_spent_usd": 14246,
+    "jobs_posted": 81,
+    "hires": 19,
+    "hire_rate": 0.23,
+    "avg_rating_given": 3.95,
+    "freelancer_reviews": [
+      "Slow to reply at times, but approved milestones without fuss.",
+      "Vague at the start; clarified after a couple of questions and was fair.",
+      "Decent client, scope shifted a little but they paid fairly."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Webflow",
+        "JavaScript"
+      ],
+      "budget_ceiling": 30.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Webflow Expert - Integrating 1 click setup integrations' and cite concrete prior work; needs a bid within the budget ceiling of 30 to hire."
+    }
+  },
+  {
+    "client_id": "cl-064",
+    "job_ids": [
+      "real-15888"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2017-01",
+    "payment_verified": true,
+    "total_spent_usd": 2218,
+    "jobs_posted": 7,
+    "hires": 4,
+    "hire_rate": 0.57,
+    "avg_rating_given": 4.65,
+    "freelancer_reviews": [
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Clear brief, responded quickly and paid on time. Would work with again."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Google Sheets",
+        "marketing analytics"
+      ],
+      "budget_ceiling": 30.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Excel | Google Sheet Consultant | Marketing Analytics Experi' and cite concrete prior work; needs a bid within the budget ceiling of 30 to hire."
+    }
+  },
+  {
+    "client_id": "cl-065",
+    "job_ids": [
+      "real-06010"
+    ],
+    "synthetic": true,
+    "country": "United Kingdom",
+    "member_since": "2018-02",
+    "payment_verified": true,
+    "total_spent_usd": 17343,
+    "jobs_posted": 15,
+    "hires": 10,
+    "hire_rate": 0.67,
+    "avg_rating_given": 4.73,
+    "freelancer_reviews": [
+      "Knew what they wanted and gave useful feedback. Smooth contract.",
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Clear brief, responded quickly and paid on time. Would work with again."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "data entry",
+        "typing"
+      ],
+      "budget_ceiling": 50.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Simple Retyping of documents' and cite concrete prior work; needs a bid within the budget ceiling of 50 to hire."
+    }
+  },
+  {
+    "client_id": "cl-066",
+    "job_ids": [
+      "real-15749"
+    ],
+    "synthetic": true,
+    "country": "United States",
+    "member_since": "2020-02",
+    "payment_verified": false,
+    "total_spent_usd": 10543,
+    "jobs_posted": 59,
+    "hires": 19,
+    "hire_rate": 0.32,
+    "avg_rating_given": 4.06,
+    "freelancer_reviews": [
+      "Slow to reply at times, but approved milestones without fuss.",
+      "Vague at the start; clarified after a couple of questions and was fair."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Java",
+        "data structures"
+      ],
+      "budget_ceiling": 150.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'Java Software Engineering Interview Support' and cite concrete prior work; needs a bid within the budget ceiling of 150 to hire."
+    }
+  },
+  {
+    "client_id": "cl-067",
+    "job_ids": [
+      "real-20672"
+    ],
+    "synthetic": true,
+    "country": "India",
+    "member_since": "2022-09",
+    "payment_verified": false,
+    "total_spent_usd": 8591,
+    "jobs_posted": 66,
+    "hires": 23,
+    "hire_rate": 0.35,
+    "avg_rating_given": 4.38,
+    "freelancer_reviews": [
+      "Slow to reply at times, but approved milestones without fuss.",
+      "Vague at the start; clarified after a couple of questions and was fair.",
+      "Decent client, scope shifted a little but they paid fairly."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Webflow",
+        "WordPress"
+      ],
+      "budget_ceiling": 30.0,
+      "dislikes_generic_openings": true,
+      "reply_threshold": "picky",
+      "notes": "Replies to proposals that reference specifics of 'WordPress and Webflow Designer / Developer' and cite concrete prior work; needs a bid within the budget ceiling of 30 to hire."
+    }
+  },
+  {
+    "client_id": "cl-068",
+    "job_ids": [
+      "real-30901"
+    ],
+    "synthetic": true,
+    "country": "Germany",
+    "member_since": "2016-04",
+    "payment_verified": true,
+    "total_spent_usd": 20158,
+    "jobs_posted": 18,
+    "hires": 7,
+    "hire_rate": 0.39,
+    "avg_rating_given": 4.81,
+    "freelancer_reviews": [
+      "Very responsive, detailed requirements, paid right after delivery.",
+      "Clear brief, responded quickly and paid on time. Would work with again."
+    ],
+    "hidden_prefs": {
+      "must_have_skills": [
+        "Omnisend",
+        "email design"
+      ],
+      "budget_ceiling": 35.0,
+      "dislikes_generic_openings": false,
+      "reply_threshold": "easy",
+      "notes": "Replies to proposals that reference specifics of 'Design email template in Omnisend' and cite concrete prior work; needs a bid within the budget ceiling of 35 to hire."
+    }
+  }
+]

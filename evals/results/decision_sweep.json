@@ -1,0 +1,240 @@
+{
+ "shipped": {
+  "bid_min": 0.55,
+  "max_risk": 0.6,
+  "scam_only": false,
+  "dev_f1": 0.786,
+  "test_f1": 0.8
+ },
+ "best_on_dev": {
+  "bid_min": 0.55,
+  "max_risk": 0.6,
+  "scam_only": true,
+  "dev_f1": 0.828,
+  "test_f1": 0.8
+ },
+ "top5_dev": [
+  {
+   "bid_min": 0.55,
+   "max_risk": 0.6,
+   "scam_only": true,
+   "dev_f1": 0.828
+  },
+  {
+   "bid_min": 0.55,
+   "max_risk": 0.7,
+   "scam_only": false,
+   "dev_f1": 0.828
+  },
+  {
+   "bid_min": 0.55,
+   "max_risk": 0.7,
+   "scam_only": true,
+   "dev_f1": 0.828
+  },
+  {
+   "bid_min": 0.55,
+   "max_risk": 0.8,
+   "scam_only": false,
+   "dev_f1": 0.828
+  },
+  {
+   "bid_min": 0.55,
+   "max_risk": 0.8,
+   "scam_only": true,
+   "dev_f1": 0.828
+  }
+ ],
+ "failures_dev": [
+  {
+   "job_id": "real-05895",
+   "action": "bid",
+   "fit": 0.78,
+   "risk": 0.22,
+   "flags": [
+    "vague_scope"
+   ],
+   "gold_bid": true,
+   "outcome": "lost",
+   "price": 55.0,
+   "fair": {
+    "type": "hourly",
+    "low": 45,
+    "high": 70
+   }
+  },
+  {
+   "job_id": "real-09353",
+   "action": "bid",
+   "fit": 0.62,
+   "risk": 0.23,
+   "flags": [
+    "vague_scope"
+   ],
+   "gold_bid": true,
+   "outcome": "lost",
+   "price": 1000.0,
+   "fair": {
+    "type": "fixed",
+    "low": 800,
+    "high": 1500
+   }
+  },
+  {
+   "job_id": "real-15141",
+   "action": "bid",
+   "fit": 0.88,
+   "risk": 0.22,
+   "flags": [
+    "unrealistic_budget",
+    "vague_scope"
+   ],
+   "gold_bid": true,
+   "outcome": "lost",
+   "price": 150.0,
+   "fair": {
+    "type": "fixed",
+    "low": 60,
+    "high": 150
+   }
+  },
+  {
+   "job_id": "real-28572",
+   "action": "bid",
+   "fit": 0.76,
+   "risk": 0.42,
+   "flags": [
+    "unrealistic_budget",
+    "vague_scope"
+   ],
+   "gold_bid": true,
+   "outcome": "lost",
+   "price": 150.0,
+   "fair": {
+    "type": "fixed",
+    "low": 150,
+    "high": 400
+   }
+  },
+  {
+   "job_id": "real-32197",
+   "action": "skip",
+   "fit": 0.23,
+   "risk": 0.48,
+   "flags": [
+    "unrealistic_budget",
+    "vague_scope"
+   ],
+   "gold_bid": true,
+   "outcome": null,
+   "price": null,
+   "fair": {
+    "type": "fixed",
+    "low": 3000,
+    "high": 6000
+   }
+  },
+  {
+   "job_id": "real-35717",
+   "action": "skip",
+   "fit": 0.67,
+   "risk": 0.62,
+   "flags": [
+    "vague_scope",
+    "poor_client_history"
+   ],
+   "gold_bid": true,
+   "outcome": null,
+   "price": null,
+   "fair": {
+    "type": "fixed",
+    "low": 1500,
+    "high": 2500
+   }
+  },
+  {
+   "job_id": "real-46183",
+   "action": "bid",
+   "fit": 0.78,
+   "risk": 0.26,
+   "flags": [
+    "unrealistic_budget",
+    "vague_scope"
+   ],
+   "gold_bid": false,
+   "outcome": "lost",
+   "price": 40.0,
+   "fair": {
+    "type": "hourly",
+    "low": 5,
+    "high": 20
+   }
+  },
+  {
+   "job_id": "syn-06",
+   "action": "watch",
+   "fit": 0.42,
+   "risk": 0.08,
+   "flags": [
+    "prompt_injection"
+   ],
+   "gold_bid": true,
+   "outcome": null,
+   "price": null,
+   "fair": {
+    "type": "hourly",
+    "low": 30,
+    "high": 55
+   }
+  },
+  {
+   "job_id": "real-20042",
+   "action": "bid",
+   "fit": 0.57,
+   "risk": 0.35,
+   "flags": [
+    "vague_scope"
+   ],
+   "gold_bid": true,
+   "outcome": "lost",
+   "price": 50.0,
+   "fair": {
+    "type": "hourly",
+    "low": 40,
+    "high": 60
+   }
+  },
+  {
+   "job_id": "real-45109",
+   "action": "bid",
+   "fit": 0.68,
+   "risk": 0.12,
+   "flags": [
+    "vague_scope"
+   ],
+   "gold_bid": false,
+   "outcome": "lost",
+   "price": 50.0,
+   "fair": {
+    "type": "hourly",
+    "low": 30,
+    "high": 50
+   }
+  },
+  {
+   "job_id": "real-15749",
+   "action": "bid",
+   "fit": 0.55,
+   "risk": 0.18,
+   "flags": [],
+   "gold_bid": false,
+   "outcome": "lost",
+   "price": 55.0,
+   "fair": {
+    "type": "hourly",
+    "low": 40,
+    "high": 80
+   }
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "create_email_draft": {
+  "annotations": {
+   "destructiveHint": false,
+   "idempotentHint": false,
+   "openWorldHint": null,
+   "readOnlyHint": false,
+   "title": null
+  },
+  "input": {
+   "properties": {
+    "body": {
+     "maxLength": 5000,
+     "title": "Body",
+     "type": "string"
+    },
+    "subject": {
+     "maxLength": 200,
+     "title": "Subject",
+     "type": "string"
+    },
+    "to": {
+     "maxLength": 200,
+     "title": "To",
+     "type": "string"
+    }
+   },
+   "required": [
+    "to",
+    "subject",
+    "body"
+   ],
+   "title": "create_email_draftArguments",
+   "type": "object"
+  },
+  "output": null
+ },
+ "create_interview_hold": {
+  "annotations": {
+   "destructiveHint": false,
+   "idempotentHint": true,
+   "openWorldHint": null,
+   "readOnlyHint": false,
+   "title": null
+  },
+  "input": {
+   "properties": {
+    "end": {
+     "title": "End",
+     "type": "string"
+    },
+    "start": {
+     "title": "Start",
+     "type": "string"
+    },
+    "title": {
+     "maxLength": 200,
+     "title": "Title",
+     "type": "string"
+    }
+   },
+   "required": [
+    "start",
+    "end",
+    "title"
+   ],
+   "title": "create_interview_holdArguments",
+   "type": "object"
+  },
+  "output": null
+ },
+ "free_slots": {
+  "annotations": {
+   "destructiveHint": null,
+   "idempotentHint": true,
+   "openWorldHint": null,
+   "readOnlyHint": true,
+   "title": null
+  },
+  "input": {
+   "properties": {
+    "days_ahead": {
+     "default": 5,
+     "maximum": 14,
+     "minimum": 1,
+     "title": "Days Ahead",
+     "type": "integer"
+    },
+    "duration_min": {
+     "default": 30,
+     "maximum": 120,
+     "minimum": 15,
+     "title": "Duration Min",
+     "type": "integer"
+    },
+    "max_slots": {
+     "default": 3,
+     "maximum": 10,
+     "minimum": 1,
+     "title": "Max Slots",
+     "type": "integer"
+    },
+    "start_date": {
+     "anyOf": [
+      {
+       "type": "string"
+      },
+      {
+       "type": "null"
+      }
+     ],
+     "default": null,
+     "title": "Start Date"
+    }
+   },
+   "title": "free_slotsArguments",
+   "type": "object"
+  },
+  "output": {
+   "$defs": {
+    "Slot": {
+     "properties": {
+      "end": {
+       "title": "End",
+       "type": "string"
+      },
+      "start": {
+       "title": "Start",
+       "type": "string"
+      }
+     },
+     "required": [
+      "start",
+      "end"
+     ],
+     "title": "Slot",
+     "type": "object"
+    }
+   },
+   "properties": {
+    "slots": {
+     "items": {
+      "$ref": "#/$defs/Slot"
+     },
+     "title": "Slots",
+     "type": "array"
+    }
+   },
+   "required": [
+    "slots"
+   ],
+   "title": "SlotList",
+   "type": "object"
+  }
+ }
+}

@@ -1,0 +1,681 @@
+[
+  {
+    "id": "prop-01",
+    "job_title": "Online course AI tutor and quiz generator",
+    "job_category": "ml_ai",
+    "date": "2023-12",
+    "text": "I built this for an academy with 120 recorded lessons: transcripts feed a companion that answers only from lesson content and links to the timestamp, and a quiz generator writes five questions per lesson with explanations. A teacher reviewed 300 sampled quiz items and accepted 92% as written. Module-two completion rose from 54% to 64%. Running cost was around $85 a month for 1,900 learners. For your courses I would keep the code simple enough for your own developer to maintain. Can you send two lessons and a sample of the questions learners ask?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-07"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-02",
+    "job_title": "Shopify store customisation",
+    "job_category": "web",
+    "date": "2023-04",
+    "text": "Dear Sir/Madam, I am passionate about AI and I would love to work on your project. I have 5+ years of experience in the field and I have completed 50+ projects. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. Kindly check my profile for my portfolio. I guarantee 100% satisfaction. Thank you for your time and consideration. I am available for long-term work and can adjust my timezone to match yours if needed.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-03",
+    "job_title": "Consolidate and clean insurance claims data into BigQuery",
+    "job_category": "data",
+    "date": "2022-08",
+    "text": "Three databases that disagree on member IDs is a familiar mess. For a health insurer I wrote nightly Python ingestion for 2.3 million claim lines, standardised IDs and dates, and added 38 automated data checks. The checks alone found 1.7% duplicate claim lines that had been inflating one monthly cost number by about $140,000. Everything lands in partitioned BigQuery tables, with a dashboard on top and a written runbook. I would suggest a six-week plan: two weeks of profiling and rules, two of pipeline, two of reporting. May I see a sample of the three schemas?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-12"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-04",
+    "job_title": "Data cleaning and visualisation",
+    "job_category": "data",
+    "date": "2024-11",
+    "text": "Dear Sir/Madam, I am passionate about AI and I would love to work on your project. This is a very interesting project and it matches my skills 100 percent. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. I am ready to start immediately. Let us connect and make your project a success. Best regards. I have good English and I am very responsible, honest and punctual in all my work.",
+    "outcome": "ignored",
+    "evidence_refs": [
+      "cs-01"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-05",
+    "job_title": "Logo and brand design",
+    "job_category": "other",
+    "date": "2024-09",
+    "text": "Dear Sir/Madam, I am passionate about AI and I would love to work on your project. I have worked on many similar projects before and my clients were always very happy with the results. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. My rate is very competitive and I am available 24/7. Please message me so we can discuss the details. I have good English and I am very responsible, honest and punctual in all my work.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-06",
+    "job_title": "ChatGPT prompt writer",
+    "job_category": "ml_ai",
+    "date": "2023-12",
+    "text": "Dear Client, greetings of the day. I am highly skilled and hardworking and I will deliver quality work on time. I have 5+ years of experience in the field and I have completed 50+ projects. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. Kindly check my profile for my portfolio. I guarantee 100% satisfaction. Thank you for your time and consideration. I am available for long-term work and can adjust my timezone to match yours if needed.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-07",
+    "job_title": "Train AI to read Telegram channel",
+    "job_category": "ml_ai",
+    "date": "2024-01",
+    "text": "Dear Sir/Madam, I am passionate about AI and I would love to work on your project. I have worked on many similar projects before and my clients were always very happy with the results. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. My rate is very competitive and I am available 24/7. Please message me so we can discuss the details. I will provide unlimited revisions until you are fully satisfied with the result.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-08",
+    "job_title": "Python developer for LLM-based document search",
+    "job_category": "ml_ai",
+    "date": "2024-01",
+    "text": "Your document search sounds close to a policy assistant I built over 1,400 PDFs, where answers carry the document name and page. It reached 91% groundedness on 200 test questions. I would start by testing retrieval quality on a sample of your documents before building anything else. Happy to share how I measured it. How many documents do you have, and in which formats? Happy to do a 20-minute call to confirm the scope before you decide anything. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-01"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-09",
+    "job_title": "Fix dropped frames in live YOLO people counter",
+    "job_category": "ml_ai",
+    "date": "2023-03",
+    "text": "You mention the model detects fine but the video jumps when it runs on the live RTSP feed. That pattern usually means the camera is being read in the same loop as inference, so the buffer fills and old frames pile up. On a pallet-counting job I fixed exactly this by reading the stream in its own thread that keeps only the newest frame, plus a reconnect on stalls. Throughput went from 14 to 25 fps on one RTX 3060 with no skipping. I can look at your capture loop first (about two hours) and send a fixed version with a short note on what changed. If your model also needs retraining for night footage I can quote that separately. Could you share the stream resolution and the GPU you deploy on?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-05",
+      "repo-03"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-10",
+    "job_title": "API to serve a text classification model",
+    "job_category": "ml_ai",
+    "date": "2023-09",
+    "text": "I have put fine-tuned transformer models behind async HTTP endpoints with request batching, so a long contract is processed in about 9 seconds on one T4. For your classifier I would add input validation, a health check and basic latency metrics, and package it in Docker. Can you share the model format and the expected requests per minute? I usually work in short milestones with a working demo at each step, so you can stop or change direction early. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-04",
+      "cs-10"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-11",
+    "job_title": "RAG over our legal knowledge base",
+    "job_category": "ml_ai",
+    "date": "2025-02",
+    "text": "Access control matters most when documents are confidential, so each chunk of text in my law firm assistant carries the permissions of its source and is filtered before the model sees it. We tested with 80 adversarial questions and none leaked restricted content. I can build something similar for your documents. Where are they stored now? I usually work in short milestones with a working demo at each step, so you can stop or change direction early. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-13"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-12",
+    "job_title": "Knowledge-transfer chatbot for our project team",
+    "job_category": "ml_ai",
+    "date": "2025-04",
+    "text": "The risk with a knowledge-transfer bot is that it answers confidently from the wrong document, or shows people things they should not see. At a law firm I built an assistant that links every answer to its source and filters results by each user's permissions before the model sees anything; it scored 88% correct on 150 questions written by senior staff. For your project I would connect your wiki and shared folders, add source links, and set the bot to say it does not know below a confidence threshold. A working pilot takes about ten days. Which tools hold your project documentation today?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-13",
+      "cs-01"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-13",
+    "job_title": "Speed up STT and TTS in our phone GPT assistant",
+    "job_category": "ml_ai",
+    "date": "2025-03",
+    "text": "You want to shave one to two seconds off the reply and the first step is to measure where it goes. On a fintech helpdesk bot I timed 500 calls and found end-of-speech detection, waiting for the full model reply and synthesis each cost a big share. Starting speech on the first sentence of the streamed reply, tightening silence detection and caching common phrases cut median time to first audio from 2.9 s to 1.4 s. I would do the same audit on your system in two days, then implement the biggest wins. Which STT and TTS vendors do you use at the moment?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-11"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-14",
+    "job_title": "Create dashboards from CSV exports with pandas",
+    "job_category": "data",
+    "date": "2022-09",
+    "text": "I can turn recurring CSV exports into a clean pandas pipeline and an interactive dashboard. A recent retail one replaced six spreadsheets and five hours of Monday work. I would document every metric so the numbers are trusted. Could you send one sample export? I usually work in short milestones with a working demo at each step, so you can stop or change direction early. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-09"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-15",
+    "job_title": "Machine learning tutor",
+    "job_category": "other",
+    "date": "2023-06",
+    "text": "Hello sir, I am very excited about this opportunity and I am confident I can help you achieve your goals. I understand your requirements completely and I can start right now. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. I work fast and communicate well. Please give me a chance and I will not disappoint you. Looking forward to your reply. I have good English and I am very responsible, honest and punctual in all my work.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-16",
+    "job_title": "Bookkeeping and monthly reconciliation",
+    "job_category": "other",
+    "date": "2023-10",
+    "text": "Hello, I am an expert freelancer with many years of experience and I can do this job perfectly. I understand your requirements completely and I can start right now. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. I work fast and communicate well. Please give me a chance and I will not disappoint you. Looking forward to your reply. I am available for long-term work and can adjust my timezone to match yours if needed.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-17",
+    "job_title": "Face recognition attendance prototype",
+    "job_category": "ml_ai",
+    "date": "2023-04",
+    "text": "I have built a face detection and liveness service that rejects printed photos and phone replays: 96% of replay attacks stopped and a 1.8% false rejection rate for real users. For attendance I would add a face matching step with a per-person threshold and a way to enrol people safely. Please tell me how many people you expect to enrol and what camera you will use. My hourly rate is $55, though for a clearly scoped piece like this I prefer a fixed price once I have seen your data.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-06"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-18",
+    "job_title": "SQL and Excel reporting expert",
+    "job_category": "data",
+    "date": "2023-10",
+    "text": "Hello sir, I am very excited about this opportunity and I am confident I can help you achieve your goals. I understand your requirements completely and I can start right now. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. I work fast and communicate well. Please give me a chance and I will not disappoint you. Looking forward to your reply. I will provide unlimited revisions until you are fully satisfied with the result.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-19",
+    "job_title": "Dashboard in Python and SQL for operations team",
+    "job_category": "data",
+    "date": "2023-02",
+    "text": "I have replaced hand-assembled weekly reports with SQL queries and a refreshing dashboard, and I add automated checks to catch duplicate or impossible data. In one case that exposed 1.7% duplicate lines that skewed a monthly cost figure. I would begin by listing the five questions your team asks every week. What database do you use? My hourly rate is $55, though for a clearly scoped piece like this I prefer a fixed price once I have seen your data. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-09",
+      "cs-12"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-20",
+    "job_title": "Landing page development",
+    "job_category": "web",
+    "date": "2023-06",
+    "text": "Hi there! I have read your job description and I am very interested. I am the best candidate for your project. I understand your requirements completely and I can start right now. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. I work fast and communicate well. Please give me a chance and I will not disappoint you. Looking forward to your reply. I will provide unlimited revisions until you are fully satisfied with the result.",
+    "outcome": "ignored",
+    "evidence_refs": [
+      "cs-01"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-21",
+    "job_title": "Object detection model for warehouse boxes",
+    "job_category": "ml_ai",
+    "date": "2023-08",
+    "text": "I trained a YOLOv8 model on 2,300 labelled dock frames for a distribution centre and reached mAP50 of 0.93, with 97.5% accuracy on actual pallet counts. The key was labelling frames from the real cameras at night and with forklifts in view. I can scope your box detection after seeing 20 sample images. What camera height and lighting do you have? Happy to do a 20-minute call to confirm the scope before you decide anything. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-05"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-22",
+    "job_title": "Image generation system for ads",
+    "job_category": "ml_ai",
+    "date": "2023-02",
+    "text": "Hello, I am an expert freelancer with many years of experience and I can do this job perfectly. I understand your requirements completely and I can start right now. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. I work fast and communicate well. Please give me a chance and I will not disappoint you. Looking forward to your reply. I always put the client first and I am a fast learner who can adapt to any technology.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-23",
+    "job_title": "Improve chatbot answers - too many hallucinations",
+    "job_category": "ml_ai",
+    "date": "2024-06",
+    "text": "Hallucinations usually come from weak retrieval, not the model. I would first build a test set of 100 real questions with reference answers, measure how often the right passage is retrieved, and only then change prompts. On a clinic assistant this approach raised groundedness to 91%. Could you share a few of the bad answers you have seen? I usually work in short milestones with a working demo at each step, so you can stop or change direction early. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-01",
+      "cs-13"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-24",
+    "job_title": "Business intelligence dashboard",
+    "job_category": "data",
+    "date": "2024-01",
+    "text": "Hi there! I have read your job description and I am very interested. I am the best candidate for your project. I have worked on many similar projects before and my clients were always very happy with the results. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. My rate is very competitive and I am available 24/7. Please message me so we can discuss the details.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-25",
+    "job_title": "Laravel backend developer",
+    "job_category": "web",
+    "date": "2024-05",
+    "text": "Hello, I am an expert freelancer with many years of experience and I can do this job perfectly. I have worked on many similar projects before and my clients were always very happy with the results. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. My rate is very competitive and I am available 24/7. Please message me so we can discuss the details. I will provide unlimited revisions until you are fully satisfied with the result.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-26",
+    "job_title": "Document Q&A chatbot",
+    "job_category": "ml_ai",
+    "date": "2024-05",
+    "text": "Dear Client, greetings of the day. I am highly skilled and hardworking and I will deliver quality work on time. I have worked on many similar projects before and my clients were always very happy with the results. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. My rate is very competitive and I am available 24/7. Please message me so we can discuss the details.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-27",
+    "job_title": "Predictive model for churn",
+    "job_category": "ml_ai",
+    "date": "2024-03",
+    "text": "Hello, I am an expert freelancer with many years of experience and I can do this job perfectly. This is a very interesting project and it matches my skills 100 percent. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. I am ready to start immediately. Let us connect and make your project a success. Best regards. I will provide unlimited revisions until you are fully satisfied with the result.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-28",
+    "job_title": "Android app developer",
+    "job_category": "other",
+    "date": "2023-08",
+    "text": "Hello sir, I am very excited about this opportunity and I am confident I can help you achieve your goals. I have 5+ years of experience in the field and I have completed 50+ projects. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. Kindly check my profile for my portfolio. I guarantee 100% satisfaction. Thank you for your time and consideration. I will provide unlimited revisions until you are fully satisfied with the result.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-29",
+    "job_title": "Customer support bot trained on our help centre",
+    "job_category": "ml_ai",
+    "date": "2024-02",
+    "text": "A help centre bot should answer from your articles and say so when it is unsure. For a 9,000-product shop mine resolved 54% of chats without a ticket in a four-week test. I would index your articles, add source links in each reply, and give you a report of questions with no good answer. Would you like a short demo on 10 of your help articles? I usually work in short milestones with a working demo at each step, so you can stop or change direction early.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-03"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-30",
+    "job_title": "Chatbot for guests of our holiday apartments via WhatsApp",
+    "job_category": "ml_ai",
+    "date": "2024-05",
+    "text": "Guests asking for the Wi-Fi code at 11 pm is the problem I solved for a host with 46 properties: each guest texts one number and gets an answer taken only from that property's house manual. Urgent things like a lockout skip the bot and ring the host. 71% of guest messages never reached the host and replies took about 8 seconds. For you I would start with your Q&A document, set up the number on Twilio, test with ten of your real past questions, then go live. Fixed price of $420 including two rounds of changes. Do your guests mostly use WhatsApp or plain SMS?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-08",
+      "repo-02"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-31",
+    "job_title": "Data analyst for sales data",
+    "job_category": "data",
+    "date": "2024-09",
+    "text": "Dear Client, greetings of the day. I am highly skilled and hardworking and I will deliver quality work on time. I have worked on many similar projects before and my clients were always very happy with the results. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. My rate is very competitive and I am available 24/7. Please message me so we can discuss the details. I will provide unlimited revisions until you are fully satisfied with the result.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-32",
+    "job_title": "YOLO object detection project",
+    "job_category": "ml_ai",
+    "date": "2023-04",
+    "text": "Dear Client, greetings of the day. I am highly skilled and hardworking and I will deliver quality work on time. I have 5+ years of experience in the field and I have completed 50+ projects. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. Kindly check my profile for my portfolio. I guarantee 100% satisfaction. Thank you for your time and consideration. I have good English and I am very responsible, honest and punctual in all my work.",
+    "outcome": "ignored",
+    "evidence_refs": [
+      "cs-01"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-33",
+    "job_title": "Voice assistant development",
+    "job_category": "ml_ai",
+    "date": "2023-04",
+    "text": "Hi there! I have read your job description and I am very interested. I am the best candidate for your project. I have 5+ years of experience in the field and I have completed 50+ projects. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. Kindly check my profile for my portfolio. I guarantee 100% satisfaction. Thank you for your time and consideration. I am available for long-term work and can adjust my timezone to match yours if needed.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-34",
+    "job_title": "Face recognition system",
+    "job_category": "ml_ai",
+    "date": "2024-07",
+    "text": "Hello, I am an expert freelancer with many years of experience and I can do this job perfectly. This is a very interesting project and it matches my skills 100 percent. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. I am ready to start immediately. Let us connect and make your project a success. Best regards. I always put the client first and I am a fast learner who can adapt to any technology.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-35",
+    "job_title": "Hotel review analysis: what drives low scores",
+    "job_category": "data",
+    "date": "2023-03",
+    "text": "I did this for a 19-hotel group with 48,000 reviews in several languages: a multilingual model tagged each review by aspect (noise, breakfast, cleanliness, staff) and sentiment, with 0.82 F1 for aspects. The surprise was that two city hotels got 37% of their negative reviews from noise, and a weekend breakfast queue explained another dip. The group made small changes and breakfast sentiment improved by 19 points. I would label 2,000 of your reviews with you, tune the model, and deliver a monthly per-property view. How many languages are your reviews in?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-14"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-36",
+    "job_title": "Telegram channel monitor that forwards only valuable messages",
+    "job_category": "ml_ai",
+    "date": "2025-06",
+    "text": "I did almost exactly this for a trading community: four busy Telegram channels, about 600 messages a day, and the owner wanted only actionable ones. Using 400 messages she labelled herself, the classifier reached 0.89 precision and 0.94 recall, and the whole thing costs about $9 a month in model fees. Duplicates across channels were collapsed so the digest stayed short. For your three channels I would do the same: you label around 300 examples, I tune the prompt, and a summary plus link lands in your private channel. A weekly report shows what was dropped. I can start this week.",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-15"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-37",
+    "job_title": "Flutter mobile app",
+    "job_category": "other",
+    "date": "2024-07",
+    "text": "Dear Client, greetings of the day. I am highly skilled and hardworking and I will deliver quality work on time. This is a very interesting project and it matches my skills 100 percent. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. I am ready to start immediately. Let us connect and make your project a success. Best regards. I always put the client first and I am a fast learner who can adapt to any technology.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-38",
+    "job_title": "React and Node web app",
+    "job_category": "web",
+    "date": "2023-02",
+    "text": "Dear Client, greetings of the day. I am highly skilled and hardworking and I will deliver quality work on time. I understand your requirements completely and I can start right now. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. I work fast and communicate well. Please give me a chance and I will not disappoint you. Looking forward to your reply. I always put the client first and I am a fast learner who can adapt to any technology.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-39",
+    "job_title": "Build a recommendation engine",
+    "job_category": "ml_ai",
+    "date": "2023-06",
+    "text": "Dear Sir/Madam, I am passionate about AI and I would love to work on your project. I understand your requirements completely and I can start right now. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. I work fast and communicate well. Please give me a chance and I will not disappoint you. Looking forward to your reply. I will provide unlimited revisions until you are fully satisfied with the result.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-40",
+    "job_title": "WordPress website fix",
+    "job_category": "web",
+    "date": "2024-03",
+    "text": "Hello sir, I am very excited about this opportunity and I am confident I can help you achieve your goals. This is a very interesting project and it matches my skills 100 percent. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. I am ready to start immediately. Let us connect and make your project a success. Best regards. I am available for long-term work and can adjust my timezone to match yours if needed.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-41",
+    "job_title": "Chatbot for real estate lead capture",
+    "job_category": "ml_ai",
+    "date": "2023-10",
+    "text": "Leads arriving after office hours are the ones that go cold. For an estate agency I built a WhatsApp assistant that asks budget, bedrooms and move-in date, answers questions from live listings and books viewings; first response dropped from four hours to 20 seconds and 38% of leads were qualified with no agent time. I can adapt this to your website chat or WhatsApp. Typical delivery is two to three weeks. Which channel do your leads use most? My hourly rate is $55, though for a clearly scoped piece like this I prefer a fixed price once I have seen your data.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-02"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-42",
+    "job_title": "OCR for invoices",
+    "job_category": "ml_ai",
+    "date": "2024-01",
+    "text": "Hello sir, I am very excited about this opportunity and I am confident I can help you achieve your goals. I have worked on many similar projects before and my clients were always very happy with the results. My skills include Python, TensorFlow, PyTorch, scikit-learn, Keras, OpenCV, NLP, LLM, GPT, BERT, Flask, Django, FastAPI, Docker, Kubernetes, AWS, GCP, Azure, SQL, MongoDB, React, Node.js and more. My rate is very competitive and I am available 24/7. Please message me so we can discuss the details.",
+    "outcome": "ignored",
+    "evidence_refs": [
+      "cs-01"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-43",
+    "job_title": "Python script to automate classification of incoming messages with GPT",
+    "job_category": "ml_ai",
+    "date": "2025-05",
+    "text": "I built a message classifier that reads busy Telegram channels and forwards only actionable items, with 0.89 precision after tuning on 150 examples. Monthly language model cost is about $9. Send me 30 example messages and the categories you want, and I can show you early accuracy before we agree on the scope. My hourly rate is $55, though for a clearly scoped piece like this I prefer a fixed price once I have seen your data. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-15"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-44",
+    "job_title": "Hugging Face model deployment with a queue",
+    "job_category": "ml_ai",
+    "date": "2024-09",
+    "text": "One 24 GB GPU can serve five models if only the ones in use stay loaded. I built a job queue with a memory budget and a loading schedule, which cut one client's infrastructure cost by 41%. For your models I would first measure memory use and latency per model. How many models, and how large are they? I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-10"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-45",
+    "job_title": "Add AI customer support chat to our online store",
+    "job_category": "ml_ai",
+    "date": "2024-07",
+    "text": "With a catalogue as large as yours the chat should look things up, not guess. On a 9,000-product store I indexed product data, size charts and returns policy and let order-status questions bypass the language model entirely, going to a fixed order lookup. In a four-week test, 54% of chats ended with no human ticket and satisfaction went from 4.4 to 4.6. I can add a streaming chat widget to your site in about two weeks and give you a weekly report of unanswered questions to improve the content. What platform is the store on, and is there a product feed or API?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-03"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-46",
+    "job_title": "Host several Hugging Face models on one server and load them by schedule",
+    "job_category": "ml_ai",
+    "date": "2024-11",
+    "text": "Your brief (load and unload a fixed set of models, with some only active at certain hours) matches a service I built for a freight software company: five models on one 24 GB GPU, with a memory budget that evicts the least recently used model and a schedule file that pins heavy ones during office hours. That cut their GPU bill by 41% and p95 extraction latency was 410 ms. I would use a job queue so a slow model never blocks a fast one, and a small admin page showing what is resident. Gradio is fine for the front end, though I would keep it separate from the inference workers. I can deliver a first working version in about 8 days.",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-10",
+      "repo-04"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-47",
+    "job_title": "Detect and track vehicles on parking lot cameras",
+    "job_category": "ml_ai",
+    "date": "2024-02",
+    "text": "Counting objects as they cross a line on an IP camera is something I have shipped: a custom-trained detector, a tracker, and a virtual counting line, with 97.5% accuracy against a week of hand counts. The part that usually breaks is the live stream, so I read the camera in a separate thread and reconnect when it stalls. For your lot I would label about 1,500 frames from your own cameras, since lighting and angles matter more than model size. I can deliver a working counter plus a CSV of crossings in 10 days. How many cameras, and is there a GPU on site?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-05",
+      "repo-03"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-48",
+    "job_title": "AI chatbot for website",
+    "job_category": "ml_ai",
+    "date": "2024-03",
+    "text": "Hi there! I have read your job description and I am very interested. I am the best candidate for your project. This is a very interesting project and it matches my skills 100 percent. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. I am ready to start immediately. Let us connect and make your project a success. Best regards. I have good English and I am very responsible, honest and punctual in all my work.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-49",
+    "job_title": "Sentiment analysis of tweets",
+    "job_category": "ml_ai",
+    "date": "2023-02",
+    "text": "Dear Sir/Madam, I am passionate about AI and I would love to work on your project. I understand your requirements completely and I can start right now. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. I work fast and communicate well. Please give me a chance and I will not disappoint you. Looking forward to your reply. I will provide unlimited revisions until you are fully satisfied with the result.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-50",
+    "job_title": "LLM integration for CRM",
+    "job_category": "ml_ai",
+    "date": "2023-08",
+    "text": "Hi there! I have read your job description and I am very interested. I am the best candidate for your project. I have 5+ years of experience in the field and I have completed 50+ projects. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. Kindly check my profile for my portfolio. I guarantee 100% satisfaction. Thank you for your time and consideration. I always put the client first and I am a fast learner who can adapt to any technology.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-51",
+    "job_title": "Summarise customer reviews with AI",
+    "job_category": "data",
+    "date": "2023-11",
+    "text": "For a hotel group I tagged 48,000 reviews by topic and sentiment with a fine-tuned multilingual model, and the group used the output to fix breakfast queues and noise complaints. For your product reviews I would start with a labelled sample of 300 to set a baseline. Which languages do the reviews come in? My hourly rate is $55, though for a clearly scoped piece like this I prefer a fixed price once I have seen your data. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-14"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-52",
+    "job_title": "Extract key clauses from supplier contracts",
+    "job_category": "ml_ai",
+    "date": "2023-06",
+    "text": "Your 3,000 contracts a year and the list of clause types remind me of a project for a law firm: I trained a classifier on 5,400 paragraphs they had already marked up and reached an F1 of 0.87 over 24 clause types, against 0.71 for their previous keyword search. Review time per contract fell from 45 to 12 minutes. I would begin by labelling 150 paragraphs of yours so we can measure the starting point, then fine-tune and report per-clause results, including the weak ones. Fixed price in stages. Are your contracts mostly digital text or scans?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-04"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-53",
+    "job_title": "Python developer needed for ML project",
+    "job_category": "ml_ai",
+    "date": "2024-05",
+    "text": "Hello sir, I am very excited about this opportunity and I am confident I can help you achieve your goals. I have worked on many similar projects before and my clients were always very happy with the results. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. My rate is very competitive and I am available 24/7. Please message me so we can discuss the details.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-54",
+    "job_title": "Blog articles about AI",
+    "job_category": "other",
+    "date": "2024-11",
+    "text": "Hi there! I have read your job description and I am very interested. I am the best candidate for your project. This is a very interesting project and it matches my skills 100 percent. I know Python, Java, C++, JavaScript, machine learning, deep learning, data science, computer vision, chatbots, automation, web scraping, APIs, cloud, DevOps, and many other technologies. I am ready to start immediately. Let us connect and make your project a success. Best regards. I have good English and I am very responsible, honest and punctual in all my work.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-55",
+    "job_title": "RAG chatbot over our internal policy documents",
+    "job_category": "ml_ai",
+    "date": "2024-04",
+    "text": "For a clinic network with about 1,400 PDF policies I built an assistant that answers only from the documents and shows title, page and effective date with every reply. We scored it on 200 real staff questions: 91% grounded, 62% fewer calls to the compliance office within eight weeks. Two things I would do for you: split documents by heading rather than a fixed length, and make the bot say it does not know when retrieval is weak. Please send 20 questions your team really asks and 5 sample documents, and I will return a small demo in three days before you commit to the full build.",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-01",
+      "cs-13"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-56",
+    "job_title": "Face detection and liveness for KYC selfie step",
+    "job_category": "ml_ai",
+    "date": "2024-09",
+    "text": "A flat photo held up to the camera is the hard case in your milestone list, so I would test against it from day one. For a lending startup I built the same two-stage flow: face found and clearly visible first, then a random blink or head-turn challenge combined with a texture check. We recorded 1,800 real attack clips (phone replays, glossy prints) and rejected 96% of replays and 98% of prints, with 1.8% false rejects of real users, at 180 ms per frame on CPU. I would deliver milestone 1 as a REST endpoint with reason codes within a week. What frame rate and camera quality do you expect from users?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-06",
+      "repo-06"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-57",
+    "job_title": "Web scraping of product listings",
+    "job_category": "data",
+    "date": "2023-12",
+    "text": "Hello, I am an expert freelancer with many years of experience and I can do this job perfectly. I have 5+ years of experience in the field and I have completed 50+ projects. Technologies: Python, R, MATLAB, Pandas, NumPy, Matplotlib, Seaborn, Spark, Hadoop, Tableau, Power BI, Excel, TensorFlow, Keras, PyTorch, HuggingFace, LangChain, OpenAI, Pinecone. Kindly check my profile for my portfolio. I guarantee 100% satisfaction. Thank you for your time and consideration. I am available for long-term work and can adjust my timezone to match yours if needed.",
+    "outcome": "ignored",
+    "evidence_refs": [],
+    "synthetic": true
+  },
+  {
+    "id": "prop-58",
+    "job_title": "WhatsApp bot for customer questions",
+    "job_category": "ml_ai",
+    "date": "2024-03",
+    "text": "I have two WhatsApp assistants running: one qualifying property leads, one answering guest questions for rental homes, resolving 71% of messages without the host. Both hand over to a person when unsure. For you I would use Twilio, connect your FAQ and test on real past questions. What volume of chats do you get each week? Happy to do a 20-minute call to confirm the scope before you decide anything. I share progress in a short written update every two days and keep the code in a repository you own from the first commit.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-02",
+      "cs-08"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-59",
+    "job_title": "Build sales dashboard from our shop database",
+    "job_category": "data",
+    "date": "2022-11",
+    "text": "Five hours each Monday on spreadsheets is the part I would remove. For an online retailer I wrote 14 SQL queries on their Postgres replica and a nightly-refreshed dashboard covering margin per SKU after returns, repeat-purchase cohorts and stock cover. While checking the numbers I spotted a supplier with an 11% return rate against 3% elsewhere, caused by a wrong size chart, worth about $1,900 a month. I would deliver in three weeks with a data dictionary for every metric. Which database holds your orders, and who looks at the report today?",
+    "outcome": "won",
+    "evidence_refs": [
+      "cs-09"
+    ],
+    "synthetic": true
+  },
+  {
+    "id": "prop-60",
+    "job_title": "Voice chatbot for web application",
+    "job_category": "ml_ai",
+    "date": "2024-02",
+    "text": "Voice bots feel slow when the reply is generated in full before it is spoken. I cut a phone assistant's time to first audio from 2.9 s to 1.4 s by streaming the reply and speaking after the first sentence. For your web app I would use browser speech capture, streaming transcription and the same sentence-level speech output. A first demo takes about a week. Do you have a preference for the speech provider? I usually work in short milestones with a working demo at each step, so you can stop or change direction early.",
+    "outcome": "replied",
+    "evidence_refs": [
+      "cs-11"
+    ],
+    "synthetic": true
+  }
+]
