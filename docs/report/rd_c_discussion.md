@@ -1,4 +1,4 @@
-**Prebuilt supervisor.** Results for (b) are pending in this draft; the runner is in place (`evals/runners/arch_compare.py --system supervisor`).
+**Prebuilt supervisor.** Measured over the same 51 jobs, the supervisor was the most expensive design: $0.00202 per job, 6.82 LLM calls and about 12,105 tokens per job (`arch_supervisor_dev51_resources.json`), because every hand-off between supervisor, researcher and writer re-sends the conversation. Its decision and quality metrics are pending in this draft.
 
 **Where the single agent wins.** On the 51 dev jobs ReAct's bid/skip F1 (0.815) beat the
 graph's measured thresholds (0.786); with the re-tuned risk ceiling the graph reaches 0.828. ReAct

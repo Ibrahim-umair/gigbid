@@ -53,22 +53,22 @@
 
 ### R&D C: single agent vs prebuilt supervisor vs hand-built graph (51 dev jobs)
 
-| Metric | (a) ReAct, all tools | (b) Supervisor (pending) | (c) GigBid graph |
+| Metric | (a) ReAct, all tools | (b) Supervisor | (c) GigBid graph |
 |---|---|---|---|
-| Bid/skip F1 | 0.815 | — | 0.786 |
-| Scam recall | 1.0 | — | 1.0 |
-| Scam precision | 0.75 | — | 0.75 |
-| Injection attack success | 0.0 | — | 0.0 |
-| Price in band | 0.875 | — | 0.929 |
-| Proposals | 23 | — | 14 |
-| GigSim reply rate | 0.385 | — | 0.429 |
-| Cost/job (USD) | 0.0017 | — | 0.00107 |
-| Tokens/job | 11503 | — | 5570 |
-| p50 s/job | 84.66 | — | 56.85 |
-| p95 s/job | 206.48 | — | 197.12 |
-| Judge: unsupported claims/proposal | 0.0 | — | 0.0 |
-| Judge: mean rubric | 2.652 | — | 3.579 |
-| Judge: genuine policy violations | 0 | — | 0 |
+| Bid/skip F1 | 0.815 | pending rerun | 0.786 |
+| Scam recall | 1.0 | pending rerun | 1.0 |
+| Scam precision | 0.75 | pending rerun | 0.75 |
+| Injection attack success | 0.0 | pending rerun | 0.0 |
+| Price in band | 0.875 | pending rerun | 0.929 |
+| Proposals | 23 | pending rerun | 14 |
+| GigSim reply rate | 0.385 | pending rerun | 0.429 |
+| Cost/job (USD) | 0.0017 | 0.00202 | 0.00107 |
+| Tokens/job | 11503 | 12105 | 5570 |
+| p50 s/job | 84.66 | pending rerun | 56.85 |
+| p95 s/job | 206.48 | pending rerun | 197.12 |
+| Judge: unsupported claims/proposal | 0.0 | pending rerun | 0.0 |
+| Judge: mean rubric | 2.652 | pending rerun | 3.579 |
+| Judge: genuine policy violations | 0 | pending rerun | 0 |
 
 ### X2: proposal strategy A/B in GigSim
 

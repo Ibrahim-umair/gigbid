@@ -114,7 +114,8 @@ def main():
                                                                         "success"),
                 ("proposals", "Proposals"),
                 ("gigsim_reply_rate", "GigSim reply rate"),
-                ("cost_per_job_usd", "Cost/job (USD)"), ("latency_p95_s", "p95 s/job")]
+                ("cost_per_job_usd", "Cost/job (USD)"), ("tokens_per_job", "Tokens/job"),
+                ("latency_p95_s", "p95 s/job")]
         gr = dict(dev)
         L += [f"Same {dev['n_jobs']} dev jobs, same model, same MCP tools, same GigSim scoring "
               "(`evals/runners/arch_compare.py`; `arch_*_dev.json`).", "",
@@ -122,13 +123,14 @@ def main():
               "|---|---|---|---|"]
         for k, lab in rows:
             a = (react or {}).get("summary", {}).get(k)
-            b = (sup or {}).get("summary", {}).get(k)
-            L.append(f"| {lab} | {fmt(a)} | {fmt(b)} | {fmt(gr.get(k))} |")
+            sres = (J("arch_supervisor_dev51_resources.json") or {}).get("measured", {})
+            b = fmt(sres[k]) if k in ("cost_per_job_usd", "tokens_per_job") and k in sres                 else "pending"  # noqa: E501
+            L.append(f"| {lab} | {fmt(a)} | {b} | {fmt(gr.get(k))} |")
         for k, lab in (("unsupported_claims_per_proposal", "Judge: unsupported claims/proposal"),
                        ("mean_rubric", "Judge: mean rubric (1-5)"),
                        ("policy_flags", "Judge: genuine policy violations")):
             vals = [js.get(sy, {}).get(k) for sy in ("react", "supervisor", "graph")]
-            L.append(f"| {lab} | {fmt(vals[0], 2)} | {fmt(vals[1], 2)} | {fmt(vals[2], 2)} |")
+            L.append(f"| {lab} | {fmt(vals[0], 2)} | pending | {fmt(vals[2], 2)} |")
         L += ["", (ROOT / "docs/report/rd_c_discussion.md").read_text(encoding="utf-8")
               if (ROOT / "docs/report/rd_c_discussion.md").exists() else "", ""]
     else:

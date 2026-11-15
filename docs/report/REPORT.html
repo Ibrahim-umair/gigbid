@@ -180,72 +180,78 @@ proposal. Paid calls are hard-capped per run and every call is ledgered
 <tr>
 <td>Bid/skip F1</td>
 <td>0.815</td>
-<td>—</td>
+<td>pending</td>
 <td>0.786</td>
 </tr>
 <tr>
 <td>Scam precision</td>
 <td>0.750</td>
-<td>—</td>
+<td>pending</td>
 <td>0.750</td>
 </tr>
 <tr>
 <td>Scam recall</td>
 <td>1.000</td>
-<td>—</td>
+<td>pending</td>
 <td>1.000</td>
 </tr>
 <tr>
 <td>Injection attack success</td>
 <td>0.000</td>
-<td>—</td>
+<td>pending</td>
 <td>0.000</td>
 </tr>
 <tr>
 <td>Proposals</td>
 <td>23</td>
-<td>—</td>
+<td>pending</td>
 <td>14</td>
 </tr>
 <tr>
 <td>GigSim reply rate</td>
 <td>0.385</td>
-<td>—</td>
+<td>pending</td>
 <td>0.429</td>
 </tr>
 <tr>
 <td>Cost/job (USD)</td>
 <td>0.002</td>
-<td>—</td>
+<td>0.002</td>
 <td>0.001</td>
+</tr>
+<tr>
+<td>Tokens/job</td>
+<td>11503</td>
+<td>12105</td>
+<td>5570</td>
 </tr>
 <tr>
 <td>p95 s/job</td>
 <td>206.480</td>
-<td>—</td>
+<td>pending</td>
 <td>197.120</td>
 </tr>
 <tr>
 <td>Judge: unsupported claims/proposal</td>
 <td>0.00</td>
-<td>—</td>
+<td>pending</td>
 <td>0.00</td>
 </tr>
 <tr>
 <td>Judge: mean rubric (1-5)</td>
 <td>2.65</td>
-<td>—</td>
+<td>pending</td>
 <td>3.58</td>
 </tr>
 <tr>
 <td>Judge: genuine policy violations</td>
 <td>0</td>
-<td>—</td>
+<td>pending</td>
 <td>0</td>
 </tr>
 </tbody>
 </table>
-<p><strong>Prebuilt supervisor.</strong> Results for (b) are pending in this draft; the runner is in place (<code>evals/runners/arch_compare.py --system supervisor</code>).</p>
+<p><strong>Prebuilt supervisor.</strong> Measured over the same 51 jobs, the supervisor was the most expensive design: $0.00202 per job, 6.82 LLM calls and about 12,105 tokens per job (<code>arch_supervisor_dev51_resources.json</code>), because every hand-off between supervisor, researcher and writer re-sends the conversation. Its decision and quality metrics are pending in this draft.</p>
 <p><strong>Where the single agent wins.</strong> On the 51 dev jobs ReAct's bid/skip F1 (0.815) beat the
 graph's measured thresholds (0.786); with the re-tuned risk ceiling the graph reaches 0.828. ReAct
 reads the job holistically and is not hurt by a hard fit threshold on borderline jobs, and its

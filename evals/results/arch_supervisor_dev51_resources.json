@@ -1,0 +1,20 @@
+{
+ "system": "supervisor",
+ "n_jobs": 51,
+ "measured": {
+  "cost_per_job_usd": 0.00202,
+  "calls_per_job": 6.82,
+  "tokens_per_job": 12105,
+  "secs_per_job_uncontended_12": 95.7
+ },
+ "pending_rerun": [
+  "bid_f1",
+  "scam_precision",
+  "scam_recall",
+  "attack_success_rate",
+  "proposals",
+  "gigsim_reply_rate",
+  "judge"
+ ],
+ "note": "Resource metrics measured over all 51 dev jobs; decision/quality metrics pending a rerun."
+}

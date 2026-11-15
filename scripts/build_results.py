@@ -84,17 +84,19 @@ def main():
                                                 "latency_p50_s", "latency_p95_s")})
         out += ["", "### R&D C: single agent vs prebuilt supervisor vs hand-built graph "
                     f"({g.get('n_jobs')} dev jobs)", "",
-                "| Metric | (a) ReAct, all tools | (b) Supervisor (pending) | (c) GigBid graph |",  # noqa: E501
+                "| Metric | (a) ReAct, all tools | (b) Supervisor | (c) GigBid graph |",  # noqa: E501
                 "|---|---|---|---|"]
         for k, label in cols:
-            vals = [((arch[a] or {}).get("summary", {})).get(k, "—") for a in
-                    ("react", "supervisor")]
+            sres = (load("arch_supervisor_dev51_resources.json") or {}).get("measured", {})
+            sv = sres.get(k, "pending rerun") if k in ("cost_per_job_usd", "tokens_per_job")                 else "pending rerun"  # noqa: E501
+            vals = [((arch["react"] or {}).get("summary", {})).get(k, "—"), sv]
             out.append(f"| {label} | {vals[0]} | {vals[1]} | {g.get(k, '—')} |")
         jsum = (judge or {}).get("summary", {})
         for k, label in (("unsupported_claims_per_proposal", "Judge: unsupported claims/proposal"),
                          ("mean_rubric", "Judge: mean rubric"),
                          ("policy_flags", "Judge: genuine policy violations")):
             v = [jsum.get(sy, {}).get(k, "—") for sy in ("react", "supervisor", "graph")]
+            v[1] = "pending rerun"
             out.append(f"| {label} | {v[0]} | {v[1]} | {v[2]} |")
     sp = None if arch["supervisor"] else load("arch_supervisor_dev_partial.json")
     if sp:

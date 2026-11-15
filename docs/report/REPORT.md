@@ -84,19 +84,20 @@ Same 51 dev jobs, same model, same MCP tools, same GigSim scoring (`evals/runner
 
 | Metric (51 dev jobs) | (a) ReAct | (b) Supervisor | (c) Graph |
 |---|---|---|---|
-| Bid/skip F1 | 0.815 | — | 0.786 |
-| Scam precision | 0.750 | — | 0.750 |
-| Scam recall | 1.000 | — | 1.000 |
-| Injection attack success | 0.000 | — | 0.000 |
-| Proposals | 23 | — | 14 |
-| GigSim reply rate | 0.385 | — | 0.429 |
-| Cost/job (USD) | 0.002 | — | 0.001 |
-| p95 s/job | 206.480 | — | 197.120 |
-| Judge: unsupported claims/proposal | 0.00 | — | 0.00 |
-| Judge: mean rubric (1-5) | 2.65 | — | 3.58 |
-| Judge: genuine policy violations | 0 | — | 0 |
+| Bid/skip F1 | 0.815 | pending | 0.786 |
+| Scam precision | 0.750 | pending | 0.750 |
+| Scam recall | 1.000 | pending | 1.000 |
+| Injection attack success | 0.000 | pending | 0.000 |
+| Proposals | 23 | pending | 14 |
+| GigSim reply rate | 0.385 | pending | 0.429 |
+| Cost/job (USD) | 0.002 | 0.002 | 0.001 |
+| Tokens/job | 11503 | 12105 | 5570 |
+| p95 s/job | 206.480 | pending | 197.120 |
+| Judge: unsupported claims/proposal | 0.00 | pending | 0.00 |
+| Judge: mean rubric (1-5) | 2.65 | pending | 3.58 |
+| Judge: genuine policy violations | 0 | pending | 0 |
 
-**Prebuilt supervisor.** Results for (b) are pending in this draft; the runner is in place (`evals/runners/arch_compare.py --system supervisor`).
+**Prebuilt supervisor.** Measured over the same 51 jobs, the supervisor was the most expensive design: $0.00202 per job, 6.82 LLM calls and about 12,105 tokens per job (`arch_supervisor_dev51_resources.json`), because every hand-off between supervisor, researcher and writer re-sends the conversation. Its decision and quality metrics are pending in this draft.
 
 **Where the single agent wins.** On the 51 dev jobs ReAct's bid/skip F1 (0.815) beat the
 graph's measured thresholds (0.786); with the re-tuned risk ceiling the graph reaches 0.828. ReAct
